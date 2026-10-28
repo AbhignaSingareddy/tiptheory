@@ -1,0 +1,642 @@
+
+/* ==================================================
+   TIPTHEORY - TERMS & CONDITIONS
+   Primary: #111111 | Secondary: #A84460
+================================================== */
+
+body[data-page="terms-conditions"] {
+    --terms-primary: #111111;
+    --terms-secondary: #A84460;
+    --terms-bg: var(--background, #ffffff);
+    --terms-text: var(--text, #282428);
+    --terms-border: rgba(17, 17, 17, 0.12);
+
+    margin: 0;
+    min-height: 100vh;
+    color: var(--terms-text);
+    background: var(--terms-bg);
+    font-family: "Lora", serif;
+}
+
+body[data-page="terms-conditions"] *,
+body[data-page="terms-conditions"] *::before,
+body[data-page="terms-conditions"] *::after {
+    box-sizing: border-box;
+}
+
+body[data-page="terms-conditions"] a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Header and centered brand */
+
+body[data-page="terms-conditions"] .terms-top-logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    padding: 16px 100px;
+    background: #FCE8ED;
+}
+
+body[data-page="terms-conditions"] .terms-top-logo > .brand {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: max-content;
+    max-width: 100%;
+    color: inherit;
+    text-decoration: none;
+    direction: ltr;
+}
+
+body[data-page="terms-conditions"] .brand-mark {
+    display: block;
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+body[data-page="terms-conditions"] .brand-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    line-height: 1;
+}
+
+body[data-page="terms-conditions"] .brand-name {
+    margin: 0;
+    padding: 0;
+    color: var(--terms-primary);
+    font-family: "Playfair Display", serif;
+    font-size: 2.15rem;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+body[data-page="terms-conditions"] .brand-name > span,
+body[data-page="terms-conditions"] .terms-footer > a > span {
+    color: var(--terms-secondary);
+}
+
+body[data-page="terms-conditions"] .brand-tagline {
+    display: block;
+    margin: 0;
+    color: var(--terms-primary);
+    font-family: "Playfair Display", serif;
+    font-size: 0.59rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    line-height: 1.2;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Theme and RTL controls */
+
+body[data-page="terms-conditions"] .terms-controls {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transform: translateY(-50%);
+    direction: ltr;
+}
+
+body[data-page="terms-conditions"] .terms-icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    color: var(--terms-primary);
+    background: #ffffff;
+    border: 1px solid var(--terms-border);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 0.25s ease, background 0.25s ease,
+                border-color 0.25s ease, transform 0.25s ease;
+}
+
+body[data-page="terms-conditions"] .terms-icon-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+body[data-page="terms-conditions"] .terms-icon-btn:hover {
+    color: #ffffff;
+    background: var(--terms-primary);
+    border-color: var(--terms-primary);
+    transform: translateY(-2px);
+}
+
+/* Hero */
+
+body[data-page="terms-conditions"] .terms-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 475px;
+    padding: 76px 24px 80px;
+    overflow: hidden;
+    color: #ffffff;
+    background: #111111;
+    text-align: center;
+}
+
+body[data-page="terms-conditions"] .terms-hero-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+body[data-page="terms-conditions"] .terms-eyebrow {
+    display: inline-block;
+    margin-bottom: 24px;
+    color: #D94B70;
+    font-family: "Playfair Display", serif;
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.19em;
+}
+
+body[data-page="terms-conditions"] .terms-hero h1 {
+    margin: 0 auto 24px;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: clamp(3rem, 7vw, 6rem);
+    font-weight: 500;
+    letter-spacing: -0.055em;
+    line-height: 1.04;
+}
+
+body[data-page="terms-conditions"] .terms-hero h1 em {
+    display: block;
+    margin-top: 4px;
+    color: #C33B60;
+    font-weight: 500;
+}
+
+body[data-page="terms-conditions"] .terms-hero-content > p {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #F1E8EB;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+body[data-page="terms-conditions"] .terms-decoration {
+    position: absolute;
+    color: rgba(168, 68, 96, 0.4);
+    pointer-events: none;
+    line-height: 1;
+}
+
+body[data-page="terms-conditions"] .terms-decoration-one {
+    top: 20%;
+    left: 10%;
+    font-size: 3.5rem;
+}
+
+body[data-page="terms-conditions"] .terms-decoration-two {
+    right: 11%;
+    bottom: 16%;
+    font-size: 3.5rem;
+}
+
+/* Main content */
+
+body[data-page="terms-conditions"] .terms-content {
+    padding: 70px 24px 80px;
+    background: var(--terms-bg);
+}
+
+body[data-page="terms-conditions"] .terms-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+body[data-page="terms-conditions"] .terms-intro {
+    margin-bottom: 34px;
+    padding: 34px;
+    background: var(--terms-bg);
+    border: 1px solid var(--terms-border);
+    border-top: 3px solid var(--terms-secondary);
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(17, 17, 17, 0.035);
+}
+
+body[data-page="terms-conditions"] .terms-card-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: var(--terms-secondary);
+    font-size: 0.73rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+}
+
+body[data-page="terms-conditions"] .terms-intro h2 {
+    margin: 0 0 18px;
+    color: var(--terms-text);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+body[data-page="terms-conditions"] .terms-intro p,
+body[data-page="terms-conditions"] .terms-block p {
+    color: var(--terms-text);
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+body[data-page="terms-conditions"] .terms-intro p:last-child,
+body[data-page="terms-conditions"] .terms-block p:last-child {
+    margin-bottom: 0;
+}
+
+body[data-page="terms-conditions"] .terms-block {
+    padding: 30px 0;
+    border-bottom: 1px solid var(--terms-border);
+}
+
+body[data-page="terms-conditions"] .terms-block h3 {
+    position: relative;
+    margin: 0 0 18px;
+    padding-left: 22px;
+    color: var(--terms-text);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.3rem, 3vw, 1.75rem);
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+body[data-page="terms-conditions"] .terms-block h3::before {
+    position: absolute;
+    top: 0.55em;
+    left: 0;
+    width: 9px;
+    height: 9px;
+    content: "";
+    background: var(--terms-secondary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(168, 68, 96, 0.1);
+}
+
+body[data-page="terms-conditions"] .terms-block p {
+    margin: 0 0 15px;
+}
+
+body[data-page="terms-conditions"] .terms-inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--terms-secondary);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+body[data-page="terms-conditions"] .terms-inline-link:hover {
+    color: var(--terms-primary);
+}
+
+/* Contact button: pink normally, black on hover */
+
+body[data-page="terms-conditions"] .terms-contact-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    min-height: 50px;
+    margin-top: 22px;
+    padding: 14px 24px;
+    color: #ffffff !important;
+    background: var(--terms-secondary) !important;
+    border: 1px solid var(--terms-secondary) !important;
+    border-radius: 3px;
+    font-family: "Playfair Display", serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease,
+                border-color 0.3s ease, transform 0.3s ease;
+}
+
+body[data-page="terms-conditions"] .terms-contact-link:hover,
+body[data-page="terms-conditions"] .terms-contact-link:focus-visible {
+    color: #ffffff !important;
+    background: var(--terms-primary) !important;
+    border-color: var(--terms-primary) !important;
+    transform: translateY(-2px);
+}
+
+body[data-page="terms-conditions"] .terms-last-note {
+    margin: 30px 0 0;
+    color: var(--terms-secondary);
+    font-size: 0.88rem;
+    line-height: 1.8;
+}
+
+/* Footer */
+
+body[data-page="terms-conditions"] .terms-footer {
+    padding: 38px 24px;
+    color: #ffffff;
+    background: #111111;
+    text-align: center;
+}
+
+body[data-page="terms-conditions"] .terms-footer > a {
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+body[data-page="terms-conditions"] .terms-footer > p {
+    margin: 10px 0 0;
+    color: #E9DDE1;
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+body[data-page="terms-conditions"] .terms-footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 20px !important;
+}
+
+body[data-page="terms-conditions"] .terms-footer-links a {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+body[data-page="terms-conditions"] .terms-footer-links a:hover {
+    color: #D94B70;
+}
+
+/* Dark mode */
+
+body[data-page="terms-conditions"].dark {
+    --terms-bg: #171517;
+    --terms-text: #F3EDEF;
+    --terms-border: rgba(255, 255, 255, 0.13);
+}
+
+body[data-page="terms-conditions"].dark .terms-top-logo {
+    background: #242024;
+}
+
+body[data-page="terms-conditions"].dark .brand-name,
+body[data-page="terms-conditions"].dark .brand-tagline {
+    color: #ffffff;
+}
+
+body[data-page="terms-conditions"].dark .terms-icon-btn {
+    color: #ffffff;
+    background: #171517;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+body[data-page="terms-conditions"].dark .terms-icon-btn:hover {
+    background: var(--terms-secondary);
+    border-color: var(--terms-secondary);
+}
+
+body[data-page="terms-conditions"].dark .terms-intro {
+    background: #211E21;
+}
+
+/* RTL support */
+
+body[data-page="terms-conditions"][dir="rtl"],
+body[data-page="terms-conditions"].is-rtl {
+    direction: rtl;
+}
+
+body[data-page="terms-conditions"].is-rtl .terms-controls {
+    right: auto;
+    left: 24px;
+}
+
+body[data-page="terms-conditions"].is-rtl .terms-block h3 {
+    padding-left: 0;
+    padding-right: 22px;
+}
+
+body[data-page="terms-conditions"].is-rtl .terms-block h3::before {
+    left: auto;
+    right: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    body[data-page="terms-conditions"] .brand-mark {
+        width: 62px;
+        height: 62px;
+    }
+
+    body[data-page="terms-conditions"] .brand-name {
+        font-size: 1.9rem;
+    }
+
+    body[data-page="terms-conditions"] .brand-tagline {
+        font-size: 0.53rem;
+    }
+
+    body[data-page="terms-conditions"] .terms-hero {
+        min-height: 420px;
+    }
+}
+
+@media (max-width: 600px) {
+    body[data-page="terms-conditions"] .terms-top-logo {
+        min-height: 90px;
+        padding: 14px 80px 14px 12px;
+    }
+
+    body[data-page="terms-conditions"] .terms-top-logo > .brand {
+        gap: 7px;
+    }
+
+    body[data-page="terms-conditions"] .brand-mark {
+        width: 48px;
+        height: 48px;
+    }
+
+    body[data-page="terms-conditions"] .brand-name {
+        font-size: 1.48rem;
+    }
+
+    body[data-page="terms-conditions"] .brand-tagline {
+        font-size: 0.43rem;
+        letter-spacing: 0.025em;
+    }
+
+    body[data-page="terms-conditions"] .terms-controls {
+        right: 10px;
+        gap: 5px;
+    }
+
+    body[data-page="terms-conditions"] .terms-icon-btn {
+        width: 35px;
+        height: 35px;
+    }
+
+    body[data-page="terms-conditions"] .terms-icon-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    body[data-page="terms-conditions"] .terms-hero {
+        min-height: 350px;
+        padding: 65px 20px;
+    }
+
+    body[data-page="terms-conditions"] .terms-hero h1 {
+        font-size: clamp(2.7rem, 12vw, 4rem);
+    }
+
+    body[data-page="terms-conditions"] .terms-hero-content > p {
+        font-size: 0.9rem;
+    }
+
+    body[data-page="terms-conditions"] .terms-decoration-one {
+        left: 3%;
+        font-size: 2.3rem;
+    }
+
+    body[data-page="terms-conditions"] .terms-decoration-two {
+        right: 4%;
+        font-size: 2.3rem;
+    }
+
+    body[data-page="terms-conditions"] .terms-content {
+        padding: 38px 16px 50px;
+    }
+
+    body[data-page="terms-conditions"] .terms-intro {
+        padding: 24px 20px;
+    }
+
+    body[data-page="terms-conditions"] .terms-block {
+        padding: 24px 0;
+    }
+
+    body[data-page="terms-conditions"] .terms-block p,
+    body[data-page="terms-conditions"] .terms-intro p {
+        font-size: 0.92rem;
+    }
+
+    body[data-page="terms-conditions"].is-rtl .terms-top-logo {
+        padding: 14px 12px 14px 80px;
+    }
+
+    body[data-page="terms-conditions"].is-rtl .terms-controls {
+        right: auto;
+        left: 10px;
+    }
+}
+/* ==========================================
+   TERMS & CONDITIONS — LIGHT HERO
+   Remove Header Horizontal Line
+========================================== */
+
+/* Light pink hero background */
+body[data-page="terms-conditions"] .terms-hero {
+    background: #FCE8ED !important;
+    color: #530F0E !important;
+}
+
+/* Hero heading */
+body[data-page="terms-conditions"] .terms-hero h1 {
+    color: #530F0E !important;
+}
+
+body[data-page="terms-conditions"] .terms-hero h1 em {
+    color: #A84460 !important;
+}
+
+/* Eyebrow label */
+body[data-page="terms-conditions"] .terms-eyebrow {
+    color: #A84460 !important;
+}
+
+body[data-page="terms-conditions"] .terms-eyebrow::before {
+    background: #A84460 !important;
+}
+
+/* Hero description */
+body[data-page="terms-conditions"] .terms-hero-content > p {
+    color: #530F0E !important;
+}
+
+/* Decorative icons */
+body[data-page="terms-conditions"] .terms-decoration {
+    color: #A84460 !important;
+}
+
+/* Remove horizontal line below header */
+body[data-page="terms-conditions"] .terms-top-logo {
+    border-bottom: none !important;
+    box-shadow: none !important;
+}
+
+body[data-page="terms-conditions"] .terms-top-logo::after,
+body[data-page="terms-conditions"] .terms-top-logo::before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Dark mode — keep hero light pink */
+html[data-theme="dark"] body[data-page="terms-conditions"] .terms-hero {
+    background: #FCE8ED !important;
+    color: #530F0E !important;
+}
+
+html[data-theme="dark"] body[data-page="terms-conditions"] .terms-hero h1,
+html[data-theme="dark"] body[data-page="terms-conditions"] .terms-hero-content > p {
+    color: #530F0E !important;
+}
+
+html[data-theme="dark"] body[data-page="terms-conditions"] .terms-hero h1 em,
+html[data-theme="dark"] body[data-page="terms-conditions"] .terms-eyebrow,
+html[data-theme="dark"] body[data-page="terms-conditions"] .terms-decoration {
+    color: #A84460 !important;
+}
+/* Terms & Conditions — Contact Us Button */
+body[data-page="terms-conditions"] .terms-contact-link {
+    background: #530F0E !important;
+    border: 1px solid #530F0E !important;
+    color: #FFFFFF !important;
+    transition: background 0.3s ease, border-color 0.3s ease !important;
+}
+
+body[data-page="terms-conditions"] .terms-contact-link:hover {
+    background: #A84460 !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+}

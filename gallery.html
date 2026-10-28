@@ -1,0 +1,642 @@
+
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore signature nail art, elegant manicures and creative nail designs at TipTheory.">
+  <title>Gallery | TipTheory</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/tt logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/gallery.css">
+
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="js/app.js"></script>
+  <link rel="stylesheet" href="css/brand-overrides.css">
+</head>
+
+<body data-page="gallery">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="TipTheory home">
+      <img class="brand-mark" src="assets/tt logo.png" alt="">
+      <span class="brand-copy">
+        <span class="brand-name">Tip<span>Theory</span></span>
+        <span class="brand-tagline">Nail Art &amp; Manicure Studio</span>
+      </span>
+    </a>
+
+    <button class="icon-btn mobile-toggle" id="mobile-toggle"
+      aria-label="Open navigation" aria-expanded="false">
+      <i data-lucide="menu"></i>
+    </button>
+
+    <nav class="nav" id="primary-nav" aria-label="Main navigation">
+      <div class="home-menu" id="home-menu">
+        <button class="nav-home-button" id="home-menu-button" aria-expanded="false">
+          Home <i data-lucide="chevron-down" width="15"></i>
+        </button>
+        <div class="home-dropdown">
+          <a href="index.html">Home 1 · Classic</a>
+          <a href="home2.html">Home 2 · Premium</a>
+        </div>
+      </div>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+      <a class="btn btn-primary mobile-book-appointment"
+   href="enquiry.html">
+  <i data-lucide="calendar-days" width="16"></i>
+  Book Appointment
+</a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        <i data-lucide="moon"></i>
+      </button>
+      <button class="icon-btn" id="rtl-toggle" aria-label="Toggle right-to-left layout" title="Toggle RTL">
+        <i data-lucide="arrow-left-right"></i>
+      </button>
+      <a class="btn btn-primary header-cta" href="enquiry.html">
+        <i data-lucide="calendar-days" width="16"></i> Book Appointment
+      </a>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="tt-gallery-page">
+
+  <!-- SECTION 1: CINEMATIC HERO -->
+  <section class="gallery-hero">
+    <img class="gallery-hero-bg"
+      src="https://i.pinimg.com/1200x/0b/52/af/0b52af07d955f1d0d2db43b6bfbc433c.jpg"
+      alt="Elegant glossy manicure" fetchpriority="high">
+
+    <div class="gallery-hero-overlay"></div>
+
+    <div class="gallery-hero-content">
+      <span class="gallery-kicker">THE TIPTHEORY COLLECTION</span>
+      
+
+      <h1>A little art.<br><em>A lot of you.</em></h1>
+
+      <p>
+        A curated world of colour, creativity and beautiful details.
+        Find the nail inspiration that feels unmistakably yours.
+      </p>
+
+      <a class="gallery-button gallery-button-light" href="#signature-gallery">
+        Explore the collection <i data-lucide="arrow-down-right"></i>
+      </a>
+
+      <span class="gallery-hero-caption">NAIL ART · PERSONALITY · EXPRESSION</span>
+    </div>
+
+    <div class="gallery-hero-side-note">BEAUTY IN EVERY DETAIL</div>
+  </section>
+
+  <!-- SECTION 2: EDITORIAL GALLERY -->
+  <section class="gallery-signature" id="signature-gallery">
+    <div class="container">
+
+      <div class="gallery-editorial-heading">
+        <div>
+          <span class="gallery-kicker"> THE SIGNATURE EDIT</span>
+          <h2>Every detail tells<br><em>a story.</em></h2>
+        </div>
+        <p>
+          From understated elegance to expressive designs, discover
+          looks created to inspire your next manicure.
+        </p>
+      </div>
+
+      <div class="gallery-filter-bar" role="group" aria-label="Filter nail designs">
+        <button class="gallery-filter active" type="button"
+          data-gallery-filter="all" aria-pressed="true">All designs</button>
+        <button class="gallery-filter" type="button"
+          data-gallery-filter="minimal" aria-pressed="false">Minimal</button>
+        <button class="gallery-filter" type="button"
+          data-gallery-filter="floral" aria-pressed="false">Floral</button>
+        <button class="gallery-filter" type="button"
+          data-gallery-filter="chrome" aria-pressed="false">Chrome</button>
+        <button class="gallery-filter" type="button"
+          data-gallery-filter="bold" aria-pressed="false">Bold looks</button>
+      </div>
+
+      <div class="gallery-masonry">
+        <article class="gallery-art-card gallery-art-tall" data-gallery-category="minimal">
+          <button class="gallery-image-button" type="button"
+            data-gallery-image="images/gallery-nude edit.jpg"
+            data-gallery-title="The Nude Edit" aria-label="View The Nude Edit">
+            <img src="images/gallery-nude edit.jpg"
+              alt="Neutral manicure inspiration" loading="lazy">
+            <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+          </button>
+          <div class="gallery-art-caption"><span>01 / MINIMAL</span><h3>The Nude Edit</h3></div>
+        </article>
+
+        <article class="gallery-art-card" data-gallery-category="floral">
+          <button class="gallery-image-button" type="button"
+            data-gallery-image="images/gallery-petal art.jpg"
+            data-gallery-title="Petal Poetry" aria-label="View Petal Poetry">
+            <img src="images/gallery-petal art.jpg"
+              alt="Delicate nail art inspiration" loading="lazy">
+            <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+          </button>
+          <div class="gallery-art-caption"><span>02 / FLORAL</span><h3>Petal Poetry</h3></div>
+        </article>
+
+        <article class="gallery-art-card gallery-art-tall" data-gallery-category="chrome">
+          <button class="gallery-image-button" type="button"
+            data-gallery-image="images/gallery-chrome.jpg"
+            data-gallery-title="Liquid Romance" aria-label="View Liquid Romance">
+            <img src="images/gallery-chrome.jpg"
+              alt="Glossy manicure finish" loading="lazy">
+            <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+          </button>
+          <div class="gallery-art-caption"><span>03 / CHROME</span><h3>Liquid Romance</h3></div>
+        </article>
+
+        <article class="gallery-art-card" data-gallery-category="bold">
+          <button class="gallery-image-button" type="button"
+            data-gallery-image="images/gallery-bold.jpg"
+            data-gallery-title="Colour Confidence" aria-label="View Colour Confidence">
+            <img src="images/gallery-bold.jpg"
+              alt="Expressive manicure style" loading="lazy">
+            <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+          </button>
+          <div class="gallery-art-caption"><span>04 / BOLD</span><h3>Colour Confidence</h3></div>
+        </article>
+
+        <article class="gallery-art-card gallery-art-tall" data-gallery-category="bold">
+          <button class="gallery-image-button" type="button"
+            data-gallery-image="images/gallery-after dark.jpg"
+            data-gallery-title="The After-Dark Edit" aria-label="View The After-Dark Edit">
+            <img src="images/gallery-after dark.jpg"
+              alt="Statement nail art inspiration" loading="lazy">
+            <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+          </button>
+          <div class="gallery-art-caption"><span>06 / STATEMENT</span><h3>The After-Dark Edit</h3></div>
+        </article>
+
+      <!-- 07: SIGNATURE -->
+<article class="gallery-art-card" data-gallery-category="minimal">
+    <button class="gallery-image-button" type="button"
+        data-gallery-image="images/gallery-elegant expression.jpg"
+        data-gallery-title="Elegant Expression"
+        aria-label="View Elegant Expression">
+
+        <img
+            src="images/gallery-elegant expression.jpg"
+            alt="Elegant nail art design"
+            loading="lazy">
+
+        <span class="gallery-image-overlay">
+            Discover the look <i data-lucide="arrow-up-right"></i>
+        </span>
+    </button>
+
+    <div class="gallery-art-caption">
+        <span>07 / SIGNATURE</span>
+        <h3>Elegant Expression</h3>
+    </div>
+</article>
+
+        
+<!-- Extra images: hidden until Show More is clicked -->
+<article class="gallery-art-card gallery-extra-card" data-gallery-category="floral" hidden>
+  <button class="gallery-image-button" type="button"
+    data-gallery-image="images/gallery-rosewater.jpg"
+    data-gallery-title="Rosewater Bloom" aria-label="View Rosewater Bloom">
+    <img src="images/gallery-rosewater.jpg"
+      alt="Rose-inspired manicure" loading="lazy">
+    <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+  </button>
+  <div class="gallery-art-caption">
+    <span>08 / FLORAL</span>
+    <h3>Rosewater Bloom</h3>
+  </div>
+</article>
+
+<article class="gallery-art-card gallery-extra-card" data-gallery-category="chrome" hidden>
+  <button class="gallery-image-button" type="button"
+    data-gallery-image="images/gallery-silver lining.jpg"
+    data-gallery-title="Silver Lining" aria-label="View Silver Lining">
+    <img src="images/gallery-silver lining.jpg"
+      alt="Glossy chrome manicure" loading="lazy">
+    <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+  </button>
+  <div class="gallery-art-caption">
+    <span>09 / CHROME</span>
+    <h3>Silver Lining</h3>
+  </div>
+</article>
+
+<article class="gallery-art-card gallery-extra-card" data-gallery-category="bold" hidden>
+  <button class="gallery-image-button" type="button"
+    data-gallery-image="images/gallery-berry after hours.jpg"
+    data-gallery-title="Berry After Hours" aria-label="View Berry After Hours">
+    <img src="images/gallery-berry after hours.jpg"
+      alt="Bold statement manicure" loading="lazy">
+    <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+  </button>
+  <div class="gallery-art-caption">
+    <span>10 / BOLD</span>
+    <h3>Berry After Hours</h3>
+  </div>
+</article>
+
+<article class="gallery-art-card gallery-extra-card" data-gallery-category="minimal" hidden>
+  <button class="gallery-image-button" type="button"
+    data-gallery-image="images/gallery-soft focus.jpg"
+    data-gallery-title="Soft Focus" aria-label="View Soft Focus">
+    <img src="images/gallery-soft focus.jpg"
+      alt="Soft neutral manicure" loading="lazy">
+    <span class="gallery-image-overlay">Discover the look <i data-lucide="arrow-up-right"></i></span>
+  </button>
+  <div class="gallery-art-caption">
+    <span>11 / MINIMAL</span>
+    <h3>Soft Focus</h3>
+  </div>
+</article>
+
+<!-- UNIQUE FLORAL DESIGN -->
+<article class="gallery-art-card" data-gallery-category="floral">
+    <button class="gallery-image-button" type="button"
+        data-gallery-title="Midnight Garden"
+        aria-label="View Midnight Garden">
+
+        <img src="images/gallery-midnight garden.jpg"
+             alt="Deep burgundy floral nail art with delicate gold details"
+             loading="lazy">
+
+        <span class="gallery-image-overlay">
+            Discover the look ↗
+        </span>
+    </button>
+
+    <div class="gallery-art-caption">
+        <span>12 / FLORAL</span>
+        <h3>Midnight Garden</h3>
+    </div>
+</article>
+
+<!-- UNIQUE CHROME DESIGN -->
+<article class="gallery-art-card" data-gallery-category="chrome">
+    <button class="gallery-image-button" type="button"
+        data-gallery-title="Molten Rose"
+        aria-label="View Molten Rose">
+
+        <img src="images/gallery-molten rose.jpg"
+             alt="Rose gold metallic chrome nail art"
+             loading="lazy">
+
+        <span class="gallery-image-overlay">
+            Discover the look ↗
+        </span>
+    </button>
+
+    <div class="gallery-art-caption">
+        <span>13 / CHROME</span>
+        <h3>Molten Rose</h3>
+    </div>
+</article>
+
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- SECTION 3: NAIL ART COLLECTIONS -->
+  
+<!-- FIND YOUR PERFECT NAIL LOOK -->
+<section class="gallery-look-finder" id="look-finder">
+  <div class="look-finder-container">
+
+    <div class="look-finder-heading">
+      <span class="gallery-kicker">YOUR STYLE, YOUR RULES</span>
+
+      <h2>
+        Find your perfect look.
+        <em>Make it yours.</em>
+      </h2>
+
+      <p>
+        Not sure what to choose? Explore different nail styles
+        and find the finish that matches your mood.
+      </p>
+    </div>
+
+    <div class="look-finder-grid">
+
+      <button class="look-finder-card" type="button"
+        data-gallery-filter="minimal">
+        <span class="look-finder-number">01</span>
+        <span class="look-finder-icon">
+          <i data-lucide="sparkles"></i>
+        </span>
+        <span class="look-finder-title">Everyday Elegance</span>
+        <span class="look-finder-description">
+          Soft neutrals, clean finishes and timeless beauty.
+        </span>
+        <span class="look-finder-link">
+          Explore minimal looks <i data-lucide="arrow-up-right"></i>
+        </span>
+      </button>
+
+      <button class="look-finder-card" type="button"
+        data-gallery-filter="floral">
+        <span class="look-finder-number">02</span>
+        <span class="look-finder-icon">
+          <i data-lucide="flower-2"></i>
+        </span>
+        <span class="look-finder-title">Romantic Details</span>
+        <span class="look-finder-description">
+          Delicate florals, fine patterns and graceful details.
+        </span>
+        <span class="look-finder-link">
+          Explore floral looks <i data-lucide="arrow-up-right"></i>
+        </span>
+      </button>
+
+      <button class="look-finder-card" type="button"
+        data-gallery-filter="chrome">
+        <span class="look-finder-number">03</span>
+        <span class="look-finder-icon">
+          <i data-lucide="gem"></i>
+        </span>
+        <span class="look-finder-title">Gloss & Glamour</span>
+        <span class="look-finder-description">
+          Reflective chrome, luminous shine and modern finishes.
+        </span>
+        <span class="look-finder-link">
+          Explore chrome looks <i data-lucide="arrow-up-right"></i>
+        </span>
+      </button>
+
+      <button class="look-finder-card" type="button"
+        data-gallery-filter="bold">
+        <span class="look-finder-number">04</span>
+        <span class="look-finder-icon">
+          <i data-lucide="palette"></i>
+        </span>
+        <span class="look-finder-title">Bold Expression</span>
+        <span class="look-finder-description">
+          Statement colours and creative nail art that stands out.
+        </span>
+        <span class="look-finder-link">
+          Explore bold looks <i data-lucide="arrow-up-right"></i>
+        </span>
+      </button>
+
+    </div>
+
+    <div class="look-finder-footer">
+      <p>Found a style you love?</p>
+      <a href="enquiry.html" class="gallery-button gallery-button-primary">
+        Book Your Appointment
+        <i data-lucide="arrow-up-right"></i>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- SECTION 4: FULL-BLEED BRAND STORY -->
+ 
+<!-- SECTION 4: TIPTHEORY NAIL ART EXPERIENCE -->
+<section class="tt-art-experience" id="nail-art-experience">
+
+  <div class="tt-art-heading">
+    <span class="tt-art-kicker"> THE TIPTHEORY EXPERIENCE</span>
+
+    <h2>
+      Small details.
+      <em>Big expression.</em>
+    </h2>
+
+    <p>
+      Every nail tells a story. Explore the details that make
+      your next manicure uniquely yours.
+    </p>
+  </div>
+
+  <div class="tt-art-visual">
+
+    <!-- Generated black-background hands image -->
+    <img
+      class="tt-art-background-image"
+      src="images/gallery -teh detail.png"
+      alt="Nail artist applying glossy rose-red nail polish"
+      loading="lazy"
+    />
+
+    <!-- Top floating content -->
+    <div class="tt-art-center-label">
+      <span class="tt-art-heart">♡</span>
+      <h3>Signature Nail Looks</h3>
+      <p>Designed for every mood &amp; moment</p>
+    </div>
+
+    <!-- Bottom left content -->
+    <div class="tt-art-info tt-art-info-left">
+      <span class="tt-art-info-icon" aria-hidden="true">
+        ♢
+      </span>
+      <div>
+        <h3>Trendy Designs</h3>
+        <p>From minimal to bold</p>
+      </div>
+    </div>
+
+    <!-- Bottom right content -->
+    <div class="tt-art-info tt-art-info-right">
+      <span class="tt-art-info-icon" aria-hidden="true">
+        ✿
+      </span>
+      <div>
+        <h3>Expert Artistry</h3>
+        <p>Beautiful details, polished finishes</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- SECTION 5: MACRO DETAIL SHOWCASE -->
+  <section class="gallery-detail-edit">
+    <div class="container">
+      <div class="gallery-detail-heading">
+        <div>
+          <span class="gallery-kicker"> THE DETAIL EDIT</span>
+          <h2>Look a little<br><em>closer.</em></h2>
+        </div>
+        <p>
+          The finish. The texture. The tiny details that turn a simple
+          manicure into something memorable.
+        </p>
+      </div>
+
+      <div class="gallery-detail-layout">
+        <figure class="gallery-detail-feature">
+          <img src="images/perfectly polished.jpg"
+            alt="Detailed manicure close-up" loading="lazy">
+          <figcaption><span>01</span><div><strong>Perfectly polished</strong><small>A clean, considered finish</small></div></figcaption>
+        </figure>
+
+        <div class="gallery-detail-side">
+          <figure>
+            <img src="images/in detail.png"
+              alt="Fine nail art detail" loading="lazy">
+            <figcaption><span>02</span> Art in the details</figcaption>
+          </figure>
+          <div class="gallery-detail-quote">
+            <span class="gallery-quote-mark"></span>
+            <p>Beauty lives in the details you notice — and the ones you simply feel.</p>
+            <span class="gallery-kicker">THE TIPTHEORY APPROACH</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  <!-- SECTION 7: FINAL APPOINTMENT CTA -->
+  
+<section class="gallery-luxe-cta">
+  <div class="gallery-luxe-cta-inner">
+
+    <div class="gallery-luxe-cta-copy">
+      <span class="gallery-luxe-eyebrow">
+        A LITTLE LUXURY, MADE PERSONAL
+      </span>
+
+      <h2>
+        Your next nail moment
+        <em>starts here.</em>
+      </h2>
+
+      <p>
+        From your saved inspiration to a look created just for you,
+        let's make your next manicure feel special.
+      </p>
+
+      <div class="gallery-luxe-cta-actions">
+        <a href="enquiry.html" class="gallery-luxe-cta-button">
+          Book Your Appointment
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+
+        <span class="gallery-luxe-cta-note">
+          YOUR STYLE. YOUR COLOUR. YOUR MOMENT.
+        </span>
+      </div>
+    </div>
+
+    <div class="gallery-luxe-cta-visual">
+      <img
+        src="images/services-inspiration.png"
+        alt="Nail art inspiration and manicure ideas"
+        loading="lazy"
+      >
+
+      <div class="gallery-luxe-cta-stamp">
+        <span>THE</span>
+        <strong>TipTheory</strong>
+        <span>BEAUTY EDIT</span>
+      </div>
+
+      <div class="gallery-luxe-cta-caption">
+        <span>01 / YOUR NEXT CHAPTER</span>
+        <span>BEAUTY IN EVERY DETAIL</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+ <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="TipTheory home">
+          <img class="brand-mark" src="assets/tt logo.png" alt="">
+          <span class="brand-copy">
+            <span class="brand-name">Tip<span>Theory</span></span>
+            <span class="brand-tagline">Nail Art &amp; Manicure Studio</span>
+          </span>
+        </a>
+
+        <p>
+          Thoughtful nail care, expressive nail art, and a little moment of luxury just for you. 
+          comfort and the little details that make your nails feel uniquely yours.
+        </p>
+
+        <div class="socials" aria-label="Social media">
+          <a href="https://instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://pinterest.com/" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Our Services</h3>
+        <div class="footer-links">
+          <a href="services.html#manicure">Classic Manicure</a>
+          <a href="services.html#gel">Gel Extensions</a>
+          <a href="services.html#art">Custom Nail Art</a>
+          <a href="services.html#pedicure">Spa Pedicure</a>
+          <a href="404.html">404 page </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <div class="footer-links">
+          <a href="mailto:hello@tiptheory.com"><i data-lucide="mail"></i> hello@tiptheory.com</a>
+          <a href="tel:+910000000000"><i data-lucide="phone"></i> +91 00000 00000</a>
+          <span><i data-lucide="map-pin"></i> India · By appointment</span>
+          <span><i data-lucide="clock-3"></i> Tue–Sun · 10:00 AM–7:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> TipTheory Nail Art &amp; Manicure Studio.</span>
+      <span>
+        <a href="privacy-policy.html">Privacy Policy</a> &nbsp; · &nbsp;
+        <a href="terms-conditions.html">Terms &amp; conditions</a>
+      </span>
+    </div>
+  </footer>
+
+
+<div class="toast" id="toast" aria-live="polite"></div>
+
+</body>
+</html>

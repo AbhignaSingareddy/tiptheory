@@ -1,0 +1,397 @@
+/* ==========================================================
+   TIPTHEORY GLOBAL BRAND OVERRIDES
+   Primary: Deep Blush #530F0E
+   Secondary: Rose Burgundy #A84460
+   Loaded last on every page to keep the palette consistent.
+========================================================== */
+:root {
+  --primary: #530F0E !important;
+  --secondary: #A84460 !important;
+  --radius-button: 5px;
+}
+
+body.dark {
+  --primary: #530F0E !important;
+  --secondary: #A84460 !important;
+}
+
+/* Main headings use primary; designed accent words use secondary. */
+h1, h2, h3, h4, h5, h6,
+.page-title, .section-title, .section-head h2,
+.services-title, .about-title, .gallery-title,
+.contact-title, .enquiry-title {
+  color: var(--primary) !important;
+}
+
+.accent,
+.heading-accent,
+.title-accent,
+.section-head h2 .accent,
+.luxury-hero-copy h1 span,
+.premium-hero h1 span,
+.hero-title span.accent,
+.page-hero h1 .accent {
+  color: var(--secondary) !important;
+}
+
+/* Logo wordmark: Tip = primary, Theory = secondary. */
+.brand-name,
+.footer-brand .brand-name,
+.site-header .brand-name,
+.site-footer .brand-name {
+  color: var(--primary) !important;
+}
+.brand-name > span,
+.footer-brand .brand-name > span,
+.site-header .brand-name > span,
+.site-footer .brand-name > span {
+  color: var(--secondary) !important;
+}
+
+/* Navigation: primary at rest, secondary on hover/focus/active. */
+.site-header .nav-link,
+.site-header .nav-home-button,
+.site-header .nav-link:visited {
+  color: var(--primary) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.site-header .nav-link:hover,
+.site-header .nav-link:focus-visible,
+.site-header .nav-link.active,
+.site-header .nav-home-button:hover,
+.site-header .nav-home-button:focus-visible,
+.site-header .nav-home-button.active,
+.site-header .home-menu:hover .nav-home-button,
+.site-header .home-menu.open .nav-home-button {
+  color: var(--secondary) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+.site-header .nav-link::after,
+.site-header .nav-home-button::after {
+  background-color: var(--secondary) !important;
+}
+
+/* Dropdown stays light; each option has a visible hover state. */
+.site-header .home-dropdown {
+  background-color: #FFF5F7 !important;
+  border-color: #E8C8D1 !important;
+}
+.site-header .home-dropdown a {
+  color: var(--primary) !important;
+  background-color: transparent !important;
+  transition: color .2s ease, background-color .2s ease;
+}
+.site-header .home-dropdown a:hover,
+.site-header .home-dropdown a:focus-visible,
+.site-header .home-dropdown a.active {
+  color: var(--secondary) !important;
+  background-color: #FBE7ED !important;
+}
+
+/* All filled buttons: primary by default, secondary on hover. */
+.btn:not(.btn-secondary):not(.luxury-btn-secondary):not(.btn-outline),
+button.btn:not(.btn-secondary):not(.btn-outline),
+a.btn:not(.btn-secondary):not(.btn-outline),
+.btn-primary,
+.btn-dark,
+.luxury-btn-primary,
+.header-cta,
+button[type="submit"],
+input[type="submit"],
+button.primary,
+a.primary-button,
+.primary-btn {
+  color: #FFFFFF !important;
+  background-color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: var(--radius-button) !important;
+  transition: background-color .22s ease, color .22s ease, border-color .22s ease, transform .22s ease;
+}
+.btn:not(.btn-secondary):not(.luxury-btn-secondary):not(.btn-outline):hover,
+button.btn:not(.btn-secondary):not(.btn-outline):hover,
+a.btn:not(.btn-secondary):not(.btn-outline):hover,
+.btn-primary:hover,
+.btn-dark:hover,
+.luxury-btn-primary:hover,
+.header-cta:hover,
+button[type="submit"]:hover,
+input[type="submit"]:hover,
+button.primary:hover,
+a.primary-button:hover,
+.primary-btn:hover {
+  color: #FFFFFF !important;
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+/* Outline/secondary buttons: primary text + border, secondary on hover. */
+.gallery-button-outline,
+.gallery-button-light,
+.error-btn-secondary,
+.svc-btn-light,
+.btn-secondary,
+.luxury-btn-secondary,
+.luxury-hero-btn:not(.luxury-btn-primary),
+.btn-outline,
+.button-outline,
+a.secondary-button,
+.secondary-btn {
+  color: var(--primary) !important;
+  background-color: transparent !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: var(--radius-button) !important;
+  transition: background-color .22s ease, color .22s ease, border-color .22s ease, transform .22s ease;
+}
+.gallery-button-outline:hover,
+.gallery-button-light:hover,
+.error-btn-secondary:hover,
+.svc-btn-light:hover,
+.btn-secondary:hover,
+.luxury-btn-secondary:hover,
+.luxury-hero-btn:not(.luxury-btn-primary):hover,
+.btn-outline:hover,
+.button-outline:hover,
+a.secondary-button:hover,
+.secondary-btn:hover {
+  color: #FFFFFF !important;
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+/* Keep all button corners consistent. */
+.btn, .luxury-hero-btn, .filter-btn, .header-cta,
+button.btn, a.btn, .btn-primary, .btn-secondary,
+.luxury-btn-primary, .luxury-btn-secondary {
+  border-radius: var(--radius-button) !important;
+}
+
+/* Accent links, small labels and icon strokes. */
+.eyebrow, .section-kicker, .section-label, .section-tagline,
+.hero-kicker, .section-overline, .luxury-eyebrow {
+  color: var(--secondary) !important;
+}
+
+/* Keep text readable in dark mode without changing brand accents. */
+body.dark .brand-tagline { color: var(--text) !important; }
+/* Preserve contrast on photographic hero banners. */
+.luxury-hero-copy h1 { color: #FFFDFC !important; }
+.luxury-hero-copy h1 span { color: var(--secondary) !important; }
+.premium-hero h1 { color: #FFFDFC !important; }
+.premium-hero h1 span { color: var(--secondary) !important; }
+body.dark .nav-link, body.dark .nav-home-button { color: var(--primary) !important; }
+body.dark .nav-link:hover, body.dark .nav-home-button:hover,
+body.dark .nav-link.active, body.dark .nav-home-button.active { color: var(--secondary) !important; }
+
+/* ==========================================================
+   FIXES: dark-mode header contrast + Home 2 brand consistency
+========================================================== */
+/* In dark mode, primary header text must remain readable white;
+   keep the Theory wordmark and active/hover states Rose Burgundy. */
+body.dark .site-header .brand-name,
+body.dark .site-header .nav-link,
+body.dark .site-header .nav-home-button,
+body.dark .site-header .brand-tagline {
+  color: #FFFFFF !important;
+}
+body.dark .site-header .brand-name > span {
+  color: var(--secondary) !important;
+}
+body.dark .site-header .nav-link:hover,
+body.dark .site-header .nav-link:focus-visible,
+body.dark .site-header .nav-link.active,
+body.dark .site-header .nav-home-button:hover,
+body.dark .site-header .nav-home-button:focus-visible,
+body.dark .site-header .nav-home-button.active,
+body.dark .site-header .home-menu:hover .nav-home-button,
+body.dark .site-header .home-menu.open .nav-home-button {
+  color: var(--secondary) !important;
+  background: transparent !important;
+}
+body.dark .site-header .nav-link::after,
+body.dark .site-header .nav-home-button::after {
+  background-color: var(--secondary) !important;
+}
+
+/* Home 2: replace leftover hard-coded black tiles in light mode with
+   a soft blush surface, while retaining Deep Blush headings and Rose accents. */
+.home2-premium-page:not(.dark) .signature-luxe-card.signature-black,
+body:not(.dark) .home2-premium-page .signature-luxe-card.signature-black {
+  background: #FFF5F7 !important;
+  color: var(--primary) !important;
+  border-color: rgba(83, 15, 14, .18) !important;
+}
+.home2-premium-page .signature-luxe-card.signature-black h2,
+.home2-premium-page .signature-luxe-card.signature-black h3,
+.home2-premium-page .signature-luxe-card.signature-black .signature-card-title {
+  color: var(--primary) !important;
+}
+.home2-premium-page .signature-luxe-card.signature-black p,
+.home2-premium-page .signature-luxe-card.signature-black .signature-card-copy {
+  color: #594447 !important;
+}
+.home2-premium-page .signature-luxe-card.signature-rose {
+  background: var(--secondary) !important;
+  color: #FFFFFF !important;
+}
+.home2-premium-page .signature-luxe-card.signature-rose h2,
+.home2-premium-page .signature-luxe-card.signature-rose h3,
+.home2-premium-page .signature-luxe-card.signature-rose .signature-card-title,
+.home2-premium-page .signature-luxe-card.signature-rose p,
+.home2-premium-page .signature-luxe-card.signature-rose .signature-card-copy {
+  color: #FFFFFF !important;
+}
+.home2-premium-page .h2-hero-booking,
+.home2-premium-page .h2-final-actions .btn-primary,
+.home2-premium-page .h2-final-cta .btn-primary {
+  color: #FFFFFF !important;
+  background: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+.home2-premium-page .h2-hero-booking:hover,
+.home2-premium-page .h2-final-actions .btn-primary:hover,
+.home2-premium-page .h2-final-cta .btn-primary:hover {
+  color: #FFFFFF !important;
+  background: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+/* Keep the Home 2 heading accents aligned with the shared palette. */
+.home2-premium-page .home2-creative-hero h1,
+.home2-premium-page .h2-artistry-section h2,
+.home2-premium-page .h2-atelier-section h2,
+.home2-premium-page .h2-signature-section h2,
+.home2-premium-page .h2-testimonials-section h2,
+.home2-premium-page .h2-final-cta h2 {
+  color: var(--primary) !important;
+}
+.home2-premium-page .home2-creative-hero h1 span,
+.home2-premium-page .h2-artistry-section h2 span,
+.home2-premium-page .h2-atelier-section h2 span,
+.home2-premium-page .h2-signature-section h2 span,
+.home2-premium-page .h2-testimonials-section h2 span,
+.home2-premium-page .h2-final-cta h2 span {
+  color: var(--secondary) !important;
+}
+/* Dark mode keeps intentional dark surfaces but restores readable header contrast. */
+body.dark .home2-premium-page .signature-luxe-card.signature-black {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+}
+body.dark .home2-premium-page .signature-luxe-card.signature-black h2,
+body.dark .home2-premium-page .signature-luxe-card.signature-black h3,
+body.dark .home2-premium-page .signature-luxe-card.signature-black p {
+  color: var(--text) !important;
+}
+
+
+/* FINAL BRAND SYSTEM — highest-priority shared rules for all pages */
+:root { --primary: #530F0E; --secondary: #A84460; }
+body.dark { --primary: #530F0E; --secondary: #A84460; }
+
+/* Wordmark: Tip = primary; Theory = secondary. */
+.site-header .brand-name, .site-footer .brand-name, .footer-brand .brand-name {
+  color: var(--primary) !important;
+}
+.site-header .brand-name > span, .site-footer .brand-name > span, .footer-brand .brand-name > span {
+  color: var(--secondary) !important;
+}
+body.dark .site-header .brand-name { color: #FFFFFF !important; }
+body.dark .site-header .brand-name > span { color: var(--secondary) !important; }
+
+/* Header navigation: primary at rest; secondary on hover/focus/active.
+   No dark filled rectangle on Home or dropdown trigger. */
+.site-header .nav-link, .site-header .nav-home-button,
+.site-header .nav-link:visited {
+  color: var(--nav-text) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.site-header .nav-link:hover, .site-header .nav-link:focus-visible,
+.site-header .nav-link.active, .site-header .nav-home-button:hover,
+.site-header .nav-home-button:focus-visible, .site-header .nav-home-button.active,
+.site-header .home-menu:hover > .nav-home-button,
+.site-header .home-menu:focus-within > .nav-home-button,
+.site-header .home-menu.open > .nav-home-button {
+  color: var(--nav-hover) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.site-header .nav-link::after, .site-header .nav-home-button::after {
+  background-color: var(--secondary) !important;
+}
+body.dark .site-header .nav-link, body.dark .site-header .nav-home-button,
+body.dark .site-header .nav-link:visited { color: #FFFFFF !important; }
+body.dark .site-header .nav-link:hover, body.dark .site-header .nav-link:focus-visible,
+body.dark .site-header .nav-link.active, body.dark .site-header .nav-home-button:hover,
+body.dark .site-header .nav-home-button:focus-visible, body.dark .site-header .nav-home-button.active,
+body.dark .site-header .home-menu:hover > .nav-home-button,
+body.dark .site-header .home-menu:focus-within > .nav-home-button,
+body.dark .site-header .home-menu.open > .nav-home-button { color: var(--secondary) !important; }
+
+/* Dropdown choices: no dark hover block; Rose Burgundy hover text and tint. */
+.site-header .home-dropdown { background: #FFFDFC !important; border-color: #E8C8D1 !important; }
+.site-header .home-dropdown a { color: var(--primary) !important; background: transparent !important; }
+.site-header .home-dropdown a:hover, .site-header .home-dropdown a:focus-visible,
+.site-header .home-dropdown a.active { color: var(--secondary) !important; background: #FBE7ED !important; }
+body.dark .site-header .home-dropdown { background: #211C1F !important; border-color: #49373D !important; }
+body.dark .site-header .home-dropdown a { color: #FFFFFF !important; }
+body.dark .site-header .home-dropdown a:hover, body.dark .site-header .home-dropdown a:focus-visible,
+body.dark .site-header .home-dropdown a.active { color: var(--secondary) !important; background: #2D2327 !important; }
+
+/* Filled buttons: Deep Blush default, Rose Burgundy hover. */
+.btn:not(.btn-secondary):not(.luxury-btn-secondary):not(.btn-outline),
+.btn-primary, .btn-dark, .luxury-btn-primary, .header-cta,
+button[type="submit"], input[type="submit"], button.primary,
+a.primary-button, .primary-btn, .h2-hero-booking {
+  color: #FFFFFF !important; background: var(--button-bg) !important;
+  border: 1px solid var(--button-border) !important; border-radius: var(--radius-button) !important;
+  transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+}
+.btn:not(.btn-secondary):not(.luxury-btn-secondary):not(.btn-outline):hover,
+.btn-primary:hover, .btn-dark:hover, .luxury-btn-primary:hover, .header-cta:hover,
+button[type="submit"]:hover, input[type="submit"]:hover, button.primary:hover,
+a.primary-button:hover, .primary-btn:hover, .h2-hero-booking:hover {
+  color: #FFFFFF !important; background: var(--button-hover-bg) !important;
+  border-color: var(--button-hover-border) !important;
+}
+
+/* Outline/secondary buttons: primary label and border, secondary hover. */
+.btn-secondary, .luxury-btn-secondary, .btn-outline, .button-outline,
+a.secondary-button, .secondary-btn, .gallery-button-outline, .gallery-button-light,
+.error-btn-secondary, .svc-btn-light, .luxury-hero-btn:not(.luxury-btn-primary) {
+  color: var(--outline-text) !important; background: var(--outline-bg) !important;
+  border: 1px solid var(--outline-border) !important; border-radius: var(--radius-button) !important;
+}
+.btn-secondary:hover, .luxury-btn-secondary:hover, .btn-outline:hover, .button-outline:hover,
+a.secondary-button:hover, .secondary-btn:hover, .gallery-button-outline:hover,
+.gallery-button-light:hover, .error-btn-secondary:hover, .svc-btn-light:hover,
+.luxury-hero-btn:not(.luxury-btn-primary):hover {
+  color: var(--outline-hover-text) !important; background: var(--outline-hover-bg) !important;
+  border-color: var(--outline-hover-border) !important;
+}
+
+/* Headings and designed accent words share the brand palette. */
+h1, h2, h3, h4, h5, h6, .page-title, .section-title,
+.section-head h2, .services-title, .about-title, .gallery-title,
+.contact-title, .enquiry-title { color: var(--heading); }
+.accent, .heading-accent, .title-accent, .section-head h2 .accent,
+.hero-title span.accent, .page-hero h1 .accent { color: var(--secondary) !important; }
+/* Preserve contrast over photographic/dark hero imagery. */
+.luxury-hero-copy h1, .premium-hero h1 { color: #FFFDFC !important; }
+.luxury-hero-copy h1 span, .premium-hero h1 span { color: var(--secondary) !important; }
+
+
+/* Final logo and control safeguards */
+.brand-copy .brand-name { color: var(--logo-tip) !important; }
+.brand-copy .brand-name > span { color: var(--logo-theory) !important; }
+body.dark .brand-copy .brand-name { color: #FFFFFF !important; }
+body.dark .brand-copy .brand-name > span { color: var(--secondary) !important; }
+.site-header .header-cta, .site-header a.header-cta, .site-header .book-appointment,
+.site-header .appointment-btn, .site-header .btn-booking {
+  background: var(--button-bg) !important; border-color: var(--button-border) !important; color: #FFFFFF !important;
+}
+.site-header .header-cta:hover, .site-header a.header-cta:hover, .site-header .book-appointment:hover,
+.site-header .appointment-btn:hover, .site-header .btn-booking:hover {
+  background: var(--button-hover-bg) !important; border-color: var(--button-hover-border) !important; color: #FFFFFF !important;
+}

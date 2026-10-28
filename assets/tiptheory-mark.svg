@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="TipTheory manicure mark">
+ <defs><linearGradient id="rose" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A84460"/><stop offset="1" stop-color="#A84460"/></linearGradient></defs>
+ <path d="M19 27 Q50 5 81 27" fill="none" stroke="url(#rose)" stroke-width="3" stroke-linecap="round"/>
+ <path d="M27 30 L27 65 Q27 81 43 81 Q59 81 59 65 L59 48" fill="none" stroke="#530F0E" stroke-width="5" stroke-linecap="round"/>
+ <path d="M48 28 L48 61 Q48 72 59 72 Q70 72 70 61 L70 43" fill="none" stroke="url(#rose)" stroke-width="5" stroke-linecap="round"/>
+ <path d="M48 28 Q49 15 59 15 Q69 15 69 27 L69 43" fill="none" stroke="#530F0E" stroke-width="4" stroke-linecap="round"/>
+ <path d="M70 20 L82 8" stroke="#A84460" stroke-width="4" stroke-linecap="round"/>
+ <path d="M81 8 Q88 11 84 17 L77 26 L73 22 Z" fill="url(#rose)"/>
+ <path d="M16 69 Q21 60 27 69 Q33 78 22 86 Q11 78 16 69Z" fill="url(#rose)"/>
+ <path d="M73 69 C73 62 82 62 82 69 C82 62 91 62 91 69 C91 76 82 82 82 82 C82 82 73 76 73 69Z" fill="none" stroke="#A84460" stroke-width="2.5"/>
+ <circle cx="14" cy="39" r="2.5" fill="#A84460"/><path d="M82 39v10 M77 44h10" stroke="#A84460" stroke-width="2" stroke-linecap="round"/>
+</svg>

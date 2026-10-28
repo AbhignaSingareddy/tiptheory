@@ -1,0 +1,5945 @@
+/* ==========================================================
+   TIPTHEORY — ABOUT PAGE
+   Luxury Editorial Design
+   Primary:   #111111
+   Secondary: #A84460
+========================================================== */
+
+body.page-about {
+    --about-primary: #111111;
+    --about-secondary: #A84460;
+
+    --about-bg: #FFF9F8;
+    --about-surface: #FFFFFF;
+    --about-soft: #F9E9ED;
+    --about-text: #292124;
+    --about-muted: #76676A;
+    --about-border: rgba(17, 17, 17, 0.12);
+
+    --about-shadow: 0 18px 55px rgba(55, 24, 35, 0.09);
+
+    font-family: "Lora", serif;
+    overflow-x: clip;
+}
+
+body.page-about *,
+body.page-about *::before,
+body.page-about *::after {
+    box-sizing: border-box;
+}
+
+body.page-about img {
+    display: block;
+    max-width: 100%;
+}
+
+body.page-about a {
+    text-decoration: none;
+}
+
+body.page-about h1,
+body.page-about h2,
+body.page-about h3,
+body.page-about h4 {
+    font-family: "Playfair Display", serif;
+}
+
+body.page-about .about-main {
+    overflow: clip;
+}
+
+body.page-about .about-main section {
+    position: relative;
+}
+
+body.page-about .about-main .container {
+    width: min(1240px, calc(100% - 64px));
+    margin-inline: auto;
+}
+
+body.page-about .about-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--about-secondary);
+    font-family: "Lora", serif;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+body.page-about .about-eyebrow-line {
+    width: 25px;
+    height: 1px;
+    background: var(--about-secondary);
+}
+
+body.page-about .about-main h1,
+body.page-about .about-main h2,
+body.page-about .about-main h3,
+body.page-about .about-main p {
+    margin-top: 0;
+}
+
+body.page-about .about-main h2 {
+    color: var(--about-primary);
+    font-size: clamp(34px, 4.2vw, 57px);
+    font-weight: 500;
+    line-height: 1.13;
+    letter-spacing: -1.7px;
+}
+
+body.page-about .about-main h2 > span,
+body.page-about .about-main h1 > span {
+    display: block;
+    color: var(--about-secondary);
+    font-style: italic;
+}
+
+body.page-about .about-main p {
+    color: var(--about-muted);
+    font-size: 15px;
+    line-height: 1.95;
+}
+
+body.page-about .about-main .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    min-height: 48px;
+    padding: 13px 22px;
+    border: 1px solid var(--about-secondary);
+    border-radius: 3px;
+    font-family: "Lora", serif;
+    font-size: 12px;
+    font-weight: 700;
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+body.page-about .about-main .btn:hover {
+    background: var(--about-primary);
+    color: #FFFFFF;
+    border-color: var(--about-primary);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(17, 17, 17, .13);
+}
+
+
+/* ==========================================================
+   01. EDITORIAL HERO
+========================================================== */
+
+
+/* ABOUT HERO — CENTERED CONTENT */
+
+body.page-about .about-editorial-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    height: 570px;
+    min-height: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #111111;
+    background-image: url("../images/aaa\ hero.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Center content inside the clear middle area */
+body.page-about .about-hero-inner {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    flex: 1;
+    min-height: 0;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.page-about .about-hero-copy {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Eyebrow */
+body.page-about .about-hero-copy .about-eyebrow {
+    color: #D75A7B;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+/* Heading — single line */
+body.page-about .about-hero-copy h1 {
+    width: 100%;
+    max-width: none;
+    margin: 8px auto 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: nowrap;
+    gap: 12px;
+
+    color: #FFFFFF;
+    font-size: clamp(34px, 4.2vw, 58px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+body.page-about .about-hero-copy h1 span {
+    color: #C04465;
+    white-space: nowrap;
+}
+
+/* Description */
+body.page-about .about-hero-description {
+    max-width: 650px;
+    margin: 0 auto 20px;
+
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+/* Buttons */
+body.page-about .about-hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+body.page-about .about-hero-actions .btn {
+    font-size: 12px;
+}
+
+/* Secondary link */
+body.page-about .about-text-link {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+/* Signature */
+body.page-about .about-hero-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    margin-top: 16px;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+body.page-about .about-note-star {
+    color: #D75A7B;
+}
+
+/* Bottom labels */
+body.page-about .about-hero-bottom {
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+    flex-shrink: 0;
+    padding: 12px 20px 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    color: #FFFFFF;
+    font-size: 11px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    body.page-about .about-editorial-hero {
+        height: 540px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        font-size: clamp(27px, 4.5vw, 36px);
+        gap: 7px;
+        letter-spacing: -0.8px;
+    }
+
+    body.page-about .about-hero-description {
+        max-width: 500px;
+        font-size: 13px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body.page-about .about-editorial-hero {
+        height: auto;
+        min-height: 520px;
+        background-size: cover;
+    }
+
+    body.page-about .about-hero-inner {
+        padding: 30px 14px;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        flex-wrap: wrap;
+        white-space: normal;
+        font-size: clamp(27px, 7vw, 34px);
+        gap: 4px 7px;
+    }
+
+    body.page-about .about-hero-copy h1 span {
+        white-space: normal;
+    }
+
+    body.page-about .about-hero-description {
+        font-size: 12px;
+    }
+
+    body.page-about .about-hero-actions {
+        gap: 12px;
+    }
+
+    body.page-about .about-hero-bottom {
+        gap: 8px;
+        font-size: 9px;
+    }
+}
+
+
+/* ==========================================================
+   02. OUR STORY
+========================================================== */
+
+body.page-about .about-story-section {
+    padding-block: clamp(85px, 10vw, 140px);
+    background: var(--about-bg);
+}
+
+body.page-about .about-story-layout {
+    display: grid;
+    grid-template-columns: 1fr .9fr;
+    align-items: center;
+    gap: clamp(45px, 8vw, 110px);
+}
+
+body.page-about .about-story-visual {
+    position: relative;
+    min-width: 0;
+    padding: 0 50px 45px 0;
+}
+
+body.page-about .about-story-image-main {
+    overflow: hidden;
+    height: clamp(420px, 48vw, 610px);
+    border-radius: 4px 180px 4px 4px;
+    box-shadow: var(--about-shadow);
+}
+
+body.page-about .about-story-image-main img,
+body.page-about .about-story-image-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .75s ease;
+}
+
+body.page-about .about-story-image-main:hover img,
+body.page-about .about-story-image-small:hover img {
+    transform: scale(1.04);
+}
+
+body.page-about .about-story-image-small {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 43%;
+    height: 225px;
+    overflow: hidden;
+
+    border: 8px solid var(--about-bg);
+    box-shadow: var(--about-shadow);
+}
+
+body.page-about .about-story-stamp {
+    position: absolute;
+    left: -18px;
+    bottom: 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+
+    padding: 19px 22px;
+    background: var(--about-secondary);
+    color: #FFFFFF;
+    box-shadow: var(--about-shadow);
+}
+
+body.page-about .about-story-stamp span {
+    font-size: 8px;
+    letter-spacing: 1.2px;
+}
+
+body.page-about .about-story-stamp strong {
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+
+body.page-about .about-story-copy h2 {
+    margin: 20px 0 24px;
+}
+
+body.page-about .about-story-copy > p {
+    margin-bottom: 18px;
+}
+
+body.page-about .about-underlined-link {
+    margin-top: 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid var(--about-secondary);
+}
+
+
+/* ==========================================================
+   03. MISSION & VISION
+========================================================== */
+
+body.page-about .about-purpose-section {
+    padding-block: clamp(75px, 9vw, 115px);
+    background: #F9EDF0;
+}
+
+body.page-about .about-section-heading {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+body.page-about .about-section-heading h2 {
+    margin: 17px 0;
+}
+
+body.page-about .about-section-heading > p {
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+body.page-about .about-purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+body.page-about .about-purpose-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 330px;
+    padding: clamp(27px, 4vw, 48px);
+
+    border: 1px solid rgba(168, 68, 96, .17);
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+}
+
+body.page-about .about-purpose-mission {
+    background: #FFFFFF;
+}
+
+body.page-about .about-purpose-vision {
+    background: var(--about-primary);
+    color: #FFFFFF;
+}
+
+body.page-about .about-purpose-card:hover {
+    transform: translateY(-7px);
+    box-shadow: var(--about-shadow);
+    border-color: var(--about-secondary);
+}
+
+body.page-about .about-purpose-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 37px;
+}
+
+body.page-about .about-purpose-card-top > i {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    color: var(--about-secondary);
+    border: 1px solid rgba(168, 68, 96, .35);
+    border-radius: 50%;
+}
+
+body.page-about .about-card-number {
+    color: var(--about-secondary);
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+}
+
+body.page-about .about-card-label {
+    display: block;
+    margin-bottom: 13px;
+    color: var(--about-secondary);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.about-card-label{
+    background-color: white;
+}
+body.page-about .about-purpose-card h3 {
+    margin-bottom: 14px;
+    font-size: clamp(24px, 3vw, 34px);
+    font-weight: 500;
+}
+
+body.page-about .about-purpose-mission h3 {
+    color: var(--about-primary);
+}
+
+body.page-about .about-purpose-vision h3 {
+    color: #FFFFFF;
+    background-color: white;
+}
+
+body.page-about .about-purpose-vision p {
+    color: #D7C9CD;
+}
+
+body.page-about .about-purpose-symbol {
+    position: absolute;
+    right: 20px;
+    bottom: -30px;
+    color: rgba(168, 68, 96, .09);
+    font-size: 150px;
+    line-height: 1;
+    pointer-events: none;
+}
+
+
+/* ==========================================================
+   04. THE TIPTHEORY DIFFERENCE
+========================================================== */
+
+body.page-about .about-difference-section {
+    padding-block: clamp(85px, 10vw, 135px);
+    background: var(--about-bg);
+}
+
+body.page-about .about-difference-heading {
+    display: grid;
+    grid-template-columns: 1fr .65fr;
+    align-items: end;
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+body.page-about .about-difference-heading h2 {
+    max-width: 650px;
+    margin: 17px 0 0;
+}
+
+body.page-about .about-difference-heading > p {
+    max-width: 440px;
+    margin-bottom: 6px;
+}
+
+body.page-about .about-difference-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    border-top: 1px solid var(--about-border);
+    border-bottom: 1px solid var(--about-border);
+}
+
+body.page-about .about-difference-card {
+    position: relative;
+    min-width: 0;
+    padding: 30px 24px 35px;
+    border-inline-start: 1px solid var(--about-border);
+    transition:
+        background-color .35s ease,
+        transform .35s ease;
+}
+
+body.page-about .about-difference-card:last-child {
+    border-inline-end: 1px solid var(--about-border);
+}
+
+body.page-about .about-difference-card:hover {
+    background: #F9EDF0;
+    transform: translateY(-5px);
+}
+
+body.page-about .about-difference-number {
+    display: block;
+    color: var(--about-secondary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+body.page-about .about-difference-icon {
+    display: grid;
+    place-items: center;
+    width: 54px;
+    height: 54px;
+    margin: 30px 0 24px;
+
+    color: var(--about-secondary);
+    background: #F9E9ED;
+    border: 1px solid rgba(168, 68, 96, .16);
+    border-radius: 50%;
+
+    transition:
+        background-color .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+body.page-about .about-difference-card:hover .about-difference-icon {
+    color: #FFFFFF;
+    background: var(--about-secondary);
+    transform: rotate(-7deg);
+}
+
+body.page-about .about-difference-card h3 {
+    margin-bottom: 12px;
+    color: var(--about-primary);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+body.page-about .about-difference-card p {
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 1.85;
+}
+
+body.page-about .about-card-arrow {
+    display: inline-block;
+    color: var(--about-secondary);
+    font-size: 19px;
+    transition: transform .3s ease;
+}
+
+body.page-about .about-difference-card:hover .about-card-arrow {
+    transform: translate(4px, -4px);
+}
+
+
+/* ==========================================================
+   05. OUR PHILOSOPHY
+========================================================== */
+
+
+/* ========================================
+   TIPTHEORY — EDITORIAL NAIL CARE SECTION
+======================================== */
+
+body.page-about .care-editorial {
+  --care-pink: #A84460;
+  --care-blush: #FFF5F7;
+  --care-black: #111111;
+
+  width: 100%;
+  overflow: hidden;
+  padding: 88px 28px 30px;
+  background: var(--care-blush);
+  color: var(--care-black);
+}
+
+body.page-about .care-editorial * {
+  box-sizing: border-box;
+}
+
+body.page-about .care-editorial-inner {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+/* CENTERED HEADING */
+
+body.page-about .care-heading {
+  max-width: 740px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+body.page-about .care-kicker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  color: var(--care-pink);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2.2px;
+  line-height: 1.8;
+}
+
+body.page-about .care-kicker span {
+  display: block;
+  width: 27px;
+  height: 1px;
+  background: var(--care-pink);
+}
+
+body.page-about .care-heading h2 {
+  margin: 24px 0 18px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(43px, 5.5vw, 70px);
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 1.08;
+}
+
+body.page-about .care-heading h2 em {
+  color: var(--care-pink);
+  font-weight: 400;
+}
+
+body.page-about .care-heading > p {
+  max-width: 550px;
+  margin: 0 auto;
+  color: #706067;
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+/* THREE PHOTOS — EDITORIAL COLLAGE */
+
+body.page-about .care-gallery {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.08fr 0.88fr 1fr;
+  align-items: start;
+  gap: 24px;
+  padding: 0 22px 20px;
+}
+
+body.page-about .care-photo {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+}
+
+body.page-about .care-photo-one {
+  margin-top: 0;
+}
+
+body.page-about .care-photo-two {
+  margin-top: 75px;
+}
+
+body.page-about .care-photo-three {
+  margin-top: 28px;
+}
+
+body.page-about .care-photo img {
+  display: block;
+  width: 100%;
+  height: 365px;
+  object-fit: cover;
+  background: #eadde0;
+  transition: transform 0.65s ease;
+}
+
+body.page-about .care-photo-one img {
+  height: 410px;
+  object-position: center;
+}
+
+body.page-about .care-photo-two img {
+  height: 325px;
+  object-position: center;
+}
+
+body.page-about .care-photo-three img {
+  height: 375px;
+  object-position: center;
+}
+
+body.page-about .care-photo:hover img {
+  transform: translateY(-5px);
+}
+
+body.page-about .care-photo figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 15px 0 0;
+}
+
+body.page-about .care-photo figcaption span:first-child {
+  color: var(--care-pink);
+  font-size: 9px;
+  letter-spacing: 1.7px;
+}
+
+body.page-about .care-photo figcaption span:last-child {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* Decorative brand initial */
+
+body.page-about .care-gallery-mark {
+  position: absolute;
+  z-index: 2;
+  right: -1px;
+  bottom: 38px;
+  display: grid;
+  place-items: center;
+  width: 76px;
+  height: 76px;
+  border: 1px solid var(--care-pink);
+  border-radius: 50%;
+  background: var(--care-blush);
+  color: var(--care-pink);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 35px;
+  font-style: italic;
+}
+
+/* BOTTOM TEXT + HORIZONTAL VALUES */
+
+body.page-about .care-bottom {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 70px;
+  align-items: center;
+  margin-top: 64px;
+  padding: 38px 0;
+  border-top: 1px solid rgba(168, 68, 96, 0.3);
+  border-bottom: 1px solid rgba(168, 68, 96, 0.3);
+}
+
+body.page-about .care-bottom-label {
+  color: var(--care-pink);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+body.page-about .care-bottom-heading h3 {
+  margin: 16px 0 0;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(30px, 3.4vw, 43px);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+body.page-about .care-bottom-heading h3 em {
+  color: var(--care-pink);
+  font-weight: 400;
+}
+
+body.page-about .care-values {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+body.page-about .care-value {
+  min-width: 0;
+}
+
+body.page-about .care-value-number {
+  display: block;
+  margin-bottom: 15px;
+  color: var(--care-pink);
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+body.page-about .care-value h4 {
+  margin: 0 0 10px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+body.page-about .care-value p {
+  margin: 0;
+  color: #706067;
+  font-size: 11px;
+  line-height: 1.85;
+}
+
+/* SIGNATURE */
+
+body.page-about .care-signature {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 23px;
+  color: #806d73;
+  font-size: 8px;
+  letter-spacing: 1.7px;
+}
+
+body.page-about .care-signature-heart {
+  color: var(--care-pink);
+  font-size: 15px;
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  body.page-about .care-editorial {
+    padding: 72px 24px 25px;
+  }
+
+  body.page-about .care-gallery {
+    gap: 17px;
+    padding-inline: 10px;
+  }
+
+  body.page-about .care-photo-one img {
+    height: 350px;
+  }
+
+  body.page-about .care-photo-two img {
+    height: 285px;
+  }
+
+  body.page-about .care-photo-three img {
+    height: 330px;
+  }
+
+  body.page-about .care-bottom {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-top: 48px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+  body.page-about .care-editorial {
+    padding: 55px 20px 22px;
+  }
+
+  body.page-about .care-heading {
+    margin-bottom: 36px;
+  }
+
+  body.page-about .care-kicker {
+    gap: 8px;
+    font-size: 7px;
+    letter-spacing: 1.2px;
+  }
+
+  body.page-about .care-kicker span {
+    width: 17px;
+  }
+
+  body.page-about .care-heading h2 {
+    margin: 21px 0 15px;
+    font-size: clamp(39px, 9vw, 55px);
+    letter-spacing: -1px;
+  }
+
+  body.page-about .care-heading > p {
+    font-size: 12px;
+    line-height: 1.85;
+  }
+
+  body.page-about .care-gallery {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 14px;
+    padding: 0 0 10px;
+  }
+
+  body.page-about .care-photo-one {
+    grid-column: 1 / -1;
+    width: 88%;
+  }
+
+  body.page-about .care-photo-one img {
+    height: 380px;
+  }
+
+  body.page-about .care-photo-two {
+    margin-top: 0;
+  }
+
+  body.page-about .care-photo-three {
+    margin-top: 38px;
+  }
+
+  body.page-about .care-photo-two img,
+  body.page-about .care-photo-three img {
+    height: 245px;
+  }
+
+  body.page-about .care-photo figcaption span:last-child {
+    font-size: 14px;
+  }
+
+  body.page-about .care-gallery-mark {
+    right: -4px;
+    bottom: 8px;
+    width: 58px;
+    height: 58px;
+    font-size: 27px;
+  }
+
+  body.page-about .care-bottom {
+    gap: 30px;
+    margin-top: 40px;
+    padding: 30px 0;
+  }
+
+  body.page-about .care-bottom-heading h3 {
+    font-size: 34px;
+  }
+
+  body.page-about .care-values {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  body.page-about .care-value {
+    display: grid;
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 10px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(168, 68, 96, 0.2);
+  }
+
+  body.page-about .care-value:last-child {
+    border-bottom: none;
+  }
+
+  body.page-about .care-value-number {
+    margin: 3px 0 0;
+  }
+
+  body.page-about .care-value h4 {
+    font-size: 18px;
+  }
+
+  body.page-about .care-value p {
+    font-size: 12px;
+  }
+
+  body.page-about .care-signature {
+    gap: 8px;
+    font-size: 6px;
+    letter-spacing: 0.8px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  body.page-about .care-editorial {
+    padding-inline: 15px;
+  }
+
+  body.page-about .care-photo-one img {
+    height: 320px;
+  }
+
+  body.page-about .care-photo-two img,
+  body.page-about .care-photo-three img {
+    height: 205px;
+  }
+
+  body.page-about .care-photo figcaption span:last-child {
+    font-size: 12px;
+  }
+
+  body.page-about .care-bottom-heading h3 {
+    font-size: 30px;
+  }
+}
+
+
+
+/* ==========================================================
+   06. YOUR EXPERIENCE
+========================================================== */
+
+body.page-about .about-experience-section {
+    padding-block: clamp(85px, 10vw, 135px);
+    background: var(--about-bg);
+}
+
+body.page-about .about-experience-heading {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+body.page-about .about-experience-heading h2 {
+    margin: 17px 0;
+}
+
+body.page-about .about-experience-heading p {
+    max-width: 590px;
+    margin: 0 auto;
+}
+
+body.page-about .about-experience-layout {
+    display: grid;
+    grid-template-columns: .85fr 1fr;
+    align-items: center;
+    gap: clamp(40px, 7vw, 95px);
+}
+
+body.page-about .about-experience-visual {
+    position: relative;
+    min-width: 0;
+    padding-bottom: 35px;
+}
+
+body.page-about .about-experience-visual > img {
+    width: 100%;
+    height: clamp(420px, 43vw, 550px);
+    object-fit: cover;
+    border-radius: 4px 170px 4px 4px;
+    box-shadow: var(--about-shadow);
+    transition: transform .7s ease;
+}
+
+body.page-about .about-experience-visual:hover > img {
+    transform: translateY(-5px);
+}
+
+body.page-about .about-experience-image-caption {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    width: 82%;
+    padding: 20px 23px;
+
+    background: #FFFFFF;
+    border-inline-start: 3px solid var(--about-secondary);
+    box-shadow: var(--about-shadow);
+}
+
+body.page-about .about-experience-image-caption span {
+    color: var(--about-secondary);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+body.page-about .about-experience-image-caption strong {
+    color: var(--about-primary);
+    font-family: "Playfair Display", serif;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+body.page-about .about-experience-steps {
+    display: grid;
+}
+
+body.page-about .about-experience-step {
+    display: grid;
+    grid-template-columns: 45px minmax(0, 1fr) 35px;
+    align-items: start;
+    gap: 18px;
+
+    padding: 25px 0;
+    border-bottom: 1px solid var(--about-border);
+
+    transition: padding .3s ease, background-color .3s ease;
+}
+
+body.page-about .about-experience-step:first-child {
+    border-top: 1px solid var(--about-border);
+}
+
+body.page-about .about-experience-step:hover {
+    padding-inline: 10px;
+    background: rgba(168, 68, 96, .035);
+}
+
+body.page-about .about-step-number {
+    padding-top: 3px;
+    color: var(--about-secondary);
+    font-family: "Playfair Display", serif;
+    font-size: 21px;
+}
+
+body.page-about .about-experience-step h3 {
+    margin-bottom: 8px;
+    color: var(--about-primary);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+body.page-about .about-experience-step p {
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+body.page-about .about-experience-step > i {
+    width: 22px;
+    height: 22px;
+    color: var(--about-secondary);
+    transition: transform .3s ease;
+}
+
+body.page-about .about-experience-step:hover > i {
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================================
+   07. FINAL INVITATION
+========================================================== */
+
+body.page-about .about-final-section {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(85px, 11vw, 145px) 24px;
+
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(168, 68, 96, .12),
+            transparent 50%
+        ),
+        #F9E9ED;
+
+    text-align: center;
+    isolation: isolate;
+}
+
+body.page-about .about-final-content {
+    position: relative;
+    z-index: 2;
+    width: min(800px, 100%);
+    margin-inline: auto;
+}
+
+body.page-about .about-final-content h2 {
+    margin: 22px 0;
+    font-size: clamp(39px, 6vw, 69px);
+    line-height: 1.1;
+}
+
+body.page-about .about-final-content > p {
+    max-width: 570px;
+    margin: 0 auto 30px;
+}
+
+body.page-about .about-final-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+body.page-about .about-final-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--about-primary);
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: color .3s ease, gap .3s ease;
+}
+
+body.page-about .about-final-secondary:hover {
+    color: var(--about-secondary);
+    gap: 15px;
+}
+
+body.page-about .about-final-secondary span {
+    color: var(--about-secondary);
+    font-size: 18px;
+}
+
+body.page-about .about-final-decoration {
+    position: absolute;
+    z-index: -1;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(168, 68, 96, .2);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+body.page-about .about-final-decoration-one {
+    top: -210px;
+    left: -100px;
+}
+
+body.page-about .about-final-decoration-two {
+    right: -120px;
+    bottom: -230px;
+    width: 410px;
+    height: 410px;
+}
+
+
+/* ==========================================================
+   SCROLL REVEAL ANIMATIONS
+========================================================== */
+
+@keyframes aboutStarFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(12deg);
+    }
+}
+
+body.page-about .about-main .reveal,
+body.page-about .about-main .about-purpose-card,
+body.page-about .about-main .about-difference-card,
+body.page-about .about-main .about-experience-step {
+    transition:
+        opacity .7s ease,
+        transform .7s cubic-bezier(.2, .7, .2, 1),
+        box-shadow .35s ease,
+        background-color .35s ease,
+        border-color .35s ease;
+}
+
+body.page-about .about-main .about-story-copy,
+body.page-about .about-main .about-section-heading,
+body.page-about .about-main .about-difference-heading,
+body.page-about .about-main .about-experience-heading {
+    animation: aboutContentIn .85s both;
+}
+
+@keyframes aboutContentIn {
+    from {
+        opacity: 0;
+        transform: translateY(22px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ==========================================================
+   DARK MODE
+   Uses existing theme toggle via html[data-theme="dark"].
+========================================================== */
+
+html[data-theme="dark"] body.page-about {
+    --about-bg: #171416;
+    --about-surface: #211B1E;
+    --about-soft: #2B2025;
+    --about-text: #F7EFF1;
+    --about-muted: #C2B2B8;
+    --about-border: rgba(255, 255, 255, .13);
+    --about-primary: #F8F0F2;
+    --about-shadow: 0 18px 55px rgba(0, 0, 0, .24);
+
+    background: var(--about-bg);
+    color: var(--about-text);
+}
+
+html[data-theme="dark"] body.page-about .about-editorial-hero {
+    background:
+        radial-gradient(
+            ellipse at 75% 10%,
+            rgba(168, 68, 96, .18),
+            transparent 38%
+        ),
+        #171416;
+}
+
+html[data-theme="dark"] body.page-about .about-hero-description,
+html[data-theme="dark"] body.page-about .about-hero-note {
+    color: #D2C2C7;
+}
+
+html[data-theme="dark"] body.page-about .about-hero-image-caption,
+html[data-theme="dark"] body.page-about .about-story-image-small,
+html[data-theme="dark"] body.page-about .about-experience-image-caption {
+    background: #211B1E;
+}
+
+html[data-theme="dark"] body.page-about .about-hero-image-caption strong,
+html[data-theme="dark"] body.page-about .about-experience-image-caption strong,
+html[data-theme="dark"] body.page-about .about-story-copy h2,
+html[data-theme="dark"] body.page-about .about-main h2,
+html[data-theme="dark"] body.page-about .about-difference-card h3,
+html[data-theme="dark"] body.page-about .about-experience-step h3 {
+    color: #F8F0F2;
+}
+
+html[data-theme="dark"] body.page-about .about-story-section,
+html[data-theme="dark"] body.page-about .about-difference-section,
+html[data-theme="dark"] body.page-about .about-experience-section {
+    background: var(--about-bg);
+}
+
+html[data-theme="dark"] body.page-about .about-purpose-section,
+html[data-theme="dark"] body.page-about .about-final-section {
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(168, 68, 96, .15),
+            transparent 60%
+        ),
+        #21191D;
+}
+
+html[data-theme="dark"] body.page-about .about-purpose-mission {
+    background: #211B1E;
+}
+
+html[data-theme="dark"] body.page-about .about-purpose-vision {
+    background: #100F10;
+}
+
+html[data-theme="dark"] body.page-about .about-purpose-mission h3 {
+    color: #F8F0F2;
+}
+
+html[data-theme="dark"] body.page-about .about-purpose-card,
+html[data-theme="dark"] body.page-about .about-difference-card {
+    border-color: rgba(255, 255, 255, .12);
+}
+
+html[data-theme="dark"] body.page-about .about-purpose-vision p {
+    color: #D2C2C7;
+}
+
+html[data-theme="dark"] body.page-about .about-difference-card:hover,
+html[data-theme="dark"] body.page-about .about-experience-step:hover {
+    background: rgba(168, 68, 96, .12);
+}
+
+html[data-theme="dark"] body.page-about .about-text-link,
+html[data-theme="dark"] body.page-about .about-underlined-link,
+html[data-theme="dark"] body.page-about .about-final-secondary {
+    color: #F8F0F2;
+}
+
+html[data-theme="dark"] body.page-about .about-main .btn:hover {
+    background: #A84460;
+    border-color: #A84460;
+    color: #FFFFFF;
+}
+
+html[data-theme="dark"] body.page-about .about-hero-bottom {
+    border-color: var(--about-border);
+    color: #D2C2C7;
+}
+
+
+/* ==========================================================
+   RESPONSIVE — TABLET
+========================================================== */
+
+@media (max-width: 1024px) {
+
+    body.page-about .about-main .container,
+    body.page-about .about-hero-inner {
+        width: min(100% - 44px, 900px);
+    }
+
+    body.page-about .about-hero-inner {
+        gap: 35px;
+        grid-template-columns: .95fr 1.05fr;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        font-size: clamp(46px, 6.2vw, 66px);
+        letter-spacing: -2px;
+    }
+
+    body.page-about .about-hero-image-frame {
+        height: 470px;
+        border-radius: 170px 170px 4px 4px;
+    }
+
+    body.page-about .about-story-layout {
+        gap: 45px;
+    }
+
+    body.page-about .about-story-image-main {
+        height: 490px;
+    }
+
+    body.page-about .about-difference-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body.page-about .about-difference-card:nth-child(3),
+    body.page-about .about-difference-card:nth-child(4) {
+        border-top: 1px solid var(--about-border);
+    }
+
+    body.page-about .about-difference-card:nth-child(3) {
+        border-inline-start: 1px solid var(--about-border);
+    }
+
+    body.page-about .about-experience-layout {
+        gap: 40px;
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    body.page-about .about-main .container,
+    body.page-about .about-hero-inner {
+        width: calc(100% - 36px);
+    }
+
+    body.page-about .about-editorial-hero {
+        padding-top: 28px;
+    }
+
+    body.page-about .about-hero-inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-bottom: 38px;
+    }
+
+    body.page-about .about-hero-copy {
+        padding-block: 15px 0;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        max-width: 580px;
+        font-size: clamp(44px, 10vw, 67px);
+        line-height: 1.04;
+        letter-spacing: -1.8px;
+    }
+
+    body.page-about .about-hero-description {
+        font-size: 14px;
+    }
+
+    body.page-about .about-hero-visual {
+        padding: 0 12px 40px 0;
+    }
+
+    body.page-about .about-hero-image-frame {
+        height: 470px;
+        border-radius: 170px 170px 3px 3px;
+    }
+
+    body.page-about .about-hero-image-accent {
+        right: 0;
+        transform: translate(10px, 12px);
+    }
+
+    body.page-about .about-hero-floating-star {
+        left: -6px;
+        font-size: 28px;
+    }
+
+    body.page-about .about-hero-bottom {
+        gap: 11px;
+        padding: 16px 10px;
+        font-size: 8px;
+        letter-spacing: .7px;
+    }
+
+    body.page-about .about-story-layout,
+    body.page-about .about-experience-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    body.page-about .about-story-visual {
+        padding-right: 35px;
+    }
+
+    body.page-about .about-story-image-main {
+        height: 450px;
+        border-radius: 4px 140px 4px 4px;
+    }
+
+    body.page-about .about-story-image-small {
+        width: 40%;
+        height: 170px;
+        border-width: 5px;
+    }
+
+    body.page-about .about-story-stamp {
+        left: -5px;
+        bottom: 65px;
+        padding: 15px;
+    }
+
+    body.page-about .about-purpose-grid {
+        grid-template-columns: 1fr;
+        gap: 17px;
+    }
+
+    body.page-about .about-purpose-card {
+        min-height: 0;
+        padding: 28px;
+    }
+
+    body.page-about .about-purpose-card-top {
+        margin-bottom: 24px;
+    }
+
+    body.page-about .about-difference-heading {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    body.page-about .about-difference-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    body.page-about .about-difference-card {
+        padding: 24px 17px;
+    }
+
+    body.page-about .about-difference-card h3 {
+        font-size: 19px;
+    }
+
+    body.page-about .about-difference-card p {
+        font-size: 12px;
+    }
+
+    body.page-about .about-philosophy-section {
+        min-height: 570px;
+        padding-block: 85px;
+    }
+
+    body.page-about .about-experience-visual > img {
+        height: 430px;
+    }
+
+    body.page-about .about-experience-image-caption {
+        right: -5px;
+    }
+
+    body.page-about .about-final-actions {
+        gap: 20px;
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE — SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+    body.page-about .about-main .container,
+    body.page-about .about-hero-inner {
+        width: calc(100% - 30px);
+    }
+
+    body.page-about .about-eyebrow {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        font-size: clamp(39px, 11vw, 51px);
+        letter-spacing: -1.5px;
+    }
+
+    body.page-about .about-hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    body.page-about .about-hero-image-frame {
+        height: 390px;
+        border-radius: 145px 145px 3px 3px;
+    }
+
+    body.page-about .about-hero-image-caption {
+        width: 90%;
+        padding: 16px;
+    }
+
+    body.page-about .about-hero-image-caption strong {
+        font-size: 15px;
+    }
+
+    body.page-about .about-hero-bottom {
+        gap: 8px;
+        font-size: 7px;
+    }
+
+    body.page-about .about-bottom-divider {
+        width: 3px;
+        height: 3px;
+    }
+
+    body.page-about .about-story-section,
+    body.page-about .about-purpose-section,
+    body.page-about .about-difference-section,
+    body.page-about .about-experience-section {
+        padding-block: 70px;
+    }
+
+    body.page-about .about-main h2 {
+        font-size: 36px;
+        letter-spacing: -1px;
+    }
+
+    body.page-about .about-main p {
+        font-size: 13px;
+        line-height: 1.85;
+    }
+
+    body.page-about .about-story-image-main {
+        height: 360px;
+        border-radius: 4px 105px 4px 4px;
+    }
+
+    body.page-about .about-story-image-small {
+        height: 135px;
+    }
+
+    body.page-about .about-story-stamp {
+        gap: 5px;
+        padding: 12px;
+    }
+
+    body.page-about .about-story-stamp strong {
+        font-size: 11px;
+    }
+
+    body.page-about .about-difference-grid {
+        grid-template-columns: 1fr;
+    }
+
+    body.page-about .about-difference-card {
+        padding: 24px;
+        border-inline: 1px solid var(--about-border);
+        border-bottom: 1px solid var(--about-border);
+    }
+
+    body.page-about .about-difference-card:nth-child(3),
+    body.page-about .about-difference-card:nth-child(4) {
+        border-top: 0;
+    }
+
+    body.page-about .about-difference-card h3 {
+        font-size: 21px;
+    }
+
+    body.page-about .about-difference-card p {
+        font-size: 13px;
+    }
+
+    body.page-about .about-philosophy-section {
+        min-height: 540px;
+        padding: 70px 20px;
+    }
+
+    body.page-about .about-philosophy-content h2 {
+        font-size: 39px;
+    }
+
+    body.page-about .about-experience-visual > img {
+        height: 350px;
+        border-radius: 4px 110px 4px 4px;
+    }
+
+    body.page-about .about-experience-step {
+        grid-template-columns: 30px minmax(0, 1fr) 22px;
+        gap: 11px;
+        padding-block: 21px;
+    }
+
+    body.page-about .about-step-number {
+        font-size: 18px;
+    }
+
+    body.page-about .about-experience-step h3 {
+        font-size: 19px;
+    }
+
+    body.page-about .about-experience-step p {
+        font-size: 12px;
+    }
+
+    body.page-about .about-experience-image-caption {
+        width: 90%;
+        padding: 15px;
+    }
+
+    body.page-about .about-final-section {
+        padding-inline: 18px;
+    }
+
+    body.page-about .about-final-content h2 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    body.page-about .about-final-actions {
+        flex-direction: column;
+    }
+
+}
+
+
+/* ==========================================================
+   EXTRA SMALL MOBILE — 360px
+========================================================== */
+
+@media (max-width: 360px) {
+
+    body.page-about .about-main .container,
+    body.page-about .about-hero-inner {
+        width: calc(100% - 24px);
+    }
+
+    body.page-about .about-hero-copy h1 {
+        font-size: 37px;
+    }
+
+    body.page-about .about-hero-image-frame {
+        height: 330px;
+        border-radius: 120px 120px 3px 3px;
+    }
+
+    body.page-about .about-hero-bottom {
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    body.page-about .about-bottom-divider {
+        display: none;
+    }
+
+    body.page-about .about-story-image-main {
+        height: 310px;
+    }
+
+    body.page-about .about-story-image-small {
+        height: 110px;
+    }
+
+    body.page-about .about-purpose-card {
+        padding: 22px;
+    }
+
+    body.page-about .about-philosophy-content h2 {
+        font-size: 34px;
+    }
+
+    body.page-about .about-experience-visual > img {
+        height: 300px;
+    }
+
+    body.page-about .about-final-content h2 {
+        font-size: 33px;
+    }
+
+}
+
+
+/* ==========================================================
+   REDUCED MOTION ACCESSIBILITY
+========================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    body.page-about *,
+    body.page-about *::before,
+    body.page-about *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
+
+}
+
+/* =========================================
+   ABOUT PAGE — CONSISTENT CONTENT ALIGNMENT
+   Header and logo styles remain unchanged
+========================================= */
+
+.page-about .about-main {
+  --about-content-width: 1200px;
+  --about-side-space: 48px;
+}
+
+/* Match the content boundaries of the header container */
+.page-about .about-main .about-hero-inner,
+.page-about .about-main .about-hero-bottom,
+.page-about .about-main .about-philosophy-content,
+.page-about .about-main .about-final-content {
+  width: min(
+    var(--about-content-width),
+    calc(100% - var(--about-side-space) * 2)
+  );
+  max-width: var(--about-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Keep the hero content aligned within its section */
+.page-about .about-hero-inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Keep the philosophy text inside the same boundaries */
+.page-about .about-philosophy-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Keep the final invitation content aligned */
+.page-about .about-final-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Responsive alignment */
+@media (max-width: 768px) {
+  .page-about .about-main {
+    --about-side-space: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-about .about-main {
+    --about-side-space: 16px;
+  }
+}
+
+/* =========================================
+   ABOUT PAGE — CONSISTENT CONTENT ALIGNMENT
+   Header and logo styles remain unchanged
+========================================= */
+
+.page-about .about-main {
+  --about-content-width: 1200px;
+  --about-side-space: 48px;
+}
+
+/* Match the content boundaries of the header container */
+.page-about .about-main .about-hero-inner,
+.page-about .about-main .about-hero-bottom,
+.page-about .about-main .about-philosophy-content,
+.page-about .about-main .about-final-content {
+  width: min(
+    var(--about-content-width),
+    calc(100% - var(--about-side-space) * 2)
+  );
+  max-width: var(--about-content-width);
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+/* Keep the hero content aligned within its section */
+.page-about .about-hero-inner {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Keep the philosophy text inside the same boundaries */
+.page-about .about-philosophy-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Keep the final invitation content aligned */
+.page-about .about-final-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Responsive alignment */
+@media (max-width: 768px) {
+  .page-about .about-main {
+    --about-side-space: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-about .about-main {
+    --about-side-space: 16px;
+  }
+}
+
+/* =========================================
+   ABOUT HERO — ALIGNMENT FIX
+========================================= */
+
+body.page-about .about-editorial-hero {
+    height: 570px;
+    min-height: 570px;
+    padding: 0;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #111111;
+    background-image: url("../images/about\ hero\ 2.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Main content area */
+body.page-about .about-hero-inner {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    min-height: 0;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Content centered inside the empty black area */
+body.page-about .about-hero-copy {
+    width: 100%;
+    max-width: 900px;
+    margin: -8px auto 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* Small eyebrow */
+body.page-about .about-hero-copy .about-eyebrow {
+    margin: 0 0 12px;
+    color: #E45B7D;
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    text-align: center;
+}
+
+/* Heading — one line */
+body.page-about .about-hero-copy h1 {
+    width: 100%;
+    max-width: none;
+    margin: 0 auto 14px;
+    padding: 0;
+
+    display: block;
+    white-space: nowrap;
+
+    color: #FFFFFF;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.15;
+    letter-spacing: -1.2px;
+    text-align: center;
+}
+
+body.page-about .about-hero-copy h1 span {
+    color: #C04465;
+}
+
+/* Description */
+body.page-about .about-hero-description {
+    max-width: 650px;
+    margin: 0 auto 20px;
+
+    color: #F5F0F2;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Buttons */
+body.page-about .about-hero-actions {
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+body.page-about .about-hero-actions .btn {
+    padding: 12px 20px;
+    font-size: 12px;
+}
+
+body.page-about .about-text-link {
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+/* Signature line */
+body.page-about .about-hero-note {
+    margin: 16px auto 0;
+    color: #FFFFFF;
+    font-size: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+body.page-about .about-note-star {
+    color: #E45B7D;
+}
+
+/* Background image is used instead of foreground image */
+body.page-about .about-hero-visual,
+body.page-about .about-hero-watermark {
+    display: none !important;
+}
+
+/* Hide bottom labels to avoid overlap with lower bottles */
+body.page-about .about-hero-bottom {
+    display: none !important;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    body.page-about .about-editorial-hero {
+        height: 540px;
+        min-height: 540px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    body.page-about .about-hero-inner {
+        padding: 0 18px;
+    }
+
+    body.page-about .about-hero-copy {
+        margin-top: 0;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        white-space: normal;
+        font-size: clamp(30px, 5.5vw, 42px);
+        letter-spacing: -0.5px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body.page-about .about-editorial-hero {
+        height: 520px;
+        min-height: 520px;
+        background-size: cover;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        font-size: clamp(28px, 7vw, 34px);
+    }
+
+    body.page-about .about-hero-description {
+        font-size: 12px;
+        max-width: 330px;
+    }
+
+    body.page-about .about-hero-actions {
+        gap: 12px;
+    }
+}
+/* Keep the entire hero heading on one line */
+body.page-about .about-hero-copy h1 {
+    display: block !important;
+    width: max-content !important;
+    max-width: none !important;
+    white-space: nowrap !important;
+
+    font-size: clamp(28px, 3.8vw, 50px) !important;
+    line-height: 1.15;
+    text-align: center;
+    margin: 8px auto 16px;
+}
+
+body.page-about .about-hero-copy h1 span {
+    display: inline !important;
+    white-space: nowrap !important;
+}
+
+/* Prevent the content wrapper from forcing a line break */
+body.page-about .about-hero-copy {
+    max-width: 100% !important;
+    width: 100%;
+    align-items: center;
+}
+
+/* Smaller screens */
+@media (max-width: 600px) {
+    body.page-about .about-hero-copy h1 {
+        font-size: clamp(23px, 5.2vw, 32px) !important;
+        letter-spacing: -0.5px;
+    }
+}
+
+/* ABOUT HERO — MATCH HOME 2 HEADING SIZE */
+
+body.page-about .about-hero-copy h1 {
+    font-size: clamp(42px, 5.2vw, 68px) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -1.5px;
+    margin: 8px auto 18px;
+    white-space: nowrap !important;
+    text-align: center;
+}
+
+body.page-about .about-hero-copy h1 span {
+    display: inline !important;
+    white-space: nowrap !important;
+}
+
+/* Paragraph — white text */
+body.page-about .about-hero-description {
+    color: #FFFFFF !important;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 650px;
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+/* Keep secondary link white */
+body.page-about .about-text-link {
+    color: #FFFFFF !important;
+}
+
+/* Signature text white */
+body.page-about .about-hero-note {
+    color: #FFFFFF !important;
+}
+
+/* Tablet and mobile */
+@media (max-width: 768px) {
+    body.page-about .about-hero-copy h1 {
+        font-size: clamp(30px, 5.5vw, 44px) !important;
+        white-space: normal !important;
+        letter-spacing: -0.5px;
+    }
+
+    body.page-about .about-hero-copy h1 span {
+        white-space: normal !important;
+    }
+
+    body.page-about .about-hero-description {
+        font-size: 13px;
+    }
+}
+
+/* OUR STORY — MATCH EXPLORE SERVICES BUTTON STYLE */
+
+body.page-about .about-hero-actions .about-text-link {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-height: 49px;
+    padding: 0 20px;
+
+    background: transparent !important;
+    border: 1px solid #A84460 !important;
+    border-radius: 5px;
+
+    color: #A84460 !important;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none !important;
+    text-transform: uppercase;
+
+    transition: background 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+/* Arrow alignment */
+body.page-about .about-hero-actions .about-text-link span {
+    color: inherit;
+    font-size: 16px;
+    line-height: 1;
+}
+
+/* Hover */
+body.page-about .about-hero-actions .about-text-link:hover {
+    background: #A84460 !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+}
+
+/* ABOUT HERO — CONSISTENT BUTTON FONT & SIZE */
+
+body.page-about .about-hero-actions .btn.btn-primary,
+body.page-about .about-hero-actions .about-text-link {
+    box-sizing: border-box;
+    min-height: 49px;
+    padding: 0 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    font-family: inherit !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+    text-transform: uppercase;
+}
+
+/* Keep the Explore Services icon aligned */
+body.page-about .about-hero-actions .btn.btn-primary i {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+/* Keep both buttons at a consistent height */
+body.page-about .about-hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ==========================================
+   TIPTHEORY ABOUT HERO — PREMIUM ANIMATIONS
+   ========================================== */
+
+/* Hero background subtle reveal */
+body.page-about .about-editorial-hero {
+    animation: heroBackgroundReveal 1.2s ease-out both;
+}
+
+/* Top nail-polish bottles */
+body.page-about .about-editorial-hero {
+    --hero-animation-duration: 1.1s;
+}
+
+body.page-about .about-hero-inner {
+    animation: heroContentReveal 1s 0.2s ease-out both;
+}
+
+/* Eyebrow */
+body.page-about .about-hero-copy .about-eyebrow {
+    animation: heroItemReveal 0.8s 0.3s ease-out both;
+}
+
+/* Heading */
+body.page-about .about-hero-copy h1 {
+    animation: heroHeadingReveal 1s 0.4s cubic-bezier(.2,.7,.2,1) both;
+}
+
+/* Description */
+body.page-about .about-hero-description {
+    animation: heroItemReveal 0.8s 0.6s ease-out both;
+}
+
+/* Buttons */
+body.page-about .about-hero-actions {
+    animation: heroItemReveal 0.8s 0.75s ease-out both;
+}
+
+body.page-about .about-hero-actions .btn,
+body.page-about .about-hero-actions .about-text-link {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background-color 0.35s ease,
+        color 0.35s ease;
+}
+
+body.page-about .about-hero-actions .btn:hover,
+body.page-about .about-hero-actions .about-text-link:hover {
+    transform: translateY(-3px);
+}
+
+/* Signature line */
+body.page-about .about-hero-note {
+    animation: heroItemReveal 0.8s 0.9s ease-out both;
+}
+
+/* Keyframes */
+@keyframes heroBackgroundReveal {
+    from {
+        opacity: 0.65;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes heroContentReveal {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroItemReveal {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroHeadingReveal {
+    from {
+        opacity: 0;
+        transform: translateY(22px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    body.page-about .about-editorial-hero,
+    body.page-about .about-hero-inner,
+    body.page-about .about-hero-copy .about-eyebrow,
+    body.page-about .about-hero-copy h1,
+    body.page-about .about-hero-description,
+    body.page-about .about-hero-actions,
+    body.page-about .about-hero-note {
+        animation: none !important;
+        opacity: 1;
+        transform: none;
+    }
+
+    body.page-about .about-hero-actions .btn,
+    body.page-about .about-hero-actions .about-text-link {
+        transition: none;
+    }
+}
+
+/* ==========================================
+   TIPTHEORY — CINEMATIC LUXURY HERO
+========================================== */
+
+body.page-about .about-editorial-hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+/* Soft luxury spotlight */
+body.page-about .about-editorial-hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    background: radial-gradient(
+        ellipse at var(--spot-x, 50%) var(--spot-y, 48%),
+        rgba(168, 68, 96, 0.16) 0%,
+        rgba(168, 68, 96, 0.05) 28%,
+        transparent 62%
+    );
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.page-about .about-editorial-hero.luxury-active::after {
+    opacity: 1;
+}
+
+/* Keep actual hero content above spotlight */
+body.page-about .about-hero-inner,
+body.page-about .about-hero-bottom {
+    position: relative;
+    z-index: 2;
+}
+
+/* Cinematic text entrance */
+body.page-about .about-hero-copy .about-eyebrow,
+body.page-about .about-hero-copy h1,
+body.page-about .about-hero-description,
+body.page-about .about-hero-actions,
+body.page-about .about-hero-note {
+    animation: luxuryRise 850ms cubic-bezier(.16, 1, .3, 1) both;
+}
+
+body.page-about .about-hero-copy .about-eyebrow {
+    animation-delay: 100ms;
+}
+
+body.page-about .about-hero-copy h1 {
+    animation-delay: 250ms;
+}
+
+body.page-about .about-hero-description {
+    animation-delay: 400ms;
+}
+
+body.page-about .about-hero-actions {
+    animation-delay: 550ms;
+}
+
+body.page-about .about-hero-note {
+    animation-delay: 700ms;
+}
+
+@keyframes luxuryRise {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+        filter: blur(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
+/* Rose-pink shimmer on highlighted heading text */
+body.page-about .about-hero-copy h1 span {
+    background-image: linear-gradient(
+        110deg,
+        #A84460 0%,
+        #A84460 35%,
+        #F4A8BA 48%,
+        #FFFFFF 50%,
+        #F4A8BA 52%,
+        #A84460 68%,
+        #A84460 100%
+    );
+
+    background-size: 250% 100%;
+    background-position: 100% 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: roseShimmer 4.5s ease-in-out 1.2s infinite;
+}
+
+@keyframes roseShimmer {
+    0%, 65%, 100% {
+        background-position: 100% 50%;
+    }
+
+    35% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Premium button hover */
+body.page-about .about-hero-actions .btn,
+body.page-about .about-hero-actions .about-text-link {
+    position: relative;
+    overflow: hidden;
+    transition:
+        transform 350ms ease,
+        box-shadow 350ms ease,
+        background-color 350ms ease;
+}
+
+body.page-about .about-hero-actions .btn:hover,
+body.page-about .about-hero-actions .about-text-link:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 28px rgba(168, 68, 96, 0.25);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    body.page-about .about-hero-copy .about-eyebrow,
+    body.page-about .about-hero-copy h1,
+    body.page-about .about-hero-description,
+    body.page-about .about-hero-actions,
+    body.page-about .about-hero-note,
+    body.page-about .about-hero-copy h1 span {
+        animation: none !important;
+        filter: none;
+    }
+}
+
+/* OUR STORY — PRIMARY COLOUR ONLY ON HOVER */
+
+body.page-about .about-hero-actions .about-text-link {
+    background: transparent !important;
+    color: #FFFFFF;
+    border: 1px solid #A84460;
+    transition: background-color 0.3s ease,
+                color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+body.page-about .about-hero-actions .about-text-link:hover {
+    background-color: #111111 !important;
+    color: #FFFFFF !important;
+    border-color: #111111 !important;
+}
+
+body.page-about .about-hero-actions .about-text-link:hover span {
+    color: #FFFFFF !important;
+}
+
+/* ========================================
+   ABOUT STORY — PINK WAVE BACKGROUND
+======================================== */
+
+body.page-about .about-story-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    padding: 85px 5% 90px;
+
+    background-color: #FFF5F7;
+    background-image: url("../images/our\ story\ bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+/* Keep content above the background */
+body.page-about .about-story-layout {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 1320px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 65px;
+}
+
+/* Image layout */
+body.page-about .about-story-visual {
+    position: relative;
+    width: 100%;
+    max-width: 510px;
+    min-width: 0;
+    margin: 0 auto;
+    padding: 0 0 45px 25px;
+}
+
+body.page-about .about-story-image-main {
+    position: relative;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+
+    border-radius: 180px 180px 12px 12px;
+    border: 5px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 18px 45px rgba(115, 37, 60, 0.13);
+}
+
+body.page-about .about-story-image-main img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.7s ease;
+}
+
+body.page-about .about-story-image-main:hover img {
+    transform: scale(1.04);
+}
+
+/* Small overlapping image */
+body.page-about .about-story-image-small {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+
+    width: 43%;
+    height: 175px;
+    overflow: hidden;
+
+    border: 7px solid #FFF5F7;
+    border-radius: 8px;
+    box-shadow: 0 12px 30px rgba(115, 37, 60, 0.16);
+}
+
+body.page-about .about-story-image-small img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+body.page-about .about-story-image-small:hover img {
+    transform: scale(1.06);
+}
+
+/* Image stamp */
+body.page-about .about-story-stamp {
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+
+    width: 135px;
+    min-height: 100px;
+    padding: 17px 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    background: var(--secondary, #A84460);
+    color: #FFFFFF;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(90, 20, 40, 0.15);
+}
+
+body.page-about .about-story-stamp span {
+    font-size: 9px;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+}
+
+body.page-about .about-story-stamp strong {
+    font-size: 15px;
+    line-height: 1.3;
+    color: #FFFFFF;
+}
+
+/* Text content */
+body.page-about .about-story-copy {
+    width: 100%;
+    max-width: 610px;
+    margin: 0 auto;
+}
+
+body.page-about .about-story-copy .about-eyebrow {
+    display: block;
+    margin-bottom: 20px;
+
+    color: var(--secondary, #A84460);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+body.page-about .about-story-copy h2 {
+    margin: 0 0 24px;
+
+    color: var(--primary, #111111);
+    font-size: clamp(36px, 4vw, 56px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+body.page-about .about-story-copy h2 span {
+    display: block;
+    color: var(--secondary, #A84460);
+    font-style: italic;
+}
+
+body.page-about .about-story-copy p {
+    margin: 0 0 17px;
+
+    color: #563D44;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+/* Text link */
+body.page-about .about-underlined-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-top: 8px;
+    padding-bottom: 7px;
+
+    color: var(--primary, #111111);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-bottom: 1px solid var(--secondary, #A84460);
+    transition: color 0.3s ease, gap 0.3s ease;
+}
+
+body.page-about .about-underlined-link:hover {
+    color: var(--secondary, #A84460);
+    gap: 14px;
+}
+
+body.page-about .about-underlined-link span {
+    color: var(--secondary, #A84460);
+}
+
+/* Closing line */
+body.page-about .about-story-signoff {
+    margin-top: 22px;
+
+    color: var(--secondary, #A84460);
+    font-size: 15px;
+    font-style: italic;
+}
+
+body.page-about .about-story-signoff span {
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    body.page-about .about-story-section {
+        padding: 70px 5%;
+        background-size: auto 100%;
+    }
+
+    body.page-about .about-story-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    body.page-about .about-story-image-main {
+        height: 380px;
+    }
+
+    body.page-about .about-story-image-small {
+        height: 135px;
+    }
+
+    body.page-about .about-story-copy h2 {
+        font-size: 38px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body.page-about .about-story-section {
+        padding: 65px 22px;
+        background-size: auto 100%;
+    }
+
+    body.page-about .about-story-layout {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    body.page-about .about-story-visual {
+        max-width: 420px;
+        padding-left: 15px;
+        padding-bottom: 35px;
+    }
+
+    body.page-about .about-story-image-main {
+        height: 350px;
+    }
+
+    body.page-about .about-story-image-small {
+        right: -5px;
+        width: 42%;
+        height: 125px;
+    }
+
+    body.page-about .about-story-stamp {
+        width: 115px;
+        min-height: 85px;
+        bottom: 20px;
+    }
+
+    body.page-about .about-story-copy h2 {
+        font-size: 38px;
+    }
+
+    body.page-about .about-story-copy p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+/* Gap above the pink wave background */
+body.page-about .about-story-section {
+    margin-top: 85px;
+}
+
+/* ==========================================
+   TIPTHEORY — MISSION & VISION REDESIGN
+   Uses the actual classes from about.html
+========================================== */
+
+body.page-about .about-purpose-section {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: 105px 0 115px;
+    background:
+        radial-gradient(
+            ellipse at 0% 55%,
+            rgba(168, 68, 96, 0.10),
+            transparent 40%
+        ),
+        #FFF5F7 !important;
+}
+
+/* Decorative background rings */
+body.page-about .about-purpose-section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 390px;
+    height: 390px;
+    top: 40px;
+    right: -210px;
+    border: 1px solid rgba(168, 68, 96, 0.18);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 28px rgba(168, 68, 96, 0.035),
+        0 0 0 58px rgba(168, 68, 96, 0.025);
+    pointer-events: none;
+}
+
+/* Intro heading */
+body.page-about .about-purpose-section .about-section-heading {
+    max-width: 760px;
+    margin: 0 auto 62px;
+    text-align: center;
+}
+
+body.page-about .about-purpose-section .about-section-heading h2 {
+    max-width: 720px;
+    margin: 18px auto;
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1.12;
+    letter-spacing: -1.5px;
+}
+
+body.page-about .about-purpose-section .about-section-heading h2 span {
+    display: block;
+    color: #A84460;
+    font-style: italic;
+}
+
+body.page-about .about-purpose-section .about-section-heading p {
+    max-width: 630px;
+    margin: 20px auto 0;
+    color: #795D65;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+/* Two-column editorial layout */
+body.page-about .about-purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Shared card structure */
+body.page-about .about-purpose-card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    min-height: 355px;
+    padding: 38px 38px 42px;
+    overflow: hidden;
+    border: 1px solid rgba(168, 68, 96, 0.18);
+    border-radius: 3px;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        background-color 0.35s ease;
+}
+
+/* Mission card */
+body.page-about .about-purpose-mission {
+    background: #FFFFFF !important;
+    color: #21191D;
+}
+
+/* Vision card */
+body.page-about .about-purpose-vision {
+    background: #111111 !important;
+    color: #FFFFFF;
+    border-color: #111111;
+}
+
+/* Top number and icon row */
+body.page-about .about-purpose-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+body.page-about .about-purpose-card-top .about-card-number {
+    font-size: 27px;
+    font-style: italic;
+    color: #A84460;
+}
+
+body.page-about .about-purpose-card-top > i {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    color: #A84460;
+    border: 1px solid rgba(168, 68, 96, 0.35);
+    border-radius: 50%;
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Labels */
+body.page-about .about-purpose-card .about-card-label {
+    display: inline-block;
+    margin-bottom: 13px;
+    color: #A84460;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+/* Card headings */
+body.page-about .about-purpose-card h3 {
+    position: relative;
+    z-index: 1;
+    max-width: 450px;
+    margin: 0 0 16px;
+    font-size: clamp(27px, 3vw, 37px);
+    line-height: 1.25;
+    font-weight: 500;
+}
+
+body.page-about .about-purpose-mission h3 {
+    color: #21191D;
+}
+
+body.page-about .about-purpose-vision h3 {
+    color: #FFFFFF;
+}
+
+/* Descriptions */
+body.page-about .about-purpose-card p {
+    position: relative;
+    z-index: 1;
+    max-width: 470px;
+    margin: 0;
+    color: #795D65;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+body.page-about .about-purpose-vision p {
+    color: #E6D9DD;
+}
+
+/* Oversized decorative symbols */
+body.page-about .about-purpose-card .about-purpose-symbol {
+    position: absolute;
+    z-index: -1;
+    right: 16px;
+    bottom: -52px;
+    color: rgba(168, 68, 96, 0.10);
+    font-size: 175px;
+    line-height: 1;
+    pointer-events: none;
+    transition: transform 0.45s ease;
+}
+
+body.page-about .about-purpose-vision .about-purpose-symbol {
+    color: rgba(255, 255, 255, 0.07);
+}
+
+/* Hover: only activates when the card is hovered */
+body.page-about .about-purpose-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 22px 50px rgba(45, 15, 26, 0.10);
+}
+
+body.page-about .about-purpose-card:hover .about-purpose-symbol {
+    transform: rotate(-12deg) scale(1.08);
+}
+
+body.page-about .about-purpose-card:hover .about-purpose-card-top > i {
+    color: #FFFFFF;
+    background: #A84460;
+    transform: rotate(-8deg);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    body.page-about .about-purpose-section {
+        padding: 78px 0 85px;
+    }
+
+    body.page-about .about-purpose-grid {
+        gap: 18px;
+    }
+
+    body.page-about .about-purpose-card {
+        min-height: 340px;
+        padding: 28px;
+    }
+
+    body.page-about .about-purpose-card-top {
+        margin-bottom: 32px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body.page-about .about-purpose-section {
+        padding: 60px 0 68px;
+    }
+
+    body.page-about .about-purpose-section > .container {
+        width: calc(100% - 32px);
+    }
+
+    body.page-about .about-purpose-section .about-section-heading {
+        margin-bottom: 32px;
+    }
+
+    body.page-about .about-purpose-section .about-section-heading h2 {
+        font-size: clamp(35px, 9vw, 44px);
+        line-height: 1.15;
+        letter-spacing: -0.8px;
+    }
+
+    body.page-about .about-purpose-section .about-section-heading p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    body.page-about .about-purpose-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    body.page-about .about-purpose-card {
+        min-height: 0;
+        padding: 25px 23px 32px;
+    }
+
+    body.page-about .about-purpose-card-top {
+        margin-bottom: 28px;
+    }
+
+    body.page-about .about-purpose-card-top > i {
+        width: 42px;
+        height: 42px;
+        padding: 10px;
+    }
+
+    body.page-about .about-purpose-card h3 {
+        font-size: 29px;
+        line-height: 1.25;
+    }
+
+    body.page-about .about-purpose-card p {
+        font-size: 14px;
+        line-height: 1.85;
+    }
+
+    body.page-about .about-purpose-card .about-purpose-symbol {
+        font-size: 135px;
+        bottom: -40px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.page-about .about-purpose-card,
+    body.page-about .about-purpose-symbol,
+    body.page-about .about-purpose-card-top > i {
+        transition: none;
+    }
+}
+/* Center align — TipTheory Difference heading area */
+body.page-about .about-difference-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 18px;
+    margin-bottom: 50px;
+}
+
+body.page-about .about-difference-heading > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body.page-about .about-difference-heading .about-eyebrow {
+    text-align: center;
+}
+
+body.page-about .about-difference-heading h2 {
+    max-width: 800px;
+    margin: 16px auto 0;
+    text-align: center;
+}
+
+body.page-about .about-difference-heading > p {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Mobile spacing */
+@media (max-width: 600px) {
+    body.page-about .about-difference-heading {
+        gap: 15px;
+        margin-bottom: 32px;
+    }
+
+    body.page-about .about-difference-heading h2 {
+        font-size: clamp(34px, 8vw, 44px);
+    }
+
+    body.page-about .about-difference-heading > p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+}
+
+/* =================================
+   TIPTHEORY DIFFERENCE — PREMIUM UI
+================================= */
+
+body.page-about .about-difference-section {
+    padding: 75px 0 85px;
+    background: #FFF8F9;
+    position: relative;
+    overflow: hidden;
+}
+
+body.page-about .about-difference-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    max-width: 760px;
+    margin: 0 auto 48px;
+    padding: 0 20px;
+}
+
+body.page-about .about-difference-heading .about-eyebrow {
+    color: #A84460;
+    font-size: 11px;
+    letter-spacing: 2.2px;
+    font-weight: 700;
+}
+
+body.page-about .about-difference-heading h2 {
+    margin: 0;
+    max-width: 760px;
+    font-size: clamp(38px, 4.5vw, 58px);
+    line-height: 1.13;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+body.page-about .about-difference-heading h2 span {
+    color: #A84460;
+    font-style: italic;
+}
+
+body.page-about .about-difference-heading p {
+    max-width: 620px;
+    margin: 0;
+    color: #806770;
+    font-size: 16px;
+    line-height: 1.85;
+    text-align: center;
+}
+
+/* Cards layout */
+body.page-about .about-difference-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    width: min(1200px, calc(100% - 48px));
+    margin: 0 auto;
+}
+
+/* Individual cards */
+body.page-about .about-difference-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 300px;
+    padding: 28px 24px;
+    background: #FFFFFF;
+    border: 1px solid #F0DDE2;
+    border-radius: 5px;
+    overflow: hidden;
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease,
+        background-color 0.35s ease;
+}
+
+/* Subtle top accent */
+body.page-about .about-difference-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #A84460;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.35s ease;
+}
+
+/* Card number */
+body.page-about .about-difference-card .about-card-number {
+    color: #A84460;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+/* Icon circle */
+body.page-about .about-difference-card .about-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 25px;
+    color: #A84460;
+    background: #FFF0F3;
+    border: 1px solid #F4CFD9;
+    border-radius: 50%;
+    transition:
+        color 0.3s ease,
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+/* Card title */
+body.page-about .about-difference-card h3 {
+    margin: 0 0 12px;
+    color: #21191D;
+    font-size: clamp(19px, 1.7vw, 23px);
+    line-height: 1.35;
+    font-weight: 500;
+}
+
+/* Card description */
+body.page-about .about-difference-card p {
+    margin: 0;
+    color: #806770;
+    font-size: 14px;
+    line-height: 1.85;
+}
+
+/* Bottom arrow */
+body.page-about .about-difference-card .about-card-arrow {
+    margin-top: auto;
+    padding-top: 22px;
+    color: #A84460;
+    transition: transform 0.3s ease;
+}
+
+/* Hover animation */
+body.page-about .about-difference-card:hover {
+    transform: translateY(-7px);
+    border-color: #D9A0B0;
+    box-shadow: 0 18px 38px rgba(89, 35, 52, 0.09);
+}
+
+body.page-about .about-difference-card:hover::before {
+    transform: scaleX(1);
+}
+
+body.page-about .about-difference-card:hover .about-card-icon {
+    color: #FFFFFF;
+    background: #A84460;
+    transform: translateY(-3px);
+}
+
+body.page-about .about-difference-card:hover .about-card-arrow {
+    transform: translate(4px, -4px);
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+    body.page-about .about-difference-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    body.page-about .about-difference-card {
+        min-height: 280px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body.page-about .about-difference-section {
+        padding: 55px 0 60px;
+    }
+
+    body.page-about .about-difference-heading {
+        margin-bottom: 30px;
+        gap: 13px;
+    }
+
+    body.page-about .about-difference-heading h2 {
+        font-size: clamp(34px, 8.5vw, 43px);
+    }
+
+    body.page-about .about-difference-heading p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    body.page-about .about-difference-grid {
+        grid-template-columns: minmax(0, 1fr);
+        width: calc(100% - 32px);
+        gap: 13px;
+    }
+
+    body.page-about .about-difference-card {
+        min-height: 0;
+        padding: 24px;
+    }
+
+    body.page-about .about-difference-card .about-card-number {
+        margin-bottom: 20px;
+    }
+
+    body.page-about .about-difference-card .about-card-icon {
+        margin-bottom: 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    body.page-about .about-difference-card,
+    body.page-about .about-difference-card::before,
+    body.page-about .about-difference-card .about-card-icon,
+    body.page-about .about-difference-card .about-card-arrow {
+        transition: none;
+    }
+}
+
+/* ABOUT HERO — MOBILE ALIGNMENT FIX */
+@media (max-width: 600px) {
+
+    body.page-about .about-editorial-hero {
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 0 !important;
+        background-size: auto 100% !important;
+        background-position: center center !important;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    body.page-about .about-hero-inner {
+        flex: initial !important;
+        width: 100%;
+        min-height: 0 !important;
+        padding: 95px 18px 95px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    body.page-about .about-hero-copy {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 0;
+    }
+
+    body.page-about .about-hero-copy .about-eyebrow {
+        margin: 0 0 14px;
+        font-size: 9px;
+        line-height: 1.5;
+        letter-spacing: 1.4px;
+        text-align: center;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto 16px !important;
+        font-size: clamp(27px, 7.5vw, 36px) !important;
+        line-height: 1.12 !important;
+        letter-spacing: -0.8px;
+        text-align: center;
+        overflow-wrap: normal;
+    }
+
+    body.page-about .about-hero-copy h1 span {
+        display: inline;
+        white-space: normal;
+    }
+
+    body.page-about .about-hero-description {
+        max-width: 310px;
+        margin: 0 auto 20px !important;
+        font-size: 13px;
+        line-height: 1.7;
+        text-align: center;
+    }
+
+    body.page-about .about-hero-actions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        margin: 0 auto;
+    }
+
+    body.page-about .about-hero-actions .btn,
+    body.page-about .about-hero-actions .about-text-link {
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 0;
+    }
+
+    body.page-about .about-hero-actions .btn {
+        min-height: 46px;
+        padding: 13px 22px;
+        font-size: 11px;
+        justify-content: center;
+    }
+
+    body.page-about .about-hero-actions .about-text-link {
+        min-height: 42px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    body.page-about .about-hero-note {
+        margin: 16px auto 0;
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    body.page-about .about-hero-bottom {
+        position: relative;
+        width: 100%;
+        padding: 0 10px 18px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 14px;
+        box-sizing: border-box;
+    }
+}
+
+/* Extra-small mobile screens */
+@media (max-width: 380px) {
+    body.page-about .about-hero-inner {
+        padding: 85px 14px !important;
+    }
+
+    body.page-about .about-hero-copy h1 {
+        font-size: 27px !important;
+    }
+
+    body.page-about .about-hero-description {
+        font-size: 12px;
+    }
+}
+
+/* Full section background — soft blush pink */
+body.page-about .about-difference-section {
+    background: #FCE8EE !important;
+    padding: 80px 0 85px;
+}
+
+/* Cards remain white for contrast */
+body.page-about .about-difference-section .about-difference-card {
+    background: #FFFFFF;
+}
+
+/* ===== TIPTHEORY: IMPROVE EDITORIAL TEXT SIZES ===== */
+
+body.page-about .care-kicker {
+  font-size: 11px;
+  letter-spacing: 2.4px;
+}
+
+body.page-about .care-heading h2 {
+  font-size: clamp(48px, 5.8vw, 76px);
+  line-height: 1.12;
+}
+
+body.page-about .care-heading > p {
+  max-width: 650px;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+body.page-about .care-photo figcaption {
+  gap: 9px;
+  padding-top: 18px;
+}
+
+body.page-about .care-photo figcaption span:first-child {
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+body.page-about .care-photo figcaption span:last-child {
+  font-size: 21px;
+  line-height: 1.45;
+}
+
+body.page-about .care-bottom-label {
+  font-size: 11px;
+}
+
+body.page-about .care-bottom-heading h3 {
+  font-size: clamp(35px, 3.8vw, 47px);
+  line-height: 1.3;
+}
+
+body.page-about .care-value-number {
+  font-size: 12px;
+}
+
+body.page-about .care-value h4 {
+  font-size: 19px;
+  line-height: 1.45;
+}
+
+body.page-about .care-value p {
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+body.page-about .care-signature {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body.page-about .care-heading > p {
+    font-size: 15px;
+  }
+
+  body.page-about .care-photo figcaption span:last-child {
+    font-size: 18px;
+  }
+
+  body.page-about .care-value h4 {
+    font-size: 17px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  body.page-about .care-kicker {
+    font-size: 9px;
+    letter-spacing: 1.4px;
+  }
+
+  body.page-about .care-heading h2 {
+    font-size: clamp(40px, 9.5vw, 56px);
+  }
+
+  body.page-about .care-heading > p {
+    font-size: 14px;
+  }
+
+  body.page-about .care-photo figcaption span:first-child {
+    font-size: 10px;
+  }
+
+  body.page-about .care-photo figcaption span:last-child {
+    font-size: 17px;
+  }
+
+  body.page-about .care-value h4 {
+    font-size: 19px;
+  }
+
+  body.page-about .care-value p {
+    font-size: 13px;
+  }
+
+  body.page-about .care-signature {
+    font-size: 8px;
+    letter-spacing: 0.8px;
+  }
+}
+
+/* Match Our Approach heading size with TipTheory Difference */
+
+body.page-about .care-heading h2 {
+  font-size: clamp(38px, 4.2vw, 54px);
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  margin: 22px 0 16px;
+}
+
+/* Keep heading balanced on tablets */
+@media (max-width: 1024px) {
+  body.page-about .care-heading h2 {
+    font-size: clamp(36px, 4.5vw, 46px);
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  body.page-about .care-heading h2 {
+    font-size: clamp(34px, 8vw, 42px);
+    line-height: 1.2;
+    letter-spacing: -0.4px;
+  }
+}
+
+/* =========================================
+   TIPTHEORY — PREMIUM EXPERIENCE SECTION
+   Existing HTML classes only
+========================================= */
+
+.page-about .about-experience-section {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 105px;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.page-about .about-experience-heading {
+  max-width: 720px;
+  margin: 0 auto 52px;
+  text-align: center;
+}
+
+.page-about .about-experience-heading h2 {
+  margin-top: 14px;
+  line-height: 1.2;
+}
+
+.page-about .about-experience-heading h2 span {
+  color: var(--secondary, #A84460);
+}
+
+.page-about .about-experience-heading p {
+  max-width: 580px;
+  margin: 18px auto 0;
+  line-height: 1.9;
+}
+
+/* Main layout */
+.page-about .about-experience-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  align-items: center;
+  gap: clamp(32px, 5vw, 76px);
+}
+
+/* Image side */
+.page-about .about-experience-visual {
+  position: relative;
+  min-width: 0;
+  border-radius: 5px 100px 5px 5px;
+  background: #F8E9ED;
+  box-shadow: 18px 18px 0 rgba(168, 68, 96, 0.09);
+}
+
+.page-about .about-experience-visual img {
+  display: block;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px 100px 5px 5px;
+  transition: transform 0.65s ease;
+}
+
+.page-about .about-experience-visual:hover img {
+  transform: scale(1.025);
+}
+
+.page-about .about-experience-image-caption {
+  position: absolute;
+  left: 24px;
+  right: -20px;
+  bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px 25px;
+  background: #FFF9FA;
+  border-left: 3px solid #A84460;
+  box-shadow: 0 12px 35px rgba(40, 20, 25, 0.12);
+}
+
+.page-about .about-experience-image-caption span {
+  color: #A84460;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.page-about .about-experience-image-caption strong {
+  color: #111111;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(18px, 1.6vw, 23px);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Steps column */
+.page-about .about-experience-steps {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(168, 68, 96, 0.22);
+}
+
+.page-about .about-experience-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) 28px;
+  align-items: start;
+  gap: 18px;
+  padding: 27px 18px;
+  border-bottom: 1px solid rgba(168, 68, 96, 0.22);
+  transition:
+    background-color 0.3s ease,
+    padding 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.page-about .about-experience-step:nth-child(even) {
+  background: rgba(168, 68, 96, 0.045);
+}
+
+.page-about .about-experience-step:hover {
+  padding-left: 24px;
+  padding-right: 24px;
+  background: #FFF0F3;
+  box-shadow: 0 10px 28px rgba(168, 68, 96, 0.07);
+}
+
+.page-about .about-experience-step .about-step-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: #A84460;
+  border: 1px solid rgba(168, 68, 96, 0.38);
+  border-radius: 50%;
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.page-about .about-experience-step:hover .about-step-number {
+  color: #FFFFFF;
+  background: #A84460;
+  border-color: #A84460;
+}
+
+.page-about .about-experience-step h3 {
+  margin: 0 0 8px;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(19px, 1.7vw, 23px);
+  font-weight: 500;
+  line-height: 1.35;
+  transition: color 0.3s ease;
+}
+
+.page-about .about-experience-step:hover h3 {
+  color: #A84460;
+}
+
+.page-about .about-experience-step p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.85;
+  opacity: 0.82;
+}
+
+.page-about .about-experience-step > i,
+.page-about .about-experience-step > svg {
+  width: 23px;
+  height: 23px;
+  margin-top: 5px;
+  color: #A84460;
+  stroke-width: 1.6;
+  transition: transform 0.3s ease;
+}
+
+.page-about .about-experience-step:hover > i,
+.page-about .about-experience-step:hover > svg {
+  transform: rotate(-8deg) scale(1.12);
+}
+
+/* Dark mode */
+.page-about.dark-mode .about-experience-step:hover,
+.page-about[data-theme="dark"] .about-experience-step:hover {
+  background: rgba(168, 68, 96, 0.16);
+}
+
+.page-about.dark-mode .about-experience-image-caption,
+.page-about[data-theme="dark"] .about-experience-image-caption {
+  background: #242124;
+}
+
+.page-about.dark-mode .about-experience-image-caption strong,
+.page-about[data-theme="dark"] .about-experience-image-caption strong {
+  color: #FFF5F7;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .page-about .about-experience-layout {
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    gap: 28px;
+  }
+
+  .page-about .about-experience-visual img {
+    height: 470px;
+  }
+
+  .page-about .about-experience-step {
+    grid-template-columns: 34px minmax(0, 1fr) 24px;
+    gap: 12px;
+    padding: 23px 12px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .page-about .about-experience-section {
+    padding-top: 65px;
+    padding-bottom: 70px;
+  }
+
+  .page-about .about-experience-heading {
+    margin-bottom: 34px;
+  }
+
+  .page-about .about-experience-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .page-about .about-experience-visual {
+    margin-right: 12px;
+    box-shadow: 10px 10px 0 rgba(168, 68, 96, 0.09);
+  }
+
+  .page-about .about-experience-visual img {
+    height: 420px;
+    border-top-right-radius: 75px;
+  }
+
+  .page-about .about-experience-image-caption {
+    left: 14px;
+    right: -12px;
+    bottom: 18px;
+    padding: 17px 18px;
+  }
+
+  .page-about .about-experience-step {
+    grid-template-columns: 36px minmax(0, 1fr) 23px;
+    gap: 13px;
+    padding: 23px 12px;
+  }
+
+  .page-about .about-experience-step:hover {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .page-about .about-experience-step p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 420px) {
+  .page-about .about-experience-visual img {
+    height: 340px;
+  }
+
+  .page-about .about-experience-step {
+    grid-template-columns: 30px minmax(0, 1fr) 20px;
+    gap: 10px;
+    padding: 20px 8px;
+  }
+
+  .page-about .about-experience-step .about-step-number {
+    width: 30px;
+    height: 30px;
+  }
+
+  .page-about .about-experience-step h3 {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-about .about-experience-visual img,
+  .page-about .about-experience-step,
+  .page-about .about-experience-step > i,
+  .page-about .about-experience-step > svg {
+    transition: none;
+  }
+}
+
+/* Experience section: align with header content */
+
+@media (min-width: 769px) {
+  body.page-about #your-experience > .container {
+    width: calc(100% - 112px) !important;
+    max-width: none !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  body.page-about #your-experience .about-experience-layout {
+    width: 100% !important;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
+    gap: 48px !important;
+  }
+
+  body.page-about #your-experience .about-experience-visual,
+  body.page-about #your-experience .about-experience-steps {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body.page-about #your-experience > .container {
+    width: calc(100% - 32px) !important;
+    max-width: none !important;
+  }
+}
+
+/* Reduce experience section width further */
+
+@media (min-width: 769px) {
+  body.page-about #your-experience > .container {
+    width: calc(100% - 160px) !important;
+    max-width: 1280px !important;
+    margin-inline: auto !important;
+  }
+
+  body.page-about #your-experience .about-experience-layout {
+    gap: 38px !important;
+  }
+}
+
+/* TIPTHEORY — Experience Image Design Upgrade */
+
+body.page-about #your-experience .about-experience-visual {
+  position: relative !important;
+  width: 100% !important;
+  padding: 0 12px 12px 0 !important;
+  background: #FBE8ED !important;
+  border-radius: 4px 95px 4px 4px !important;
+  box-shadow: 0 18px 45px rgba(168, 68, 96, 0.10) !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+body.page-about #your-experience .about-experience-visual img {
+  display: block !important;
+  width: 100% !important;
+  height: 460px !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  border-radius: 4px 85px 4px 4px !important;
+  transition: transform 0.6s ease !important;
+}
+
+body.page-about #your-experience .about-experience-visual:hover img {
+  transform: scale(1.035) !important;
+}
+
+/* Floating caption */
+body.page-about #your-experience .about-experience-image-caption {
+  position: absolute !important;
+  left: 22px !important;
+  right: 0 !important;
+  bottom: 25px !important;
+  max-width: calc(100% - 22px) !important;
+  padding: 20px 22px !important;
+  background: rgba(255, 249, 250, 0.97) !important;
+  border-left: 3px solid #A84460 !important;
+  box-shadow: 0 10px 30px rgba(35, 15, 20, 0.14) !important;
+  box-sizing: border-box !important;
+  z-index: 2 !important;
+}
+
+body.page-about #your-experience .about-experience-image-caption span {
+  color: #A84460 !important;
+  letter-spacing: 2px !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+}
+
+body.page-about #your-experience .about-experience-image-caption strong {
+  color: #111111 !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: 21px !important;
+  font-weight: 500 !important;
+  line-height: 1.4 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body.page-about #your-experience .about-experience-visual img {
+    height: 380px !important;
+  }
+
+  body.page-about #your-experience .about-experience-visual {
+    border-top-right-radius: 65px !important;
+  }
+
+  body.page-about #your-experience .about-experience-visual img {
+    border-top-right-radius: 58px !important;
+  }
+
+  body.page-about #your-experience .about-experience-image-caption {
+    left: 12px !important;
+    bottom: 16px !important;
+    padding: 16px !important;
+  }
+
+  body.page-about #your-experience .about-experience-image-caption strong {
+    font-size: 18px !important;
+  }
+}
+
+/* Make both About final CTA buttons equal in size */
+
+body.page-about .about-final-actions {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 24px !important;
+  flex-wrap: wrap;
+}
+
+body.page-about .about-final-actions .btn-primary,
+body.page-about .about-final-actions .about-final-secondary {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+
+  width: 212px !important;
+  min-width: 212px !important;
+  height: 56px !important;
+  min-height: 56px !important;
+  padding: 0 16px !important;
+
+  box-sizing: border-box !important;
+  border-radius: 5px !important;
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+  white-space: nowrap !important;
+}
+
+/* Keep the secondary button transparent */
+body.page-about .about-final-actions .about-final-secondary {
+  background: transparent !important;
+  color: #A84460 !important;
+  border: 1px solid #A84460 !important;
+  text-decoration: none !important;
+}
+
+/* Hover */
+body.page-about .about-final-actions .about-final-secondary:hover {
+  background: #111111 !important;
+  color: #FFFFFF !important;
+  border-color: #111111 !important;
+}
+
+body.page-about .about-final-actions .about-final-secondary:hover span {
+  color: #FFFFFF !important;
+}
+
+@media (max-width: 520px) {
+  body.page-about .about-final-actions {
+    gap: 12px !important;
+  }
+
+  body.page-about .about-final-actions .btn-primary,
+  body.page-about .about-final-actions .about-final-secondary {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 280px !important;
+  }
+}
+
+/* FIX — Pink About Story section height */
+
+body.page-about section#our-story.about-story-section {
+  padding-top: 140px !important;
+  padding-bottom: 160px !important;
+  min-height: 700px !important;
+  height: auto !important;
+  box-sizing: border-box !important;
+}
+
+body.page-about section#our-story .about-story-layout {
+  min-height: 400px !important;
+  align-items: center !important;
+}
+
+@media (max-width: 768px) {
+  body.page-about section#our-story.about-story-section {
+    padding-top: 80px !important;
+    padding-bottom: 110px !important;
+    min-height: auto !important;
+  }
+
+  body.page-about section#our-story .about-story-layout {
+    min-height: 0 !important;
+  }
+}
+
+/* Make the wave's cream/white background pure white */
+
+body.page-about #our-story.about-story-section {
+  background-color: #FFFFFF !important;
+}
+
+/* Change the wave background layer to white */
+body.page-about #our-story.about-story-section::before {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+}
+
+/* Preserve the existing pink wave */
+body.page-about #our-story.about-story-section::after {
+  background-color: #FFFFFF !important;
+}
+
+/* Keep content backgrounds transparent */
+body.page-about #our-story .container,
+body.page-about #our-story .about-story-layout {
+  background-color: transparent !important;
+}
+
+/* =====================================================
+   TIPTHEORY ABOUT PAGE — SCROLL REVEAL ANIMATIONS
+   Hero section is intentionally excluded.
+===================================================== */
+
+@keyframes aboutRevealUp {
+    from {
+        opacity: 0;
+        transform: translateY(38px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes aboutRevealLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aboutRevealRight {
+    from {
+        opacity: 0;
+        transform: translateX(45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes aboutRevealZoom {
+    from {
+        opacity: 0;
+        transform: scale(.94);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Reveal elements only in sections below the hero */
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal {
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+/* Default reveal */
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal.about-revealed {
+    animation: aboutRevealUp .8s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+/* Direction variations */
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal-left.about-revealed {
+    animation: aboutRevealLeft .85s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal-right.about-revealed {
+    animation: aboutRevealRight .85s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal-zoom.about-revealed {
+    animation: aboutRevealZoom .8s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+/* Staggered reveal delays */
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal-delay-1.about-revealed {
+    animation-delay: .12s;
+}
+
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal-delay-2.about-revealed {
+    animation-delay: .24s;
+}
+
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal-delay-3.about-revealed {
+    animation-delay: .36s;
+}
+
+body.page-about .about-main
+section:not(.about-editorial-hero) .about-reveal-delay-4.about-revealed {
+    animation-delay: .48s;
+}
+
+/* Keep existing card hover interactions */
+body.page-about .about-purpose-card,
+body.page-about .about-difference-card,
+body.page-about .about-experience-step {
+    transition:
+        box-shadow .35s ease,
+        border-color .35s ease,
+        background-color .35s ease;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    body.page-about .about-main
+    section:not(.about-editorial-hero) .about-reveal {
+        opacity: 1;
+        transform: none;
+        animation: none !important;
+    }
+}
+
+/* =====================================================
+   TIPTHEORY ABOUT PAGE — COMPLETE HOME 2 STYLE REVEALS
+   Applies to headings, paragraphs, images, cards and CTAs
+===================================================== */
+
+body.page-about #main .tt-about-motion {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+    filter: blur(2px);
+    transition:
+        opacity 0.8s cubic-bezier(.22, 1, .36, 1),
+        transform 0.8s cubic-bezier(.22, 1, .36, 1),
+        filter 0.8s ease;
+    transition-delay: var(--tt-about-delay, 0ms);
+    will-change: opacity, transform;
+}
+
+body.page-about #main .tt-about-motion.tt-about-visible {
+    opacity: 1 !important;
+    transform: translate3d(0, 0, 0) !important;
+    filter: blur(0) !important;
+}
+
+/* Keep nested content visible when its parent section is revealed */
+body.page-about #main section.tt-about-visible .tt-about-motion {
+    opacity: 1;
+}
+
+/* Image reveal */
+body.page-about #main .tt-about-motion img {
+    transition:
+        transform 0.85s cubic-bezier(.22, 1, .36, 1),
+        filter 0.85s ease;
+}
+
+body.page-about #main .tt-about-motion.tt-about-visible img {
+    filter: blur(0);
+}
+
+/* Cards lift smoothly on hover */
+body.page-about #main .about-purpose-card,
+body.page-about #main .about-difference-card,
+body.page-about #main .about-experience-step,
+body.page-about #main .care-photo {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+body.page-about #main .about-purpose-card:hover,
+body.page-about #main .about-difference-card:hover,
+body.page-about #main .about-experience-step:hover {
+    transform: translateY(-5px);
+}
+
+/* Respect accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+    body.page-about #main .tt-about-motion,
+    body.page-about #main .tt-about-motion.tt-about-visible {
+        opacity: 1 !important;
+        transform: none !important;
+        filter: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+}
+/* ==========================================
+   TIPTHEORY ABOUT PAGE
+   MATCH HOME 2 TYPOGRAPHY
+========================================== */
+
+/* Main paragraphs */
+body.page-about #main p {
+    font-family: "Lora", Georgia, serif !important;
+    font-size: 16px !important;
+    line-height: 1.9 !important;
+    font-weight: 400;
+}
+
+/* Smaller paragraphs / card descriptions */
+body.page-about #main .about-purpose-card p,
+body.page-about #main .about-difference-card p,
+body.page-about #main .about-experience-step p,
+body.page-about #main .care-value p,
+body.page-about #main .about-story-copy p {
+    font-size: 15px !important;
+    line-height: 1.9 !important;
+}
+
+/* Hero description */
+body.page-about #main .about-hero-description {
+    font-family: "Lora", Georgia, serif !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+}
+
+/* Taglines / Eyebrows */
+body.page-about #main .about-eyebrow,
+body.page-about #main .care-kicker,
+body.page-about #main .eyebrow,
+body.page-about #main .about-card-label,
+body.page-about #main .care-signature,
+body.page-about #main .about-difference-number {
+    font-family: "Lora", Georgia, serif !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    line-height: 1.5 !important;
+    letter-spacing: 1.5px !important;
+    text-transform: uppercase !important;
+}
+
+/* Tagline spacing */
+body.page-about #main .about-eyebrow,
+body.page-about #main .care-kicker,
+body.page-about #main .eyebrow {
+    display: block;
+    margin-bottom: 14px;
+}
+
+/* Paragraph inside section headings */
+body.page-about #main .about-section-heading > p,
+body.page-about #main .about-experience-heading > p,
+body.page-about #main .care-heading > p {
+    font-size: 16px !important;
+    line-height: 1.9 !important;
+}
+
+/* Image captions */
+body.page-about #main figcaption,
+body.page-about #main .about-experience-image-caption span {
+    font-family: "Lora", Georgia, serif !important;
+    line-height: 1.7;
+}
+
+/* Mobile typography — same Home 2 scale */
+@media (max-width: 600px) {
+    body.page-about #main p {
+        font-size: 14.4px !important;
+        line-height: 1.8 !important;
+    }
+
+    body.page-about #main .about-purpose-card p,
+    body.page-about #main .about-difference-card p,
+    body.page-about #main .about-experience-step p,
+    body.page-about #main .care-value p,
+    body.page-about #main .about-story-copy p {
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+    }
+
+    body.page-about #main .about-hero-description {
+        font-size: 14px !important;
+        line-height: 1.8 !important;
+    }
+
+    body.page-about #main .about-eyebrow,
+    body.page-about #main .care-kicker,
+    body.page-about #main .eyebrow,
+    body.page-about #main .about-card-label,
+    body.page-about #main .care-signature,
+    body.page-about #main .about-difference-number {
+        font-size: 11px !important;
+        letter-spacing: 1.5px !important;
+    }
+}
+/* ABOUT FINAL CTA — HEADING SIZE FIX */
+body.page-about #main .about-final-section .about-final-content h2 {
+    font-size: clamp(36px, 3.5vw, 52px) !important;
+    line-height: 1.12 !important;
+    margin: 18px 0 20px !important;
+}
+
+body.page-about #main .about-final-section .about-final-content h2 span {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    body.page-about #main .about-final-section .about-final-content h2 {
+        font-size: 42px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body.page-about #main .about-final-section .about-final-content h2 {
+        font-size: 32px !important;
+        line-height: 1.15 !important;
+    }
+}
+/* CTA heading — match the first screenshot */
+body.page-about .about-final-section .about-final-content h2 {
+    font-size: clamp(44px, 4.2vw, 60px) !important;
+    line-height: 1.08 !important;
+    font-weight: 500 !important;
+    letter-spacing: -1.5px !important;
+    margin: 22px 0 22px !important;
+}
+
+body.page-about .about-final-section .about-final-content h2 span {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    body.page-about .about-final-section .about-final-content h2 {
+        font-size: 36px !important;
+        line-height: 1.12 !important;
+        letter-spacing: -0.8px !important;
+    }
+}
+/* Remove the two small decorative lines beside the kicker */
+.care-editorial .care-heading .care-kicker > span {
+    display: none !important;
+}
+
+/* =====================================================
+   TIPTHEORY ABOUT PAGE — COMPLETE DARK MODE FIX
+   Add this at the VERY END of css/about.css
+===================================================== */
+
+/* Dark mode colour variables */
+body.dark-mode.page-about,
+body[data-theme="dark"].page-about,
+html[data-theme="dark"] body.page-about {
+    --about-bg: #111013;
+    --about-bg-soft: #191519;
+    --about-bg-pink: #21171c;
+    --about-card-bg: #1c191d;
+    --about-text: #fff5f7;
+    --about-text-soft: #e4d4d9;
+    --about-muted: #cbb9c0;
+    --about-border: rgba(231, 84, 128, 0.25);
+    --about-accent: #E75480;
+
+    background: var(--about-bg) !important;
+    color: var(--about-text) !important;
+}
+
+/* Main page background */
+body.dark-mode.page-about #main,
+body[data-theme="dark"].page-about #main,
+html[data-theme="dark"] body.page-about #main {
+    background: var(--about-bg) !important;
+    color: var(--about-text) !important;
+}
+
+/* All About page sections */
+body.dark-mode.page-about #main > section,
+body[data-theme="dark"].page-about #main > section,
+html[data-theme="dark"] body.page-about #main > section {
+    background-color: var(--about-bg) !important;
+    color: var(--about-text) !important;
+    border-color: var(--about-border);
+}
+
+/* Hero section */
+body.dark-mode.page-about .about-editorial-hero,
+body[data-theme="dark"].page-about .about-editorial-hero,
+html[data-theme="dark"] body.page-about .about-editorial-hero {
+    background:
+        radial-gradient(
+            ellipse at 80% 15%,
+            rgba(130, 35, 66, 0.28),
+            transparent 48%
+        ),
+        linear-gradient(135deg, #100d10, #1d1218) !important;
+}
+
+/* Hero and section headings */
+body.dark-mode.page-about #main h1,
+body.dark-mode.page-about #main h2,
+body.dark-mode.page-about #main h3,
+body[data-theme="dark"].page-about #main h1,
+body[data-theme="dark"].page-about #main h2,
+body[data-theme="dark"].page-about #main h3,
+html[data-theme="dark"] body.page-about #main h1,
+html[data-theme="dark"] body.page-about #main h2,
+html[data-theme="dark"] body.page-about #main h3 {
+    color: #fff5f7 !important;
+}
+
+/* Highlighted / italic heading text */
+body.dark-mode.page-about #main h1 span,
+body.dark-mode.page-about #main h2 span,
+body.dark-mode.page-about #main h2 em,
+body[data-theme="dark"].page-about #main h1 span,
+body[data-theme="dark"].page-about #main h2 span,
+body[data-theme="dark"].page-about #main h2 em,
+html[data-theme="dark"] body.page-about #main h1 span,
+html[data-theme="dark"] body.page-about #main h2 span,
+html[data-theme="dark"] body.page-about #main h2 em {
+    color: var(--about-accent) !important;
+}
+
+/* Paragraphs and descriptive text */
+body.dark-mode.page-about #main p,
+body[data-theme="dark"].page-about #main p,
+html[data-theme="dark"] body.page-about #main p {
+    color: var(--about-text-soft) !important;
+}
+
+/* Eyebrows, taglines and small labels */
+body.dark-mode.page-about .about-eyebrow,
+body.dark-mode.page-about .care-kicker,
+body.dark-mode.page-about .about-card-label,
+body.dark-mode.page-about .about-card-number,
+body.dark-mode.page-about .about-difference-number,
+body.dark-mode.page-about .about-step-number,
+body[data-theme="dark"].page-about .about-eyebrow,
+body[data-theme="dark"].page-about .care-kicker,
+body[data-theme="dark"].page-about .about-card-label,
+body[data-theme="dark"].page-about .about-card-number,
+body[data-theme="dark"].page-about .about-difference-number,
+body[data-theme="dark"].page-about .about-step-number,
+html[data-theme="dark"] body.page-about .about-eyebrow,
+html[data-theme="dark"] body.page-about .care-kicker,
+html[data-theme="dark"] body.page-about .about-card-label,
+html[data-theme="dark"] body.page-about .about-card-number,
+html[data-theme="dark"] body.page-about .about-difference-number,
+html[data-theme="dark"] body.page-about .about-step-number {
+    color: var(--about-accent) !important;
+}
+
+/* Story section */
+body.dark-mode.page-about .about-story-section,
+body[data-theme="dark"].page-about .about-story-section,
+html[data-theme="dark"] body.page-about .about-story-section {
+    background: #141114 !important;
+}
+
+body.dark-mode.page-about .about-story-stamp,
+body[data-theme="dark"].page-about .about-story-stamp,
+html[data-theme="dark"] body.page-about .about-story-stamp {
+    background: var(--about-accent) !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode.page-about .about-story-stamp *,
+body[data-theme="dark"].page-about .about-story-stamp *,
+html[data-theme="dark"] body.page-about .about-story-stamp * {
+    color: #ffffff !important;
+}
+
+/* Mission and vision section */
+body.dark-mode.page-about .about-purpose-section,
+body[data-theme="dark"].page-about .about-purpose-section,
+html[data-theme="dark"] body.page-about .about-purpose-section {
+    background:
+        radial-gradient(
+            circle at 100% 20%,
+            rgba(231, 84, 128, 0.10),
+            transparent 35%
+        ),
+        #191519 !important;
+}
+
+body.dark-mode.page-about .about-purpose-card,
+body[data-theme="dark"].page-about .about-purpose-card,
+html[data-theme="dark"] body.page-about .about-purpose-card {
+    background: #211c21 !important;
+    color: var(--about-text) !important;
+    border: 1px solid var(--about-border) !important;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+body.dark-mode.page-about .about-purpose-card h3,
+body[data-theme="dark"].page-about .about-purpose-card h3,
+html[data-theme="dark"] body.page-about .about-purpose-card h3 {
+    color: #fff5f7 !important;
+}
+
+body.dark-mode.page-about .about-purpose-card p,
+body[data-theme="dark"].page-about .about-purpose-card p,
+html[data-theme="dark"] body.page-about .about-purpose-card p {
+    color: #d8c7ce !important;
+}
+
+/* Difference cards */
+body.dark-mode.page-about .about-difference-section,
+body[data-theme="dark"].page-about .about-difference-section,
+html[data-theme="dark"] body.page-about .about-difference-section {
+    background: #171317 !important;
+}
+
+body.dark-mode.page-about .about-difference-card,
+body[data-theme="dark"].page-about .about-difference-card,
+html[data-theme="dark"] body.page-about .about-difference-card {
+    background: #211c21 !important;
+    border: 1px solid var(--about-border) !important;
+    color: var(--about-text) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.20);
+}
+
+body.dark-mode.page-about .about-difference-card h3,
+body[data-theme="dark"].page-about .about-difference-card h3,
+html[data-theme="dark"] body.page-about .about-difference-card h3 {
+    color: #fff5f7 !important;
+}
+
+body.dark-mode.page-about .about-difference-card p,
+body[data-theme="dark"].page-about .about-difference-card p,
+html[data-theme="dark"] body.page-about .about-difference-card p {
+    color: #d8c7ce !important;
+}
+
+body.dark-mode.page-about .about-difference-icon,
+body[data-theme="dark"].page-about .about-difference-icon,
+html[data-theme="dark"] body.page-about .about-difference-icon {
+    background: rgba(231, 84, 128, 0.15) !important;
+    color: #ff83a4 !important;
+    border-color: rgba(231, 84, 128, 0.35) !important;
+}
+
+body.dark-mode.page-about .about-difference-icon svg,
+body.dark-mode.page-about .about-difference-icon i,
+body[data-theme="dark"].page-about .about-difference-icon svg,
+body[data-theme="dark"].page-about .about-difference-icon i,
+html[data-theme="dark"] body.page-about .about-difference-icon svg,
+html[data-theme="dark"] body.page-about .about-difference-icon i {
+    color: #ff83a4 !important;
+    stroke: currentColor;
+}
+
+/* Philosophy / image gallery */
+body.dark-mode.page-about .care-editorial,
+body[data-theme="dark"].page-about .care-editorial,
+html[data-theme="dark"] body.page-about .care-editorial {
+    background: #110f12 !important;
+}
+
+body.dark-mode.page-about .care-heading,
+body[data-theme="dark"].page-about .care-heading,
+html[data-theme="dark"] body.page-about .care-heading {
+    color: var(--about-text) !important;
+}
+
+body.dark-mode.page-about .care-photo,
+body[data-theme="dark"].page-about .care-photo,
+html[data-theme="dark"] body.page-about .care-photo {
+    background: #211c21 !important;
+    border-color: var(--about-border) !important;
+}
+
+body.dark-mode.page-about .care-photo figcaption,
+body[data-theme="dark"].page-about .care-photo figcaption,
+html[data-theme="dark"] body.page-about .care-photo figcaption {
+    background: #211c21 !important;
+    color: #fff5f7 !important;
+}
+
+body.dark-mode.page-about .care-photo figcaption span,
+body[data-theme="dark"].page-about .care-photo figcaption span,
+html[data-theme="dark"] body.page-about .care-photo figcaption span {
+    color: #fff5f7 !important;
+}
+
+/* Keep nail polish and manicure photos visible */
+body.dark-mode.page-about #main img,
+body[data-theme="dark"].page-about #main img,
+html[data-theme="dark"] body.page-about #main img {
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: none !important;
+}
+
+/* Do not apply a dark overlay to photos */
+body.dark-mode.page-about .about-story-image-main img,
+body.dark-mode.page-about .about-story-image-small img,
+body.dark-mode.page-about .care-photo img,
+body.dark-mode.page-about .about-experience-visual img,
+body[data-theme="dark"].page-about .about-story-image-main img,
+body[data-theme="dark"].page-about .about-story-image-small img,
+body[data-theme="dark"].page-about .care-photo img,
+body[data-theme="dark"].page-about .about-experience-visual img,
+html[data-theme="dark"] body.page-about .about-story-image-main img,
+html[data-theme="dark"] body.page-about .about-story-image-small img,
+html[data-theme="dark"] body.page-about .care-photo img,
+html[data-theme="dark"] body.page-about .about-experience-visual img {
+    opacity: 1 !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+}
+
+/* Experience section */
+body.dark-mode.page-about .about-experience-section,
+body[data-theme="dark"].page-about .about-experience-section,
+html[data-theme="dark"] body.page-about .about-experience-section {
+    background: #171317 !important;
+}
+
+body.dark-mode.page-about .about-experience-step,
+body[data-theme="dark"].page-about .about-experience-step,
+html[data-theme="dark"] body.page-about .about-experience-step {
+    background: #211c21 !important;
+    border-color: var(--about-border) !important;
+    color: var(--about-text) !important;
+}
+
+body.dark-mode.page-about .about-experience-step h3,
+body[data-theme="dark"].page-about .about-experience-step h3,
+html[data-theme="dark"] body.page-about .about-experience-step h3 {
+    color: #fff5f7 !important;
+}
+
+body.dark-mode.page-about .about-experience-step p,
+body[data-theme="dark"].page-about .about-experience-step p,
+html[data-theme="dark"] body.page-about .about-experience-step p {
+    color: #d8c7ce !important;
+}
+
+body.dark-mode.page-about .about-experience-step > i,
+body.dark-mode.page-about .about-experience-step > svg,
+body[data-theme="dark"].page-about .about-experience-step > i,
+body[data-theme="dark"].page-about .about-experience-step > svg,
+html[data-theme="dark"] body.page-about .about-experience-step > i,
+html[data-theme="dark"] body.page-about .about-experience-step > svg {
+    color: #ff83a4 !important;
+}
+
+/* Final invitation section */
+body.dark-mode.page-about .about-final-section,
+body[data-theme="dark"].page-about .about-final-section,
+html[data-theme="dark"] body.page-about .about-final-section {
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(231, 84, 128, 0.19),
+            transparent 65%
+        ),
+        #1b1218 !important;
+    color: #fff5f7 !important;
+}
+
+body.dark-mode.page-about .about-final-section h2,
+body.dark-mode.page-about .about-final-section p,
+body[data-theme="dark"].page-about .about-final-section h2,
+body[data-theme="dark"].page-about .about-final-section p,
+html[data-theme="dark"] body.page-about .about-final-section h2,
+html[data-theme="dark"] body.page-about .about-final-section p {
+    color: #fff5f7 !important;
+}
+
+/* Links */
+body.dark-mode.page-about #main a:not(.btn),
+body[data-theme="dark"].page-about #main a:not(.btn),
+html[data-theme="dark"] body.page-about #main a:not(.btn) {
+    color: #ff83a4;
+}
+
+body.dark-mode.page-about #main a:not(.btn):hover,
+body[data-theme="dark"].page-about #main a:not(.btn):hover,
+html[data-theme="dark"] body.page-about #main a:not(.btn):hover {
+    color: #ffc0d0 !important;
+}
+
+/* Primary buttons */
+body.dark-mode.page-about #main .btn-primary,
+body[data-theme="dark"].page-about #main .btn-primary,
+html[data-theme="dark"] body.page-about #main .btn-primary {
+    background: #E75480 !important;
+    border-color: #E75480 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode.page-about #main .btn-primary *,
+body[data-theme="dark"].page-about #main .btn-primary *,
+html[data-theme="dark"] body.page-about #main .btn-primary * {
+    color: #ffffff !important;
+}
+
+/* Footer stays dark and readable */
+body.dark-mode.page-about .site-footer,
+body[data-theme="dark"].page-about .site-footer,
+html[data-theme="dark"] body.page-about .site-footer {
+    background: #0e0c0f !important;
+    color: #fff5f7 !important;
+}
+
+body.dark-mode.page-about .site-footer p,
+body.dark-mode.page-about .site-footer a,
+body.dark-mode.page-about .site-footer span,
+body[data-theme="dark"].page-about .site-footer p,
+body[data-theme="dark"].page-about .site-footer a,
+body[data-theme="dark"].page-about .site-footer span,
+html[data-theme="dark"] body.page-about .site-footer p,
+html[data-theme="dark"] body.page-about .site-footer a,
+html[data-theme="dark"] body.page-about .site-footer span {
+    color: #d8c7ce !important;
+}
+
+body.dark-mode.page-about .site-footer .footer-title,
+body[data-theme="dark"].page-about .site-footer .footer-title,
+html[data-theme="dark"] body.page-about .site-footer .footer-title {
+    color: #ff83a4 !important;
+}
+
+/* Smooth colour transition */
+body.page-about #main > section,
+body.page-about #main .about-purpose-card,
+body.page-about #main .about-difference-card,
+body.page-about #main .about-experience-step,
+body.page-about #main .care-photo {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Mobile safety */
+@media (max-width: 768px) {
+    body.dark-mode.page-about .about-purpose-card,
+    body.dark-mode.page-about .about-difference-card,
+    body.dark-mode.page-about .about-experience-step,
+    body[data-theme="dark"].page-about .about-purpose-card,
+    body[data-theme="dark"].page-about .about-difference-card,
+    body[data-theme="dark"].page-about .about-experience-step,
+    html[data-theme="dark"] body.page-about .about-purpose-card,
+    html[data-theme="dark"] body.page-about .about-difference-card,
+    html[data-theme="dark"] body.page-about .about-experience-step {
+        background: #211c21 !important;
+    }
+}
+/* ==========================================
+   ABOUT HERO — KEEP SAME IMAGE IN DARK MODE
+========================================== */
+
+html[data-theme="dark"] body.page-about .about-editorial-hero {
+    background-color: #111111 !important;
+    background-image: url("../images/abouuuu\ hero.png") !important;
+    background-size: 100% 100% !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Keep hero dimensions and content alignment unchanged */
+html[data-theme="dark"] body.page-about .about-editorial-hero {
+    height: 570px;
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    html[data-theme="dark"] body.page-about .about-editorial-hero {
+        height: 540px;
+        min-height: 540px;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+@media (max-width: 480px) {
+    html[data-theme="dark"] body.page-about .about-editorial-hero {
+        height: 520px;
+        min-height: 520px;
+        background-size: cover !important;
+        background-position: center center !important;
+    }
+}
+
+
+/* ABOUT HERO — PREMIUM DEEP ROSE BACKGROUND */
+
+html body .about-editorial-hero {
+  background-color: #24070f !important;
+  background-image:
+    linear-gradient(
+      rgba(36, 7, 15, 0.18),
+      rgba(36, 7, 15, 0.18)
+    ),
+    url("../images/abouuuu\ hero.png") !important;
+
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Keep hero content above the background */
+html body .about-editorial-hero .about-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile adjustment */
+@media (max-width: 768px) {
+  html body .about-editorial-hero {
+    background-position: center center !important;
+  }
+}
+
+html body .about-editorial-hero .about-hero-copy .about-hero-eyebrow,
+html body .about-editorial-hero .about-hero-copy .eyebrow {
+  color: #E75480 !important;
+}
+
+/* OUR STORY — KEEP ORIGINAL STYLE, CHANGE ONLY ON HOVER */
+
+html body .about-editorial-hero .about-hero-actions a[href="#our-story"] {
+  transition: background-color 0.3s ease,
+              border-color 0.3s ease,
+              color 0.3s ease !important;
+}
+
+html body .about-editorial-hero .about-hero-actions a[href="#our-story"]:hover {
+  background-color: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #ffffff !important;
+}
+
+html body .about-editorial-hero .about-hero-actions a[href="#our-story"]:hover i {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* ABOUT HERO — DARK MODE COLORS */
+
+html body.dark-mode .about-editorial-hero .about-hero-copy h1,
+html body.dark-theme .about-editorial-hero .about-hero-copy h1,
+html[data-theme="dark"] .about-editorial-hero .about-hero-copy h1,
+html[data-bs-theme="dark"] .about-editorial-hero .about-hero-copy h1 {
+  color: #650909 !important;
+  -webkit-text-fill-color: #650909 !important;
+}
+
+/* Secondary color for "Every Detail" */
+html body.dark-mode .about-editorial-hero .about-hero-copy h1 em,
+html body.dark-theme .about-editorial-hero .about-hero-copy h1 em,
+html[data-theme="dark"] .about-editorial-hero .about-hero-copy h1 em,
+html[data-bs-theme="dark"] .about-editorial-hero .about-hero-copy h1 em {
+  color: #E75480 !important;
+  -webkit-text-fill-color: #E75480 !important;
+}
+
+/* Explore Services — same as light mode */
+html body.dark-mode .about-editorial-hero .about-hero-actions a:first-child,
+html body.dark-theme .about-editorial-hero .about-hero-actions a:first-child,
+html[data-theme="dark"] .about-editorial-hero .about-hero-actions a:first-child,
+html[data-bs-theme="dark"] .about-editorial-hero .about-hero-actions a:first-child {
+  background: #650909 !important;
+  border: 1px solid #650909 !important;
+  color: #ffffff !important;
+}
+
+/* Our Story — keep outlined style */
+html body.dark-mode .about-editorial-hero .about-hero-actions a:last-child,
+html body.dark-theme .about-editorial-hero .about-hero-actions a:last-child,
+html[data-theme="dark"] .about-editorial-hero .about-hero-actions a:last-child,
+html[data-bs-theme="dark"] .about-editorial-hero .about-hero-actions a:last-child {
+  background: transparent !important;
+  border: 1px solid #E75480 !important;
+  color: #E75480 !important;
+}
+
+/* Both buttons — secondary color on hover */
+html body.dark-mode .about-editorial-hero .about-hero-actions a:hover,
+html body.dark-theme .about-editorial-hero .about-hero-actions a:hover,
+html[data-theme="dark"] .about-editorial-hero .about-hero-actions a:hover,
+html[data-bs-theme="dark"] .about-editorial-hero .about-hero-actions a:hover {
+  background: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #ffffff !important;
+}
+/* ABOUT HERO — EXPLORE SERVICES BUTTON */
+html body.page-about section#about-hero
+.about-hero-actions > a.btn.btn-primary {
+  background: #650909 !important;
+  background-color: #650909 !important;
+  border: 1px solid #650909 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  opacity: 1 !important;
+}
+
+/* Icon colour */
+html body.page-about section#about-hero
+.about-hero-actions > a.btn.btn-primary i,
+html body.page-about section#about-hero
+.about-hero-actions > a.btn.btn-primary svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+/* Same primary colour in dark mode */
+html body.page-about section#about-hero
+.about-hero-actions > a.btn.btn-primary:hover {
+  background: #650909 !important;
+  background-color: #650909 !important;
+  border-color: #650909 !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
+  transform: translateY(-2px);
+}
+/* Secondary Colour — Rose Burgundy */
+:root {
+  --secondary-color: #8B1E3F;
+}
+
+/* Explore Services hover */
+body.page-about #about-hero .about-hero-actions .btn.btn-primary:hover {
+  background: var(--secondary-color) !important;
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: #ffffff !important;
+}
+
+
+
+/* =========================================
+   WHAT GUIDES US — SECOND CARD WHITE
+========================================= */
+
+.what-guides-us .guide-card:nth-child(2) {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+}
+
+
+/* =========================================
+   A LITTLE CARE, A LOT OF PERSONALITY
+   EQUAL CARD HEIGHT & ALIGNMENT
+========================================= */
+
+.care-editorial {
+    width: 100%;
+}
+
+.care-editorial .care-photo {
+    height: 100%;
+    min-height: 420px;
+    box-sizing: border-box;
+}
+
+.care-editorial .care-photo-one,
+.care-editorial .care-photo-two,
+.care-editorial .care-photo-three {
+    height: 420px !important;
+    min-height: 420px !important;
+    align-self: stretch;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Keep all 3 cards aligned */
+.care-editorial .care-photo-one,
+.care-editorial .care-photo-two,
+.care-editorial .care-photo-three {
+    transform: none;
+}
+
+/* Responsive height */
+@media (max-width: 768px) {
+    .care-editorial .care-photo-one,
+    .care-editorial .care-photo-two,
+    .care-editorial .care-photo-three {
+        height: 360px !important;
+        min-height: 360px !important;
+    }
+}
+
+
+
+/* WHAT GUIDES US — OUR VISION CARD WHITE BACKGROUND */
+body.page-about #our-values .about-value-card.vision-card {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    color: #263445 !important;
+    opacity: 1 !important;
+}
+
+/* Vision card content */
+body.page-about #our-values .about-value-card.vision-card h2,
+body.page-about #our-values .about-value-card.vision-card h3,
+body.page-about #our-values .about-value-card.vision-card p,
+body.page-about #our-values .about-value-card.vision-card span,
+body.page-about #our-values .about-value-card.vision-card i,
+body.page-about #our-values .about-value-card.vision-card svg {
+    color: #263445 !important;
+}
+
+/* Remove dark overlays or gradient effects */
+body.page-about #our-values .about-value-card.vision-card::before,
+body.page-about #our-values .about-value-card.vision-card::after {
+    background: transparent !important;
+    opacity: 0 !important;
+}
+
+
+/* =========================================
+   WHAT GUIDES US — OUR VISION CARD
+   REMOVE BLACK ANIMATED BACKGROUND
+========================================= */
+
+body.page-about .about-purpose-card.about-purpose-vision {
+    background: #FFFFFF !important;
+    background-color: #FFFFFF !important;
+    background-image: none !important;
+    animation: none !important;
+    box-shadow: none !important;
+    color: #263445 !important;
+    isolation: isolate;
+}
+
+/* Remove animated background overlays */
+body.page-about .about-purpose-card.about-purpose-vision::before,
+body.page-about .about-purpose-card.about-purpose-vision::after {
+    content: none !important;
+    display: none !important;
+    animation: none !important;
+    background: none !important;
+}
+
+/* Keep card content transparent */
+body.page-about .about-purpose-card.about-purpose-vision > * {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* Text and icon colors */
+body.page-about .about-purpose-card.about-purpose-vision .about-card-number,
+body.page-about .about-purpose-card.about-purpose-vision .about-card-label,
+body.page-about .about-purpose-card.about-purpose-vision h3,
+body.page-about .about-purpose-card.about-purpose-vision p,
+body.page-about .about-purpose-card.about-purpose-vision .about-purpose-card-top i,
+body.page-about .about-purpose-card.about-purpose-vision .about-purpose-card-top svg,
+body.page-about .about-purpose-card.about-purpose-vision .about-purpose-symbol {
+    color: #263445 !important;
+    fill: none;
+    stroke: currentColor;
+}
+
+/* Disable animations on the card's decorative elements */
+body.page-about .about-purpose-card.about-purpose-vision * {
+    animation: none !important;
+}
+
+
+/* OUR VISION — LIGHT MATCHING BORDER */
+body.page-about .about-purpose-card.about-purpose-vision {
+    border: 1px solid rgba(168, 68, 96, 0.22) !important;
+    border-radius: 3px;
+    background: #FFFFFF !important;
+    box-shadow: 0 4px 18px rgba(38, 52, 69, 0.04) !important;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+/* Subtle hover effect */
+body.page-about .about-purpose-card.about-purpose-vision:hover {
+    border-color: rgba(168, 68, 96, 0.40) !important;
+    box-shadow: 0 8px 24px rgba(38, 52, 69, 0.07) !important;
+}
+
+
+
+/* OUR VISION — MATCH NEIGHBOURING CARD CONTENT */
+
+body.page-about .about-purpose-card.about-purpose-vision {
+    color: inherit !important;
+}
+
+/* Card number */
+body.page-about .about-purpose-card.about-purpose-vision .about-card-number {
+    color: #A84460 !important;
+}
+
+/* OUR VISION label */
+body.page-about .about-purpose-card.about-purpose-vision .about-card-label {
+    color: #A84460 !important;
+}
+
+/* Main heading */
+body.page-about .about-purpose-card.about-purpose-vision h3 {
+    color: #263445 !important;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* Paragraph */
+body.page-about .about-purpose-card.about-purpose-vision p {
+    color: #596574 !important;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* Top icon and decorative symbol */
+body.page-about .about-purpose-card.about-purpose-vision .about-purpose-card-top svg,
+body.page-about .about-purpose-card.about-purpose-vision .about-purpose-card-top i,
+body.page-about .about-purpose-card.about-purpose-vision .about-purpose-symbol {
+    color: #A84460 !important;
+    stroke: #A84460 !important;
+}
+
+
+
+
+
+
+/* OUR VISION — PARAGRAPH MATCH */
+body.page-about .about-purpose-card.about-purpose-vision p {
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    color: inherit !important;
+    letter-spacing: inherit !important;
+    font-family: inherit !important;
+    opacity: 1 !important;
+}
+
+
+
+
+/* OUR VISION — HEADING SIZE MATCH */
+body.page-about .about-purpose-card.about-purpose-vision h3 {
+    font-size: 36px !important;
+    line-height: 1.3 !important;
+    font-weight: 600 !important;
+    color: rgb(77, 16, 33)  !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body.page-about .about-purpose-card.about-purpose-vision h3 {
+        font-size: 26px !important;
+    }
+}
+
+
+
+
+
+/* A LITTLE CARE, A LOT OF PERSONALITY
+   MIDDLE IMAGE HEIGHT FIX */
+
+body.page-about .care-photo-two {
+    height: 420px !important;
+    min-height: 420px !important;
+    align-self: stretch !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+body.page-about .care-photo-two img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+
+
+
+
+
+
+
+/* A LITTLE CARE, A LOT OF PERSONALITY
+   ALL THREE IMAGES — EQUAL HEIGHT */
+
+body.page-about .care-photo-one,
+body.page-about .care-photo-two,
+body.page-about .care-photo-three {
+    height: 420px !important;
+    min-height: 420px !important;
+    max-height: 420px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    align-self: stretch !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
+}
+
+body.page-about .care-photo-one img,
+body.page-about .care-photo-two img,
+body.page-about .care-photo-three img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body.page-about .care-photo-one,
+    body.page-about .care-photo-two,
+    body.page-about .care-photo-three {
+        height: 360px !important;
+        min-height: 360px !important;
+        max-height: 360px !important;
+    }
+}
+
+
+
+
+
+/* A LITTLE CARE, A LOT OF PERSONALITY
+   KEEP IMAGES AND TEXT CONTENT VISIBLE */
+
+/* All three cards */
+body.page-about .care-photo-one,
+body.page-about .care-photo-two,
+body.page-about .care-photo-three {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Equal image height only */
+body.page-about .care-photo-one img,
+body.page-about .care-photo-two img,
+body.page-about .care-photo-three img {
+    width: 100% !important;
+    height: 420px !important;
+    min-height: 420px !important;
+    max-height: 420px !important;
+    object-fit: cover !important;
+    display: block !important;
+    flex-shrink: 0 !important;
+}
+
+/* Preserve text content inside the cards */
+body.page-about .care-photo-one h3,
+body.page-about .care-photo-two h3,
+body.page-about .care-photo-three h3,
+body.page-about .care-photo-one p,
+body.page-about .care-photo-two p,
+body.page-about .care-photo-three p {
+    display: block !important;
+    visibility: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    body.page-about .care-photo-one img,
+    body.page-about .care-photo-two img,
+    body.page-about .care-photo-three img {
+        height: 360px !important;
+        min-height: 360px !important;
+        max-height: 360px !important;
+    }
+}
+
+
+
+/* =========================================
+   ABOUT PAGE — DARK MODE CARD BACKGROUND
+   MATCH CARDS WITH BODY BACKGROUND
+========================================= */
+
+body.dark-mode.page-about .care-photo-one,
+body.dark-mode.page-about .care-photo-two,
+body.dark-mode.page-about .care-photo-three,
+html[data-theme="dark"] body.page-about .care-photo-one,
+html[data-theme="dark"] body.page-about .care-photo-two,
+html[data-theme="dark"] body.page-about .care-photo-three,
+body[data-theme="dark"].page-about .care-photo-one,
+body[data-theme="dark"].page-about .care-photo-two,
+body[data-theme="dark"].page-about .care-photo-three {
+    background: #171717 !important;
+    background-color: #171717 !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* Remove shade differences from inner card content */
+body.dark-mode.page-about .care-photo-one *,
+body.dark-mode.page-about .care-photo-two *,
+body.dark-mode.page-about .care-photo-three *,
+html[data-theme="dark"] body.page-about .care-photo-one *,
+html[data-theme="dark"] body.page-about .care-photo-two *,
+html[data-theme="dark"] body.page-about .care-photo-three * {
+    box-shadow: none !important;
+}
+
+/* Keep image corners clean */
+body.dark-mode.page-about .care-photo-one img,
+body.dark-mode.page-about .care-photo-two img,
+body.dark-mode.page-about .care-photo-three img {
+    border-radius: inherit;
+}
+/* ABOUT PAGE — DARK MODE
+   BLEND CARD CAPTIONS INTO SECTION BACKGROUND */
+
+body.dark-mode.page-about .care-photo figcaption,
+body[data-theme="dark"].page-about .care-photo figcaption,
+html[data-theme="dark"] body.page-about .care-photo figcaption {
+    background: #110f12 !important;
+    background-color: #110f12 !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: #fff5f7 !important;
+}
+
+/* Caption text */
+body.dark-mode.page-about .care-photo figcaption span,
+body[data-theme="dark"].page-about .care-photo figcaption span,
+html[data-theme="dark"] body.page-about .care-photo figcaption span {
+    background: transparent !important;
+    color: #fff5f7 !important;
+}
+
+/* Match each card background with the section */
+body.dark-mode.page-about .care-photo,
+body[data-theme="dark"].page-about .care-photo,
+html[data-theme="dark"] body.page-about .care-photo {
+    background: #110f12 !important;
+    background-color: #110f12 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ==========================================
+   ABOUT PAGE — DARK MODE FIXES
+========================================== */
+
+/* 1. HERO — DESCRIPTION TEXT */
+body.dark.page-about .about-editorial-hero .about-hero-description {
+    color: #F7F5EF !important;
+    -webkit-text-fill-color: #F7F5EF !important;
+    opacity: 1 !important;
+}
+
+/* Hero supporting text, if any */
+body.dark.page-about .about-editorial-hero .about-hero-copy p {
+    color: #F7F5EF !important;
+    -webkit-text-fill-color: #F7F5EF !important;
+    opacity: 1 !important;
+}
+
+
+/* 2. EXPERIENCE — REMOVE DIFFERENT RIGHT-SIDE SHADE */
+body.dark.page-about .about-experience-section .about-experience-steps {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+body.dark.page-about .about-experience-section .about-experience-step {
+    background: transparent !important;
+    background-color: transparent !important;
+    background-image: none !important;
+    box-shadow: none !important;
+}
+
+/* Keep the step dividers subtle */
+body.dark.page-about .about-experience-section .about-experience-step {
+    border-color: rgba(217, 108, 137, 0.28) !important;
+}
+
+/* Keep experience text readable */
+body.dark.page-about .about-experience-section .about-experience-step h3 {
+    color: #F7F5EF !important;
+}
+
+body.dark.page-about .about-experience-section .about-experience-step p {
+    color: #D8C9CC !important;
+}
+
+body.dark.page-about .about-experience-section .about-step-number,
+body.dark.page-about .about-experience-section .about-experience-step > i {
+    color: #E75480 !important;
+}
+
+
+/* 3. FINAL CTA — PRIMARY BUTTON */
+body.dark.page-about .about-final-section .about-final-actions .btn.btn-primary {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    border: 1px solid #A84460 !important;
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease,
+                color 0.25s ease !important;
+}
+
+/* Book Appointment hover — secondary berry pink */
+body.dark.page-about .about-final-section .about-final-actions .btn.btn-primary:hover {
+    background: #E75480 !important;
+    background-color: #E75480 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    border-color: #E75480 !important;
+}
+
+/* 4. EXPLORE GALLERY BUTTON */
+body.dark.page-about .about-final-section .about-final-actions .about-final-secondary {
+    background: transparent !important;
+    background-color: transparent !important;
+    color: #F7F5EF !important;
+    -webkit-text-fill-color: #F7F5EF !important;
+    border: 1px solid transparent !important;
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease,
+                color 0.25s ease !important;
+}
+
+/* Explore Gallery hover — secondary berry pink */
+body.dark.page-about .about-final-section .about-final-actions .about-final-secondary:hover {
+    background: #E75480 !important;
+    background-color: #E75480 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    border-color: #E75480 !important;
+}
+
+body.dark.page-about .about-final-section .about-final-actions .about-final-secondary span {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
+/* ABOUT PAGE — CTA BUTTONS MATCH LIGHT MODE STYLE */
+
+/* Primary: Book Your Appointment */
+body.page-about #main .about-final-actions .btn-primary {
+    background: #600000 !important;
+    background-color: #600000 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    border: 1px solid #600000 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+/* Secondary: Explore the Gallery */
+body.page-about #main .about-final-actions .about-final-secondary {
+    background: transparent !important;
+    color: #E75480 !important;
+    -webkit-text-fill-color: #E75480 !important;
+    border: 1px solid #E75480 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+/* Icons and inner text */
+body.page-about #main .about-final-actions .btn-primary *,
+body.page-about #main .about-final-actions .about-final-secondary * {
+    color: inherit !important;
+    -webkit-text-fill-color: inherit !important;
+}
+
+/* Hover: berry pink */
+body.page-about #main .about-final-actions .btn-primary:hover,
+body.page-about #main .about-final-actions .about-final-secondary:hover {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+body.page-about #main .about-final-actions .btn-primary:hover *,
+body.page-about #main .about-final-actions .about-final-secondary:hover * {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}/* ABOUT PAGE — DEEP BLUSH CTA BUTTON */
+
+body.page-about #main .about-final-actions .btn-primary {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    border: 1px solid #A84460 !important;
+}
+
+/* Keep button text and icon white */
+body.page-about #main .about-final-actions .btn-primary * {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Hover — Berry Pink */
+body.page-about #main .about-final-actions .btn-primary:hover {
+    background: #E75480 !important;
+    background-color: #E75480 !important;
+    border-color: #E75480 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}/* ABOUT CTA — FORCE BRAND PRIMARY COLOUR */
+
+html body.page-about a.btn.btn-primary,
+html body.page-about .about-final-actions a.btn-primary,
+html body.page-about #main .about-final-actions a.btn.btn-primary {
+    background: var(--primary, #530F0E) !important;
+    background-color: #530F0E !important;
+    background-image: none !important;
+    border: 1px solid #530F0E !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+/* Keep button text and arrow white */
+html body.page-about .about-final-actions a.btn-primary *,
+html body.page-about .about-final-actions a.btn-primary svg {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    stroke: #FFFFFF !important;
+}
+
+/* Hover — secondary rose burgundy */
+html body.page-about .about-final-actions a.btn-primary:hover {
+    background: var(--secondary, #A84460) !important;
+    background-color: #A84460 !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+/* ABOUT PAGE — BOOK APPOINTMENT HOVER FIX */
+
+body.page-about section#about-final
+.about-final-actions a[href="enquiry.html"].btn.btn-primary:hover {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    background-image: none !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    box-shadow: none !important;
+}
+
+/* Keep button text and arrow white */
+body.page-about section#about-final
+.about-final-actions a[href="enquiry.html"].btn.btn-primary:hover i,
+body.page-about section#about-final
+.about-final-actions a[href="enquiry.html"].btn.btn-primary:hover svg {
+    color: #FFFFFF !important;
+    stroke: #FFFFFF !important;
+}
+
+/* Smooth hover */
+body.page-about section#about-final
+.about-final-actions a[href="enquiry.html"].btn.btn-primary {
+    transition: background-color 0.25s ease,
+                border-color 0.25s ease !important;
+}
+/* ABOUT PAGE — REMOVE WHITE HIGHLIGHT */
+.about-purpose-section .about-card-label {
+  display: inline-block !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--secondary, #A84460) !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}

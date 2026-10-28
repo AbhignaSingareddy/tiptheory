@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Book Appointment | TipTheory</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/tt logo.png">
+
+  <link rel="stylesheet" href="css/enquiry.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Lucide icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Shared JavaScript -->
+  <script src="js/app.js" defer></script>
+  <link rel="stylesheet" href="css/brand-overrides.css">
+</head>
+
+<body class="appointment-page">
+
+  <!-- Centered logo, controls on right -->
+  <!-- Floating theme and RTL controls -->
+<div class="header-controls">
+  <button
+    type="button"
+    id="themeToggle"
+    class="icon-button"
+    aria-label="Toggle dark mode"
+    title="Toggle dark mode">
+    <i data-lucide="moon"></i>
+  </button>
+
+  <button
+    type="button"
+    id="rtlToggle"
+    class="icon-button"
+    aria-label="Toggle RTL"
+    title="Toggle RTL">
+    <i data-lucide="arrow-left-right"></i>
+  </button>
+</div>
+
+  <!-- Only one appointment form -->
+  <main class="appointment-main">
+
+    <section class="appointment-card">
+      <div class="appointment-brand">
+  <a href="index.html" class="brand-link">
+    <img src="assets/tt logo.png" alt="TipTheory Logo">
+
+    <span class="brand-name">
+      Tip<span>Theory</span>
+      <small>NAIL ART &amp; MANICURE STUDIO</small>
+    </span>
+  </a>
+</div>
+
+
+      <div class="form-heading">
+        <span class="eyebrow">YOUR NEXT NAIL MOMENT</span>
+
+        <h1>
+          Book an <em>appointment.</em>
+        </h1>
+
+        <p>
+          Tell us your preferences and choose a time for your visit.
+        </p>
+      </div>
+
+
+      <form id="appointmentForm">
+
+        <div class="form-grid">
+
+          <div class="form-group">
+            <label for="fullName">Full name <span>*</span></label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              autocomplete="name"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone number <span>*</span></label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              autocomplete="tel"
+              pattern="[0-9+\s()-]{7,20}"
+              required>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="email">Email address <span>*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required>
+          </div>
+
+          <div class="form-group">
+            <label for="service">Choose your service <span>*</span></label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected hidden>Select a service</option>
+              <option value="Classic Manicure">Classic Manicure</option>
+              <option value="Gel Manicure">Gel Manicure</option>
+              <option value="Gel Extensions">Gel Extensions</option>
+              <option value="Custom Nail Art">Custom Nail Art</option>
+              <option value="French Manicure">French Manicure</option>
+              <option value="Nail Repair">Nail Repair</option>
+              <option value="Help Me Choose">Help Me Choose</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="guests">Number of guests</label>
+            <select id="guests" name="guests">
+              <option value="1">1 guest</option>
+              <option value="2">2 guests</option>
+              <option value="3">3 guests</option>
+              <option value="4">4 guests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="date">Preferred date <span>*</span></label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div class="form-group">
+            <label for="time">Preferred time <span>*</span></label>
+           <select id="time" name="time" required>
+  <option value="" disabled selected hidden>Select a time</option>
+  <option value="10:00 AM">10:00 AM</option>
+  <option value="11:00 AM">11:00 AM</option>
+  <option value="12:00 PM">12:00 PM</option>
+  <option value="01:00 PM">1:00 PM</option>
+  <option value="02:00 PM">2:00 PM</option>
+  <option value="03:00 PM">3:00 PM</option>
+  <option value="04:00 PM">4:00 PM</option>
+  <option value="05:00 PM">5:00 PM</option>
+  <option value="06:00 PM">6:00 PM</option>
+</select>
+          </div>
+
+          <div class="form-group full-width">
+            <label for="notes">Design preferences or special requests</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="3"
+              placeholder="Preferred colours, nail shape, design inspiration..."></textarea>
+          </div>
+
+        </div>
+
+
+        <label class="consent-row">
+          <input type="checkbox" name="consent" required>
+          <span>
+            I agree to be contacted about my appointment request.
+          </span>
+        </label>
+
+
+        <button type="submit" class="submit-button">
+          <span>Request Appointment</span>
+          <i data-lucide="arrow-up-right"></i>
+        </button>
+
+        <p class="form-note">
+          Your appointment is not confirmed until availability is verified.
+        </p>
+
+        <div
+          id="formMessage"
+          class="form-message"
+          role="status"
+          aria-live="polite">
+        </div>
+
+      </form>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

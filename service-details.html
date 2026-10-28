@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Service Details | TipTheory</title>
+  <meta name="description" content="Explore TipTheory manicure, gel extensions, nail art, pedicure and nail care services.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/service-details.css">
+
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="js/app.js"></script>
+</head>
+
+<body data-page="services">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html" aria-label="TipTheory home">
+        <img class="brand-mark" src="assets/tt logo.png" alt="">
+        <span class="brand-copy">
+          <span class="brand-name">Tip<span>Theory</span></span>
+          <span class="brand-tagline">Nail Art &amp; Manicure Studio</span>
+        </span>
+      </a>
+
+      <button class="icon-btn mobile-toggle" id="mobile-toggle"
+              aria-label="Open navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
+        <div class="home-menu" id="home-menu">
+          <button class="nav-home-button" id="home-menu-button"
+                  aria-expanded="false">
+            Home <i data-lucide="chevron-down" width="15"></i>
+          </button>
+          <div class="home-dropdown">
+            <a href="index.html">Home 1 · Classic</a>
+            <a href="home2.html">Home 2 · Premium</a>
+          </div>
+        </div>
+
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="services.html">Services</a>
+        <a class="nav-link" href="gallery.html">Gallery</a>
+        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="btn btn-primary mobile-book-appointment"
+   href="enquiry.html">
+  <i data-lucide="calendar-days" width="16"></i>
+  Book Appointment
+</a>
+      </nav>
+
+      <div class="header-tools">
+        <button class="icon-btn" id="theme-toggle"
+                aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i data-lucide="moon"></i>
+        </button>
+
+        <button class="icon-btn" id="rtl-toggle"
+                aria-label="Toggle right-to-left layout" title="Toggle RTL">
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <a class="btn btn-primary header-cta" href="enquiry.html">
+          <i data-lucide="calendar-days" width="16"></i>
+          Book Appointment
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="service-details-page">
+
+    <!-- HERO -->
+    <section class="sd-hero">
+      <div class="sd-hero-orbit sd-orbit-one"></div>
+      <div class="sd-hero-orbit sd-orbit-two"></div>
+
+      <div class="sd-hero-content">
+        <span class="sd-eyebrow">THE TIPTHEORY EXPERIENCE</span>
+
+        <h1>
+          Thoughtful care.
+          <em>Beautiful details.</em>
+        </h1>
+
+        <p>
+          Discover our signature nail treatments, from timeless manicures
+          to expressive nail art. Find the service that feels like you.
+        </p>
+
+        <a class="sd-button sd-button-primary" href="#all-services">
+          Explore Service Details
+          <i data-lucide="arrow-down-right"></i>
+        </a>
+      </div>
+
+      <div class="sd-hero-image">
+        <img src="images/services img1.jpg"
+             alt="Elegant manicure at TipTheory">
+        <span class="sd-image-label">BEAUTY IN EVERY DETAIL</span>
+      </div>
+    </section>
+
+   
+
+    <!-- SERVICE DETAILS -->
+    <section class="sd-services" id="all-services">
+
+      <header class="sd-section-heading">
+        <span class="sd-eyebrow">OUR SIGNATURE MENU</span>
+        <h2>Find your <em>perfect treatment.</em></h2>
+        <p>
+          Every service is approached with care and attention to your
+          preferences, comfort and desired finish.
+        </p>
+      </header>
+
+      <!-- 01 CLASSIC MANICURE -->
+      <article class="sd-service-card" id="classic-manicure">
+        <div class="sd-service-image">
+          <img src="images/services-classic manicure.jpg"
+               alt="Classic manicure treatment" loading="lazy">
+          <span class="sd-image-number">01</span>
+        </div>
+
+        <div class="sd-service-content">
+          <span class="sd-service-label">THE TIMELESS ONE</span>
+          <h3>Classic Manicure</h3>
+
+          <p class="sd-service-intro">
+            Clean, polished and effortlessly elegant.
+          </p>
+
+          <p>
+            Give your natural nails a neat, refreshed look with thoughtful
+            shaping, cuticle care and your choice of finish. Ideal for
+            everyday elegance and a well-groomed appearance.
+          </p>
+
+          <h4>What this service includes</h4>
+          <ul class="sd-benefits">
+            <li><i data-lucide="check"></i> Nail shaping and filing</li>
+            <li><i data-lucide="check"></i> Cuticle care</li>
+            <li><i data-lucide="check"></i> Nail surface preparation</li>
+            <li><i data-lucide="check"></i> Your chosen polish finish</li>
+          </ul>
+
+          <a class="sd-button sd-button-primary"
+             href="enquiry.html?service=Classic%20Manicure">
+            Book This Service <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 02 GEL MANICURE -->
+      <article class="sd-service-card sd-service-reverse" id="gel-manicure">
+        <div class="sd-service-image">
+          <img src="images/services-gel manicure.jpg"
+               alt="Glossy gel manicure" loading="lazy">
+          <span class="sd-image-number">02</span>
+        </div>
+
+        <div class="sd-service-content">
+          <span class="sd-service-label">THE GLOSS EDIT</span>
+          <h3>Gel Manicure</h3>
+
+          <p class="sd-service-intro">
+            Rich colour with a smooth, glossy finish.
+          </p>
+
+          <p>
+            Choose a gel manicure for a sleek, polished appearance.
+            Explore soft neutrals, timeless reds or expressive berry
+            shades to complement your personal style.
+          </p>
+
+          <h4>What this service includes</h4>
+          <ul class="sd-benefits">
+            <li><i data-lucide="check"></i> Nail preparation and shaping</li>
+            <li><i data-lucide="check"></i> Choice of gel colour</li>
+            <li><i data-lucide="check"></i> Carefully applied finish</li>
+            <li><i data-lucide="check"></i> Glossy, refined appearance</li>
+          </ul>
+
+          <a class="sd-button sd-button-primary"
+             href="enquiry.html?service=Gel%20Manicure">
+            Book This Service <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 03 GEL EXTENSIONS -->
+      <article class="sd-service-card" id="gel-extensions">
+        <div class="sd-service-image">
+          <img src="images/services-gel extension.jpg"
+               alt="Gel nail extensions" loading="lazy">
+          <span class="sd-image-number">03</span>
+        </div>
+
+        <div class="sd-service-content">
+          <span class="sd-service-label">THE LENGTH EDIT</span>
+          <h3>Gel Extensions</h3>
+
+          <p class="sd-service-intro">
+            Your preferred length. Your signature shape.
+          </p>
+
+          <p>
+            Explore added length and beautifully shaped nails tailored
+            to your preferences. Choose a look that feels understated,
+            glamorous or completely individual.
+          </p>
+
+          <h4>What this service includes</h4>
+          <ul class="sd-benefits">
+            <li><i data-lucide="check"></i> Length and shape consultation</li>
+            <li><i data-lucide="check"></i> Extension application</li>
+            <li><i data-lucide="check"></i> Shape refinement</li>
+            <li><i data-lucide="check"></i> Your preferred colour or finish</li>
+          </ul>
+
+          <a class="sd-button sd-button-primary"
+             href="enquiry.html?service=Gel%20Extensions">
+            Book This Service <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 04 CUSTOM NAIL ART -->
+      <article class="sd-service-card sd-service-reverse" id="custom-nail-art">
+        <div class="sd-service-image">
+          <img src="images/services-custom nail art.jpg"
+               alt="Custom nail art design" loading="lazy">
+          <span class="sd-image-number">04</span>
+        </div>
+
+        <div class="sd-service-content">
+          <span class="sd-service-label">THE CREATIVE EDIT</span>
+          <h3>Custom Nail Art</h3>
+
+          <p class="sd-service-intro">
+            Little details. A look that's entirely yours.
+          </p>
+
+          <p>
+            Bring your inspiration and create a look that reflects
+            your personality. From delicate accents and minimal lines
+            to expressive patterns and special-occasion designs.
+          </p>
+
+          <h4>Explore your design options</h4>
+          <ul class="sd-benefits">
+            <li><i data-lucide="check"></i> Minimal and delicate details</li>
+            <li><i data-lucide="check"></i> Floral and romantic designs</li>
+            <li><i data-lucide="check"></i> Chrome and creative finishes</li>
+            <li><i data-lucide="check"></i> Personalised colour combinations</li>
+          </ul>
+
+          <a class="sd-button sd-button-primary"
+             href="enquiry.html?service=Custom%20Nail%20Art">
+            Book This Service <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 05 SPA PEDICURE -->
+      <article class="sd-service-card" id="spa-pedicure">
+        <div class="sd-service-image">
+          <img src="images/services-spa pedicure.jpg"
+               alt="Spa pedicure and foot care" loading="lazy">
+          <span class="sd-image-number">05</span>
+        </div>
+
+        <div class="sd-service-content">
+          <span class="sd-service-label">THE RESET RITUAL</span>
+          <h3>Spa Pedicure</h3>
+
+          <p class="sd-service-intro">
+            A refreshing moment of care from heel to toe.
+          </p>
+
+          <p>
+            Take a little time for yourself with a considered foot-care
+            ritual. Enjoy neat nail shaping, attentive care and a
+            polished finish selected to suit your style.
+          </p>
+
+          <h4>What this service includes</h4>
+          <ul class="sd-benefits">
+            <li><i data-lucide="check"></i> Nail and cuticle care</li>
+            <li><i data-lucide="check"></i> Nail shaping and tidy-up</li>
+            <li><i data-lucide="check"></i> Foot-care treatment</li>
+            <li><i data-lucide="check"></i> Optional polish finish</li>
+          </ul>
+
+          <a class="sd-button sd-button-primary"
+             href="enquiry.html?service=Spa%20Pedicure">
+            Book This Service <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </article>
+
+      <!-- 06 GEL REMOVAL -->
+      <article class="sd-service-card sd-service-reverse" id="gel-removal">
+        <div class="sd-service-image">
+          <img src="images/sevices-gel removal.jpg"
+               alt="Nail preparation for a fresh manicure" loading="lazy">
+          <span class="sd-image-number">06</span>
+        </div>
+
+        <div class="sd-service-content">
+          <span class="sd-service-label">THE FRESH START</span>
+          <h3>Gel Removal</h3>
+
+          <p class="sd-service-intro">
+            A considered start to your next nail look.
+          </p>
+
+          <p>
+            Have your existing gel finish removed with an approach
+            suited to your current manicure and natural nails.
+            Let us know about any extensions or previous nail work
+            when planning your appointment.
+          </p>
+
+          <h4>What this service focuses on</h4>
+          <ul class="sd-benefits">
+            <li><i data-lucide="check"></i> Review of your existing manicure</li>
+            <li><i data-lucide="check"></i> Appropriate removal approach</li>
+            <li><i data-lucide="check"></i> Attention to natural nails</li>
+            <li><i data-lucide="check"></i> Preparation for your next look</li>
+          </ul>
+
+          <a class="sd-button sd-button-primary"
+             href="enquiry.html?service=Gel%20Removal">
+            Book This Service <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </article>
+
+    </section>
+
+
+    <!-- FINAL CTA -->
+    <section class="sd-final-cta">
+      <span class="sd-eyebrow">YOUR NEXT NAIL MOMENT</span>
+      <h2>A little time for you.<br><em>A look you'll love.</em></h2>
+      <p>
+        Tell us what you have in mind and let's plan your next appointment.
+      </p>
+
+      <div class="sd-final-actions">
+        <a class="sd-button sd-button-primary" href="enquiry.html">
+          Book an Appointment <i data-lucide="arrow-up-right"></i>
+        </a>
+        <a class="sd-button sd-button-outline" href="services.html">
+          Back to Services <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-main">
+
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="TipTheory home">
+          <img class="brand-mark" src="assets/tt logo.png" alt="">
+          <span class="brand-copy">
+            <span class="brand-name">Tip<span>Theory</span></span>
+            <span class="brand-tagline">Nail Art &amp; Manicure Studio</span>
+          </span>
+        </a>
+
+        <p>
+          Thoughtful nail care, expressive nail art, and a little
+          moment of luxury just for you.
+        </p>
+
+        <div class="socials" aria-label="Social media">
+          <a href="https://instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://pinterest.com/" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Our Services</h3>
+        <div class="footer-links">
+          <a href="service-details.html#classic-manicure">Classic Manicure</a>
+          <a href="service-details.html#gel-manicure">Gel Manicure</a>
+          <a href="service-details.html#gel-extensions">Gel Extensions</a>
+          <a href="service-details.html#custom-nail-art">Custom Nail Art</a>
+          <a href="service-details.html#spa-pedicure">Spa Pedicure</a>
+          <a href="service-details.html#gel-removal">Gel Removal</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <div class="footer-links">
+          <a href="mailto:hello@tiptheory.com"><i data-lucide="mail"></i> hello@tiptheory.com</a>
+          <a href="tel:+910000000000"><i data-lucide="phone"></i> +91 00000 00000</a>
+          <span><i data-lucide="map-pin"></i> India · By appointment</span>
+          <span><i data-lucide="clock-3"></i> Tue–Sun · 10:00 AM–7:00 PM</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> TipTheory Nail Art &amp; Manicure Studio.</span>
+      <span><a href="contact.html#privacy">Privacy</a> · <a href="contact.html#terms">Terms</a></span>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("load", () => {
+      if (window.lucide) window.lucide.createIcons();
+
+      const year = document.getElementById("year");
+      if (year) year.textContent = new Date().getFullYear();
+    });
+  </script>
+
+</body>
+</html>

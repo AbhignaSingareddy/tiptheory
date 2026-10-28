@@ -1,0 +1,6769 @@
+
+/* =========================================================
+   TIPTHEORY — SERVICES PAGE
+   Luxury editorial + beauty boutique + fashion studio
+   ========================================================= */
+
+.services-page {
+  --svc-ink: #111111;
+  --svc-berry: #A84460;
+  --svc-blush: #F9ECEB;
+  --svc-paper: #FFFDFC;
+  --svc-muted: #766B6B;
+  --svc-line: rgba(168, 68, 96, .23);
+  color: var(--text, var(--svc-ink));
+  overflow: hidden;
+}
+
+.services-page img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services-page h1,
+.services-page h2,
+.services-page h3,
+.services-page p {
+  margin-top: 0;
+}
+
+.services-page h1,
+.services-page h2,
+.services-page h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -.045em;
+}
+
+.services-page p {
+  line-height: 1.85;
+}
+
+.services-page h1 em,
+.services-page h2 em {
+  color: var(--svc-berry);
+  font-weight: 400;
+}
+
+.svc-kicker {
+  display: inline-block;
+  color: var(--svc-berry);
+  font-family: "Lora", Georgia, serif;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .19em;
+  line-height: 1.7;
+}
+
+.svc-btn {
+  min-height: 50px;
+  padding: 13px 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  border: 1px solid var(--svc-ink);
+  border-radius: 2px;
+  font-family: "Lora", Georgia, serif;
+  font-size: .83rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background .25s ease, color .25s ease,
+    border-color .25s ease, transform .25s ease;
+}
+
+.svc-btn svg,
+.svc-text-link svg,
+.svc-final-link svg {
+  width: 17px;
+  height: 17px;
+  flex: 0 0 auto;
+}
+
+.svc-btn:hover {
+  background: var(--svc-berry);
+  border-color: var(--svc-berry);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.svc-btn-dark {
+  background: var(--svc-ink);
+  color: #fff;
+}
+
+.svc-btn-light {
+  background: transparent;
+  color: #fff;
+  border-color: rgba(255, 255, 255, .65);
+}
+
+.svc-text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--svc-ink);
+  font-size: .88rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--svc-berry);
+  padding: 8px 0;
+  transition: color .2s ease, gap .2s ease;
+}
+
+.svc-text-link:hover {
+  color: var(--svc-berry);
+  gap: 14px;
+}
+
+/* 01 — Editorial hero */
+
+/* ==============================================
+   TIPTHEORY — CREATIVE MOSAIC SERVICES HERO
+   ============================================== */
+
+.tt-collage-hero {
+  --tc-black: #111111;
+  --tc-berry: #A84460;
+  --tc-blush: #F9ECEB;
+  --tc-white: #FFFFFF;
+
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  padding: 34px 5% 42px;
+  overflow: hidden;
+  background: #FFFAF9;
+  color: var(--tc-black);
+}
+
+.tt-collage-hero,
+.tt-collage-hero * {
+  box-sizing: border-box;
+}
+
+.tt-collage-container {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 610px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.96fr 1.04fr;
+  align-items: stretch;
+  gap: clamp(25px, 4vw, 58px);
+}
+
+/* LEFT CONTENT */
+
+.tt-collage-left {
+  min-width: 0;
+  min-height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
+  animation: tcContentEnter 0.7s ease both;
+}
+
+.tt-collage-copy {
+  width: 100%;
+}
+
+.tt-collage-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+  color: var(--tc-berry);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+
+.tt-collage-eyebrow::before {
+  width: 27px;
+  height: 1px;
+  background: var(--tc-berry);
+  content: "";
+}
+
+.tt-collage-copy h1 {
+  max-width: 600px;
+  margin: 0;
+  color: var(--tc-black);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(46px, 5vw, 70px);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+
+.tt-collage-copy h1 span {
+  color: var(--tc-berry);
+  font-style: italic;
+  font-weight: 500;
+}
+
+.tt-collage-copy > p {
+  max-width: 440px;
+  margin: 20px 0 25px;
+  color: #6B5A60;
+  font-family: "Lora", Georgia, serif;
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+.tt-collage-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.tt-collage-primary {
+  min-height: 46px;
+  padding: 12px 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  border: 1px solid var(--tc-berry);
+  background: var(--tc-berry);
+  color: var(--tc-white);
+  font-family: "Lora", Georgia, serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.25s ease, border-color 0.25s ease,
+    color 0.25s ease, transform 0.25s ease;
+}
+
+.tt-collage-primary:hover {
+  background: var(--tc-black);
+  border-color: var(--tc-black);
+  color: var(--tc-white);
+  transform: translateY(-2px);
+}
+
+.tt-collage-secondary {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--tc-black);
+  font-family: "Lora", Georgia, serif;
+  font-size: 12px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.tt-collage-secondary:hover {
+  color: var(--tc-berry);
+}
+
+/* SMALL SERVICE CARDS */
+
+.tt-collage-mini-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: auto;
+  padding-top: 34px;
+  padding-bottom: 13px;
+  color: var(--tc-berry);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.tt-mini-heading-line {
+  height: 1px;
+  flex: 1;
+  background: rgb(168 68 96 / 28%);
+}
+
+.tt-collage-mini-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.tt-mini-card {
+  min-width: 0;
+  color: var(--tc-black);
+  text-decoration: none;
+}
+
+.tt-mini-image {
+  position: relative;
+  height: 112px;
+  overflow: hidden;
+  background: var(--tc-blush);
+}
+
+.tt-mini-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+
+.tt-mini-card:hover .tt-mini-image img {
+  transform: scale(1.07);
+}
+
+.tt-mini-arrow {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  width: 23px;
+  height: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--tc-white);
+  color: var(--tc-berry);
+  font-size: 13px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.tt-mini-card:hover .tt-mini-arrow {
+  background: var(--tc-berry);
+  color: var(--tc-white);
+}
+
+.tt-mini-title {
+  display: block;
+  margin-top: 10px;
+  font-family: "Lora", Georgia, serif;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* RIGHT MOSAIC */
+
+.tt-collage-right {
+  position: relative;
+  min-width: 0;
+  min-height: 610px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 13px 12px 0;
+  animation: tcImageEnter 0.85s ease both;
+}
+
+.tt-photo-mosaic {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 590px;
+  height: 580px;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-template-rows: repeat(12, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.tt-mosaic-tile {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: 7px;
+  background: #F0D6D4;
+}
+
+.tt-mosaic-tile img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.65s ease;
+}
+
+.tt-mosaic-tile:hover img {
+  transform: scale(1.08);
+}
+
+/* Asymmetric collage positions */
+
+.tt-tile-one {
+  grid-column: 5 / 10;
+  grid-row: 1 / 5;
+}
+
+.tt-tile-two {
+  grid-column: 1 / 5;
+  grid-row: 2 / 5;
+}
+
+.tt-tile-three {
+  grid-column: 10 / 13;
+  grid-row: 2 / 7;
+}
+
+.tt-tile-four {
+  grid-column: 3 / 8;
+  grid-row: 5 / 10;
+}
+
+.tt-tile-five {
+  grid-column: 8 / 13;
+  grid-row: 7 / 11;
+}
+
+.tt-tile-six {
+  grid-column: 1 / 3;
+  grid-row: 7 / 10;
+}
+
+.tt-tile-seven {
+  grid-column: 4 / 9;
+  grid-row: 10 / 13;
+}
+
+.tt-mosaic-note {
+  grid-column: 9 / 13;
+  grid-row: 11 / 13;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  color: var(--tc-berry);
+}
+
+.tt-mosaic-note span {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.tt-mosaic-note strong {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+/* DECORATIVE CURVED LINES */
+
+.tt-collage-orbit {
+  position: absolute;
+  z-index: 0;
+  border: 2px solid rgb(168 68 96 / 17%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.tt-orbit-one {
+  width: 410px;
+  height: 160px;
+  top: 4%;
+  right: -15%;
+  transform: rotate(-34deg);
+}
+
+.tt-orbit-two {
+  width: 430px;
+  height: 175px;
+  bottom: 4%;
+  left: -12%;
+  transform: rotate(32deg);
+}
+
+.tt-collage-side-note {
+  position: absolute;
+  top: 50%;
+  right: -3px;
+  color: var(--tc-berry);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%);
+}
+
+/* ANIMATION */
+
+@keyframes tcContentEnter {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes tcImageEnter {
+  from {
+    opacity: 0;
+    transform: translateX(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* TABLET */
+
+@media (max-width: 1024px) {
+  .tt-collage-hero {
+    padding: 30px 3.5%;
+  }
+
+  .tt-collage-container {
+    min-height: 540px;
+    gap: 25px;
+  }
+
+  .tt-collage-left,
+  .tt-collage-right {
+    min-height: 540px;
+  }
+
+  .tt-collage-copy h1 {
+    font-size: clamp(43px, 5.2vw, 57px);
+    letter-spacing: -1.2px;
+  }
+
+  .tt-collage-copy > p {
+    font-size: 12px;
+  }
+
+  .tt-collage-actions {
+    gap: 13px;
+  }
+
+  .tt-collage-mini-cards {
+    gap: 8px;
+  }
+
+  .tt-mini-image {
+    height: 92px;
+  }
+
+  .tt-mini-title {
+    font-size: 9px;
+  }
+
+  .tt-photo-mosaic {
+    height: 510px;
+    gap: 4px;
+  }
+
+  .tt-collage-side-note {
+    right: -5px;
+    font-size: 7px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .tt-collage-hero {
+    padding: 24px 17px 32px;
+  }
+
+  .tt-collage-container {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
+    gap: 22px;
+  }
+
+  .tt-collage-left {
+    min-height: 0;
+    padding: 10px 3px 0;
+  }
+
+  .tt-collage-eyebrow {
+    margin-bottom: 19px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .tt-collage-copy h1 {
+    font-size: clamp(44px, 10.5vw, 65px);
+    line-height: 1.08;
+    letter-spacing: -1.4px;
+  }
+
+  .tt-collage-copy > p {
+    max-width: 480px;
+    margin: 18px 0 22px;
+    font-size: 13px;
+    line-height: 1.85;
+  }
+
+  .tt-collage-actions {
+    gap: 14px;
+  }
+
+  .tt-collage-mini-heading {
+    margin-top: 22px;
+    padding-top: 16px;
+  }
+
+  .tt-mini-image {
+    height: clamp(85px, 25vw, 130px);
+  }
+
+  .tt-collage-right {
+    min-height: 0;
+    padding: 0 9px 0 0;
+  }
+
+  .tt-photo-mosaic {
+    height: clamp(390px, 110vw, 540px);
+    gap: 4px;
+  }
+
+  .tt-collage-side-note {
+    right: -7px;
+    font-size: 7px;
+  }
+
+  .tt-orbit-one {
+    width: 300px;
+    height: 120px;
+  }
+
+  .tt-orbit-two {
+    width: 330px;
+    height: 130px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 380px) {
+  .tt-collage-hero {
+    padding-right: 13px;
+    padding-left: 13px;
+  }
+
+  .tt-collage-copy h1 {
+    font-size: 42px;
+  }
+
+  .tt-collage-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 9px;
+  }
+
+  .tt-collage-primary {
+    min-height: 44px;
+  }
+
+  .tt-collage-mini-cards {
+    gap: 7px;
+  }
+
+  .tt-mini-image {
+    height: 82px;
+  }
+
+  .tt-mini-title {
+    font-size: 8px;
+  }
+
+  .tt-photo-mosaic {
+    height: 360px;
+  }
+
+  .tt-mosaic-note strong {
+    font-size: 27px;
+  }
+}
+
+/* DARK MODE */
+
+html.dark .tt-collage-hero,
+body.dark .tt-collage-hero,
+[data-theme="dark"] .tt-collage-hero {
+  background: #171416;
+  color: #F9ECEB;
+}
+
+html.dark .tt-collage-copy h1,
+body.dark .tt-collage-copy h1,
+[data-theme="dark"] .tt-collage-copy h1 {
+  color: #F9ECEB;
+}
+
+html.dark .tt-collage-copy > p,
+body.dark .tt-collage-copy > p,
+[data-theme="dark"] .tt-collage-copy > p {
+  color: #D4C0C6;
+}
+
+html.dark .tt-collage-secondary,
+body.dark .tt-collage-secondary,
+[data-theme="dark"] .tt-collage-secondary {
+  color: #F9ECEB;
+}
+
+html.dark .tt-collage-secondary:hover,
+body.dark .tt-collage-secondary:hover,
+[data-theme="dark"] .tt-collage-secondary:hover {
+  color: #D99BAE;
+}
+
+html.dark .tt-mini-card,
+body.dark .tt-mini-card,
+[data-theme="dark"] .tt-mini-card {
+  color: #F9ECEB;
+}
+
+html.dark .tt-collage-mini-heading,
+body.dark .tt-collage-mini-heading,
+[data-theme="dark"] .tt-collage-mini-heading {
+  color: #D99BAE;
+}
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+  .tt-collage-left,
+  .tt-collage-right {
+    animation: none;
+  }
+
+  .tt-mini-image img,
+  .tt-mosaic-tile img,
+  .tt-collage-primary,
+  .tt-collage-secondary {
+    transition: none;
+  }
+}
+
+/* 02 — Asymmetric service menu */
+.svc-menu-section {
+  padding: clamp(75px, 10vw, 135px) max(5vw, calc((100vw - 1220px) / 2));
+  background: var(--bg, var(--svc-blush));
+}
+
+.svc-section-intro {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 40px;
+  align-items: end;
+  margin-bottom: 65px;
+}
+
+.svc-section-intro h2,
+.svc-details-heading h2 {
+  font-size: clamp(2.6rem, 4.7vw, 4.5rem);
+  line-height: 1.08;
+  margin: 18px 0 0;
+}
+
+.svc-section-intro > p {
+  max-width: 430px;
+  color: var(--muted, var(--svc-muted));
+  margin-bottom: 6px;
+}
+
+.svc-menu-list {
+  border-top: 1px solid var(--svc-line);
+}
+
+.svc-menu-item {
+  min-height: 245px;
+  display: grid;
+  grid-template-columns: 42px 180px minmax(0, 1fr) 52px;
+  align-items: center;
+  gap: clamp(18px, 3.4vw, 48px);
+  padding: 28px 0;
+  border-bottom: 1px solid var(--svc-line);
+  scroll-margin-top: 110px;
+}
+
+.svc-menu-number {
+  align-self: start;
+  padding-top: 6px;
+  color: var(--svc-berry);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.15rem;
+}
+
+.svc-menu-image {
+  height: 190px;
+  overflow: hidden;
+  background: var(--svc-blush);
+}
+
+.svc-menu-image img {
+  transition: transform .65s ease;
+}
+
+.svc-menu-item:hover .svc-menu-image img {
+  transform: scale(1.07);
+}
+
+.svc-image-offset {
+  border-radius: 90px 90px 0 0;
+}
+
+.svc-menu-copy {
+  max-width: 560px;
+}
+
+.svc-mini-label {
+  color: var(--svc-berry);
+  font-size: .62rem;
+  letter-spacing: .17em;
+  font-weight: 700;
+}
+
+.svc-menu-copy h3 {
+  font-size: clamp(1.65rem, 2.5vw, 2.45rem);
+  margin: 10px 0 9px;
+}
+
+.svc-menu-copy p {
+  max-width: 510px;
+  color: var(--muted, var(--svc-muted));
+  font-size: .9rem;
+  margin-bottom: 13px;
+}
+
+.svc-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.svc-tags span {
+  border: 1px solid var(--svc-line);
+  border-radius: 30px;
+  padding: 5px 10px;
+  font-size: .68rem;
+  color: var(--muted, var(--svc-muted));
+}
+
+.svc-round-link {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--svc-berry);
+  border-radius: 50%;
+  color: var(--svc-berry);
+  transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.svc-round-link:hover {
+  background: var(--svc-berry);
+  color: #fff;
+  transform: rotate(45deg);
+}
+
+.svc-round-link svg {
+  width: 19px;
+}
+
+.svc-menu-footnote {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 27px 0 0;
+  color: var(--muted, var(--svc-muted));
+  font-size: .78rem;
+}
+
+.svc-menu-footnote svg {
+  width: 17px;
+  min-width: 17px;
+  color: var(--svc-berry);
+}
+
+/* 03 — Dramatic fashion section */
+.svc-fashion {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  background: #171315;
+  color: #fff;
+}
+
+.svc-fashion-image {
+  position: relative;
+  min-height: 670px;
+  overflow: hidden;
+  background: #33252a;
+}
+
+.svc-fashion-image img {
+  position: absolute;
+  inset: 0;
+  transition: transform .8s ease;
+}
+
+.svc-fashion-image:hover img {
+  transform: scale(1.04);
+}
+
+.svc-fashion-vertical {
+  position: absolute;
+  left: 25px;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  color: white;
+  font-size: .63rem;
+  letter-spacing: .23em;
+  text-shadow: 0 2px 8px #000;
+}
+
+.svc-fashion-copy {
+  padding: clamp(55px, 7vw, 100px) clamp(30px, 7vw, 100px);
+  align-self: center;
+}
+
+.svc-fashion-copy .svc-kicker {
+  color: #D88BA0;
+}
+
+.svc-fashion-copy h2 {
+  font-size: clamp(2.8rem, 4.4vw, 4.6rem);
+  line-height: 1.08;
+  margin: 25px 0;
+}
+
+.svc-fashion-copy h2 em {
+  color: #D88BA0;
+}
+
+.svc-fashion-copy > p {
+  color: #d0c4c7;
+  max-width: 450px;
+}
+
+.svc-colour-notes {
+  margin: 34px 0;
+  display: grid;
+  gap: 20px;
+}
+
+.svc-colour-notes > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.svc-dot {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.4);
+  flex: 0 0 auto;
+}
+
+.svc-dot-nude {
+  background: #D8B8A9;
+}
+
+.svc-dot-berry {
+  background: #A84460;
+}
+
+.svc-dot-art {
+  background: linear-gradient(135deg, #e9d5d5 0 33%, #A84460 33% 66%, #d7a7b2 66%);
+}
+
+.svc-colour-notes b,
+.svc-colour-notes small {
+  display: block;
+}
+
+.svc-colour-notes b {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.svc-colour-notes small {
+  color: #c7b8bd;
+  margin-top: 4px;
+  font-size: .77rem;
+}
+
+/* 04 — Boutique consultation */
+.svc-consult {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: clamp(45px, 8vw, 125px);
+  align-items: center;
+  padding: clamp(80px, 11vw, 145px) max(6vw, calc((100vw - 1180px) / 2));
+  background: var(--surface, var(--svc-paper));
+}
+
+.svc-consult-copy h2 {
+  font-size: clamp(2.8rem, 4.6vw, 4.6rem);
+  line-height: 1.08;
+  margin: 22px 0;
+}
+
+.svc-consult-copy > p {
+  color: var(--muted, var(--svc-muted));
+  max-width: 430px;
+  margin-bottom: 28px;
+}
+
+.svc-consult-visual {
+  position: relative;
+  min-height: 460px;
+  background: var(--svc-blush);
+}
+
+.svc-consult-visual > img {
+  position: absolute;
+  inset: 0;
+}
+
+.svc-note-card {
+  position: absolute;
+  left: -35px;
+  bottom: 35px;
+  width: min(280px, 75%);
+  padding: 24px;
+  background: var(--surface, var(--svc-paper));
+  border-left: 3px solid var(--svc-berry);
+  box-shadow: 0 15px 45px rgba(40, 15, 22, .12);
+}
+
+.svc-note-card span {
+  display: block;
+  color: var(--svc-berry);
+  font-size: .62rem;
+  letter-spacing: .15em;
+  margin-bottom: 12px;
+}
+
+.svc-note-card strong {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* 05 — Detail cards */
+.svc-details {
+  padding: clamp(75px, 10vw, 130px) max(5vw, calc((100vw - 1220px) / 2));
+  background: var(--surface2, var(--svc-blush));
+}
+
+.svc-details-heading {
+  margin-bottom: 50px;
+}
+
+.svc-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 27px;
+}
+
+.svc-detail-card:nth-child(2) {
+  margin-top: 40px;
+}
+
+.svc-detail-card:nth-child(3) {
+  margin-top: 80px;
+}
+
+.svc-detail-photo {
+  height: clamp(240px, 29vw, 380px);
+  position: relative;
+  overflow: hidden;
+  background: var(--svc-blush);
+}
+
+.svc-detail-photo img {
+  transition: transform .7s ease;
+}
+
+.svc-detail-card:hover .svc-detail-photo img {
+  transform: scale(1.06);
+}
+
+.svc-detail-photo > span {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  background: var(--svc-paper);
+  color: var(--svc-berry);
+  border-radius: 50%;
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+.svc-detail-card h3 {
+  font-size: 1.55rem;
+  margin: 23px 0 10px;
+}
+
+.svc-detail-card p {
+  color: var(--muted, var(--svc-muted));
+  font-size: .86rem;
+  margin-bottom: 0;
+}
+
+/* 06 — Inspiration story */
+.svc-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: clamp(45px, 8vw, 120px);
+  padding: clamp(75px, 10vw, 130px) max(6vw, calc((100vw - 1180px) / 2));
+  background: var(--surface, var(--svc-paper));
+}
+
+.svc-story-image {
+  position: relative;
+  min-height: 550px;
+  background: var(--svc-blush);
+}
+
+.svc-story-image > img {
+  position: absolute;
+  inset: 0;
+}
+
+.svc-story-badge {
+  position: absolute;
+  right: -25px;
+  top: 35px;
+  width: 125px;
+  height: 125px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--svc-berry);
+  color: #fff;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: .9rem;
+  line-height: 1.5;
+  transform: rotate(8deg);
+}
+
+.svc-story-copy h2 {
+  font-size: clamp(2.65rem, 4.4vw, 4.5rem);
+  line-height: 1.1;
+  margin: 23px 0;
+}
+
+.svc-story-copy > p {
+  color: var(--muted, var(--svc-muted));
+}
+
+.svc-story-list {
+  list-style: none;
+  margin: 25px 0 30px;
+  padding: 0;
+  display: grid;
+  gap: 15px;
+}
+
+.svc-story-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  font-size: .87rem;
+}
+
+.svc-story-list svg {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  color: var(--svc-berry);
+}
+
+/* 07 — Final booking statement */
+.svc-final {
+  min-height: 430px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 85px 25px;
+  background: var(--svc-blush);
+  text-align: center;
+}
+
+.svc-final-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+}
+
+.svc-final h2 {
+  font-size: clamp(2.8rem, 5.2vw, 5rem);
+  line-height: 1.08;
+  margin: 22px 0;
+}
+
+.svc-final-content > p {
+  color: var(--svc-muted);
+  max-width: 470px;
+  margin: 0 auto 28px;
+}
+
+.svc-final-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.svc-final-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--svc-ink);
+  text-decoration: none;
+  font-size: .86rem;
+  transition: color .2s ease, gap .2s ease;
+}
+
+.svc-final-link:hover {
+  color: var(--svc-berry);
+  gap: 14px;
+}
+
+.svc-final-orbit {
+  position: absolute;
+  border: 1px solid rgba(168, 68, 96, .15);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.svc-orbit-one {
+  width: 440px;
+  height: 440px;
+  left: -160px;
+  top: -210px;
+}
+
+.svc-orbit-two {
+  width: 570px;
+  height: 570px;
+  right: -210px;
+  bottom: -350px;
+}
+
+.svc-final-side-note {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  transform-origin: right center;
+  color: var(--svc-berry);
+  font-size: .57rem;
+  letter-spacing: .18em;
+}
+
+/* Dark mode — support common theme implementations */
+body.dark .services-page,
+body[data-theme="dark"] .services-page,
+html[data-theme="dark"] .services-page {
+  --svc-paper: #211c1f;
+  --svc-blush: #2b2025;
+  --svc-ink: #f8eff0;
+  --svc-muted: #c7b7bc;
+  --svc-line: rgba(212, 139, 160, .25);
+}
+
+body.dark .svc-hero,
+body[data-theme="dark"] .svc-hero,
+html[data-theme="dark"] .svc-hero,
+body.dark .svc-consult,
+body[data-theme="dark"] .svc-consult,
+html[data-theme="dark"] .svc-consult,
+body.dark .svc-story,
+body[data-theme="dark"] .svc-story,
+html[data-theme="dark"] .svc-story {
+  background: var(--surface, #211c1f);
+}
+
+body.dark .svc-menu-section,
+body[data-theme="dark"] .svc-menu-section,
+html[data-theme="dark"] .svc-menu-section,
+body.dark .svc-details,
+body[data-theme="dark"] .svc-details,
+html[data-theme="dark"] .svc-details,
+body.dark .svc-final,
+body[data-theme="dark"] .svc-final,
+html[data-theme="dark"] .svc-final {
+  background: var(--bg, #171416);
+}
+
+body.dark .svc-btn-dark,
+body[data-theme="dark"] .svc-btn-dark,
+html[data-theme="dark"] .svc-btn-dark {
+  background: #A84460;
+  color: #fff;
+  border-color: #A84460;
+}
+
+body.dark .svc-text-link,
+body[data-theme="dark"] .svc-text-link,
+html[data-theme="dark"] .svc-text-link,
+body.dark .svc-final-link,
+body[data-theme="dark"] .svc-final-link,
+html[data-theme="dark"] .svc-final-link {
+  color: var(--text, #f8eff0);
+}
+
+body.dark .svc-note-card,
+body[data-theme="dark"] .svc-note-card,
+html[data-theme="dark"] .svc-note-card {
+  background: #211c1f;
+}
+
+body.dark .svc-fashion,
+body[data-theme="dark"] .svc-fashion,
+html[data-theme="dark"] .svc-fashion {
+  background: #100e0f;
+}
+
+/* RTL */
+html[dir="rtl"] .svc-hero-copy {
+  padding-left: 6vw;
+  padding-right: max(6vw, calc((100vw - 1280px) / 2));
+}
+
+html[dir="rtl"] .svc-hero-index {
+  left: auto;
+  right: 22px;
+  transform-origin: right center;
+}
+
+html[dir="rtl"] .svc-image-caption {
+  left: auto;
+  right: 30px;
+}
+
+html[dir="rtl"] .svc-fashion-vertical {
+  left: auto;
+  right: 25px;
+  transform-origin: right center;
+}
+
+html[dir="rtl"] .svc-note-card {
+  left: auto;
+  right: -35px;
+  border-left: 0;
+  border-right: 3px solid var(--svc-berry);
+}
+
+html[dir="rtl"] .svc-story-badge {
+  right: auto;
+  left: -25px;
+}
+
+html[dir="rtl"] .svc-final-side-note {
+  right: auto;
+  left: 20px;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .svc-hero {
+    min-height: 540px;
+  }
+
+  .svc-hero-copy {
+    padding: 65px 35px;
+  }
+
+  .svc-hero-visual {
+    min-height: 540px;
+  }
+
+  .svc-hero h1 {
+    font-size: clamp(2.7rem, 5.5vw, 4.3rem);
+  }
+
+  .svc-menu-section,
+  .svc-details {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .svc-menu-item {
+    grid-template-columns: 30px 145px minmax(0, 1fr) 44px;
+    gap: 20px;
+  }
+
+  .svc-menu-image {
+    height: 170px;
+  }
+
+  .svc-fashion-image {
+    min-height: 590px;
+  }
+
+  .svc-fashion-copy {
+    padding: 55px 35px;
+  }
+
+  .svc-consult,
+  .svc-story {
+    gap: 45px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .svc-consult-visual {
+    min-height: 400px;
+  }
+
+  .svc-story-image {
+    min-height: 460px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+  .svc-hero {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .svc-hero-copy {
+    padding: 56px 24px 40px;
+  }
+
+  .svc-hero h1 {
+    font-size: clamp(2.75rem, 12vw, 4rem);
+    margin: 18px 0;
+  }
+
+  .svc-hero-copy > p {
+    font-size: .9rem;
+  }
+
+  .svc-hero-actions {
+    gap: 17px;
+  }
+
+  .svc-hero-note {
+    margin-top: 35px;
+    font-size: .55rem;
+  }
+
+  .svc-hero-visual {
+    min-height: 410px;
+  }
+
+  .svc-image-stamp {
+    width: 130px;
+    height: 130px;
+    right: 6%;
+    bottom: 8%;
+  }
+
+  .svc-image-stamp strong {
+    font-size: 1.05rem;
+  }
+
+  .svc-hero-index {
+    display: none;
+  }
+
+  .svc-menu-section {
+    padding: 72px 22px;
+  }
+
+  .svc-section-intro {
+    display: block;
+    margin-bottom: 35px;
+  }
+
+  .svc-section-intro h2,
+  .svc-details-heading h2 {
+    font-size: clamp(2.55rem, 11vw, 3.5rem);
+  }
+
+  .svc-section-intro > p {
+    margin-top: 20px;
+  }
+
+  .svc-menu-item {
+    grid-template-columns: 28px minmax(0, 1fr) 42px;
+    gap: 12px;
+    padding: 23px 0;
+    min-height: auto;
+  }
+
+  .svc-menu-number {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: .95rem;
+  }
+
+  .svc-menu-image {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    height: 210px;
+    margin-bottom: 8px;
+  }
+
+  .svc-menu-copy {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .svc-menu-copy h3 {
+    font-size: 1.7rem;
+  }
+
+  .svc-menu-copy p {
+    font-size: .83rem;
+  }
+
+  .svc-round-link {
+    grid-column: 3;
+    grid-row: 2;
+    width: 39px;
+    height: 39px;
+    align-self: center;
+  }
+
+  .svc-tags span {
+    font-size: .63rem;
+  }
+
+  .svc-fashion {
+    grid-template-columns: 1fr;
+  }
+
+  .svc-fashion-image {
+    min-height: 430px;
+  }
+
+  .svc-fashion-copy {
+    padding: 55px 25px 65px;
+  }
+
+  .svc-fashion-copy h2 {
+    font-size: clamp(2.8rem, 11vw, 3.8rem);
+  }
+
+  .svc-fashion-vertical {
+    left: 15px;
+  }
+
+  .svc-consult {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 75px 24px;
+  }
+
+  .svc-consult-copy h2 {
+    font-size: clamp(2.8rem, 11vw, 3.8rem);
+  }
+
+  .svc-consult-visual {
+    min-height: 390px;
+    margin-left: 20px;
+  }
+
+  .svc-note-card {
+    left: -20px;
+    bottom: 20px;
+  }
+
+  .svc-details {
+    padding: 75px 24px;
+  }
+
+  .svc-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .svc-detail-card:nth-child(2),
+  .svc-detail-card:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .svc-detail-photo {
+    height: 330px;
+  }
+
+  .svc-detail-card h3 {
+    margin-top: 17px;
+  }
+
+  .svc-story {
+    grid-template-columns: 1fr;
+    gap: 42px;
+    padding: 75px 24px;
+  }
+
+  .svc-story-image {
+    min-height: 410px;
+    margin-right: 15px;
+  }
+
+  .svc-story-badge {
+    width: 105px;
+    height: 105px;
+    right: -15px;
+    font-size: .76rem;
+  }
+
+  .svc-story-copy h2 {
+    font-size: clamp(2.6rem, 10vw, 3.7rem);
+  }
+
+  .svc-final {
+    min-height: 400px;
+    padding: 75px 22px;
+  }
+
+  .svc-final h2 {
+    font-size: clamp(2.65rem, 11vw, 3.8rem);
+  }
+
+  .svc-final-side-note {
+    display: none;
+  }
+
+  .svc-final-actions {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  html[dir="rtl"] .svc-hero-copy {
+    padding: 56px 24px 40px;
+  }
+
+  html[dir="rtl"] .svc-note-card {
+    right: -20px;
+  }
+
+  html[dir="rtl"] .svc-story-badge {
+    left: -15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .svc-hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .svc-menu-image {
+    height: 175px;
+  }
+
+  .svc-detail-photo {
+    height: 275px;
+  }
+
+  .svc-consult-visual {
+    min-height: 320px;
+  }
+
+  .svc-story-image {
+    min-height: 340px;
+  }
+
+  .svc-btn {
+    padding: 12px 15px;
+    gap: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-page *,
+  .services-page *::before,
+  .services-page *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}
+
+/* =========================================
+   SERVICES HERO — FINAL SPACING ADJUSTMENTS
+   ========================================= */
+
+/* 1. Reduce gap below header */
+.tt-collage-hero {
+  padding-top: 8px !important;
+  padding-bottom: 18px !important;
+}
+
+/* 2. Reduce overall hero height */
+.tt-collage-container {
+  height: clamp(450px, calc(100svh - 205px), 520px) !important;
+  min-height: 0 !important;
+  gap: clamp(24px, 3.5vw, 48px);
+}
+
+/* 3. Keep left content and image equal in height */
+.tt-collage-left,
+.tt-collage-right {
+  height: 100% !important;
+  min-height: 0 !important;
+}
+
+/* 4. Move left content slightly upward */
+.tt-collage-left {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* 5. Move "Find Your Next Favourite" upwards */
+.tt-collage-mini-heading {
+  margin-top: auto !important;
+  padding-top: 14px !important;
+  padding-bottom: 8px !important;
+}
+
+/* 6. Reduce service thumbnail height */
+.tt-mini-image {
+  height: clamp(58px, 8vh, 76px) !important;
+}
+
+.tt-mini-title {
+  margin-top: 6px !important;
+}
+
+/* 7. Slightly reduce right collage height */
+.tt-collage-right {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.tt-photo-mosaic {
+  height: 100% !important;
+  max-height: 100% !important;
+}
+
+/* Laptop screens */
+@media (min-width: 701px) and (max-height: 800px) {
+  .tt-collage-hero {
+    padding-top: 5px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .tt-collage-container {
+    height: clamp(420px, calc(100svh - 195px), 490px) !important;
+  }
+
+  .tt-collage-mini-heading {
+    padding-top: 10px !important;
+    padding-bottom: 6px !important;
+  }
+
+  .tt-mini-image {
+    height: clamp(52px, 7vh, 64px) !important;
+  }
+}
+
+/* Mobile layout remains natural and scrollable */
+@media (max-width: 700px) {
+  .tt-collage-hero {
+    padding-top: 16px !important;
+    padding-bottom: 24px !important;
+  }
+
+  .tt-collage-container {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .tt-collage-left {
+    height: auto !important;
+    padding-top: 8px !important;
+    padding-bottom: 0 !important;
+  }
+
+  .tt-collage-mini-heading {
+    margin-top: 20px !important;
+    padding-top: 12px !important;
+  }
+
+  .tt-mini-image {
+    height: clamp(75px, 24vw, 110px) !important;
+  }
+
+  .tt-collage-right {
+    height: auto !important;
+    padding-top: 0 !important;
+  }
+
+  .tt-photo-mosaic {
+    height: clamp(340px, 100vw, 450px) !important;
+    max-height: none !important;
+  }
+}
+
+/* TIPTHEORY SERVICES HERO — FINAL LAYOUT */
+
+@media (min-width: 701px) {
+  /* Reduce top gap and keep both sides equal */
+  .tt-collage-hero {
+    padding-top: 8px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .tt-collage-container {
+    height: clamp(450px, calc(100svh - 205px), 520px) !important;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  /* Align content closer to the logo's left edge */
+  .tt-collage-left {
+    height: 100% !important;
+    min-height: 0 !important;
+    padding: 15px 0 15px 0 !important;
+    justify-content: center;
+  }
+
+  /* Remove the bottom service heading and cards */
+  .tt-collage-mini-heading,
+  .tt-collage-mini-cards {
+    display: none !important;
+  }
+
+  /* Image collage matches the content height */
+  .tt-collage-right {
+    height: 100% !important;
+    min-height: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .tt-photo-mosaic {
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+
+  /* Preserve readable typography */
+  .tt-collage-copy h1 {
+    font-size: clamp(52px, 5.2vw, 74px) !important;
+    line-height: 1.08 !important;
+  }
+
+  .tt-collage-copy > p {
+    font-size: 15px !important;
+    line-height: 1.9 !important;
+  }
+}
+
+/* Mobile: retain the stacked layout */
+@media (max-width: 700px) {
+  .tt-collage-hero {
+    padding-top: 16px !important;
+  }
+
+  .tt-collage-container {
+    height: auto !important;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .tt-collage-left {
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 8px 3px 0 !important;
+  }
+
+  .tt-collage-mini-heading,
+  .tt-collage-mini-cards {
+    display: none !important;
+  }
+
+  .tt-collage-right {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .tt-photo-mosaic {
+    height: clamp(340px, 100vw, 450px) !important;
+    max-height: none !important;
+  }
+}
+
+/* =============================================
+   TIPTHEORY SERVICES HERO — TYPOGRAPHY + LAYOUT
+   Strong final overrides
+   ============================================= */
+
+@media (min-width: 701px) {
+
+  /* Reduce top whitespace and balance both columns */
+  html body .tt-collage-hero {
+    padding-top: 8px !important;
+    padding-bottom: 12px !important;
+  }
+
+  html body .tt-collage-container {
+    width: 100% !important;
+    height: clamp(460px, calc(100svh - 190px), 535px) !important;
+    min-height: 0 !important;
+    grid-template-columns: 1fr 1fr !important;
+    align-items: stretch !important;
+    gap: 30px !important;
+  }
+
+  /* LEFT CONTENT — align closer to header logo's left edge */
+  html body .tt-collage-left {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    padding: 15px 0 15px 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+  }
+
+  html body .tt-collage-copy {
+    width: 100% !important;
+    max-width: 590px !important;
+  }
+
+  html body .tt-collage-eyebrow {
+    margin: 0 0 25px !important;
+    font-size: 11px !important;
+    line-height: 1.6 !important;
+    letter-spacing: 2px !important;
+  }
+
+  /* Large heading like Home 2 */
+  html body .tt-collage-copy h1 {
+    width: 100% !important;
+    max-width: 590px !important;
+    margin: 0 !important;
+    font-size: clamp(58px, 5.35vw, 76px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: -1.8px !important;
+    font-weight: 500 !important;
+  }
+
+  html body .tt-collage-copy h1 span {
+    font-size: inherit !important;
+    font-weight: 500 !important;
+  }
+
+  /* Readable paragraph */
+  html body .tt-collage-copy > p {
+    width: 100% !important;
+    max-width: 475px !important;
+    margin: 22px 0 27px !important;
+    font-size: 15px !important;
+    line-height: 1.9 !important;
+  }
+
+  /* Larger buttons */
+  html body .tt-collage-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 25px !important;
+  }
+
+  html body .tt-collage-primary {
+    min-height: 50px !important;
+    padding: 14px 21px !important;
+    font-size: 13px !important;
+    gap: 15px !important;
+  }
+
+  html body .tt-collage-secondary {
+    min-height: 48px !important;
+    font-size: 13px !important;
+  }
+
+  /* Keep the image collage exactly the same height */
+  html body .tt-collage-right {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    align-self: stretch !important;
+    padding: 0 13px 0 0 !important;
+  }
+
+  html body .tt-photo-mosaic {
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: 100% !important;
+  }
+
+  /* Hide the service mini cards for a cleaner layout */
+  html body .tt-collage-mini-heading,
+  html body .tt-collage-mini-cards {
+    display: none !important;
+  }
+}
+
+/* Tablet */
+@media (min-width: 701px) and (max-width: 1100px) {
+  html body .tt-collage-container {
+    gap: 22px !important;
+  }
+
+  html body .tt-collage-copy h1 {
+    font-size: clamp(47px, 5.5vw, 62px) !important;
+  }
+
+  html body .tt-collage-copy > p {
+    font-size: 14px !important;
+  }
+}
+
+/* Mobile — preserve the stacked design */
+@media (max-width: 700px) {
+  html body .tt-collage-hero {
+    padding: 16px 17px 25px !important;
+  }
+
+  html body .tt-collage-container {
+    height: auto !important;
+    min-height: 0 !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 22px !important;
+  }
+
+  html body .tt-collage-left {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 8px 3px 0 !important;
+  }
+
+  html body .tt-collage-copy {
+    max-width: none !important;
+  }
+
+  html body .tt-collage-eyebrow {
+    margin-bottom: 20px !important;
+    font-size: 10px !important;
+  }
+
+  html body .tt-collage-copy h1 {
+    font-size: clamp(44px, 9.5vw, 62px) !important;
+    line-height: 1.1 !important;
+  }
+
+  html body .tt-collage-copy > p {
+    margin: 19px 0 23px !important;
+    font-size: 14px !important;
+    line-height: 1.85 !important;
+  }
+
+  html body .tt-collage-primary,
+  html body .tt-collage-secondary {
+    font-size: 12px !important;
+  }
+
+  html body .tt-collage-mini-heading,
+  html body .tt-collage-mini-cards {
+    display: none !important;
+  }
+
+  html body .tt-collage-right {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 9px 0 0 !important;
+  }
+
+  html body .tt-photo-mosaic {
+    height: clamp(340px, 100vw, 450px) !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+}
+
+/* Align Services hero content with the header logo */
+@media (min-width: 701px) {
+  .tt-collage-hero {
+    padding-left: 5.9% !important;
+    padding-right: 5% !important;
+  }
+
+  .tt-collage-container {
+    width: 100% !important;
+    max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  .tt-collage-left {
+    padding-left: 8px !important;
+    padding-right: 0 !important;
+  }
+
+  .tt-collage-copy {
+    margin-left: 0 !important;
+  }
+}
+
+/* Keep mobile alignment unchanged */
+@media (max-width: 700px) {
+  .tt-collage-hero {
+    padding-left: 17px !important;
+    padding-right: 17px !important;
+  }
+
+  .tt-collage-left {
+    padding-left: 3px !important;
+  }
+}
+
+/* ==========================================
+   TIPTHEORY SERVICES HERO BUTTON STYLING
+   Matching Contact Hero Buttons
+   ========================================== */
+
+.tt-collage-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px !important;
+}
+
+/* PRIMARY BUTTON — FILLED BERRY */
+.tt-collage-hero .tt-collage-primary {
+  min-height: 48px !important;
+  padding: 13px 21px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 12px !important;
+
+  background: var(--tc-berry, #A84460) !important;
+  color: #FFFFFF !important;
+  border: 1px solid var(--tc-berry, #A84460) !important;
+  border-radius: 4px !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease !important;
+}
+
+/* SECONDARY BUTTON — OUTLINE */
+.tt-collage-hero .tt-collage-secondary {
+  min-height: 48px !important;
+  padding: 13px 21px !important;
+
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+
+  background: transparent !important;
+  color: var(--tc-berry, #A84460) !important;
+  border: 1px solid var(--tc-berry, #A84460) !important;
+  border-radius: 4px !important;
+
+  font-family: "Lora", Georgia, serif !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease !important;
+}
+
+/* BOTH BUTTONS — BERRY HOVER */
+.tt-collage-hero .tt-collage-primary:hover,
+.tt-collage-hero .tt-collage-secondary:hover {
+  background: var(--tc-berry, #A84460) !important;
+  color: #FFFFFF !important;
+  border-color: var(--tc-berry, #A84460) !important;
+  transform: translateY(-2px);
+}
+
+/* Keyboard accessibility */
+.tt-collage-hero .tt-collage-primary:focus-visible,
+.tt-collage-hero .tt-collage-secondary:focus-visible {
+  outline: 2px solid var(--tc-berry, #A84460);
+  outline-offset: 3px;
+}
+
+/* Mobile button sizing */
+@media (max-width: 700px) {
+  .tt-collage-actions {
+    gap: 10px !important;
+  }
+
+  .tt-collage-hero .tt-collage-primary,
+  .tt-collage-hero .tt-collage-secondary {
+    min-height: 44px !important;
+    padding: 11px 15px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* Hover: PRIMARY COLOUR — BLACK */
+
+html body .tt-collage-hero a.tt-collage-primary:hover,
+html body .tt-collage-hero a.tt-collage-secondary:hover {
+  background: #111111 !important;
+  background-color: #111111 !important;
+  color: #FFFFFF !important;
+  border-color: #111111 !important;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   TIPTHEORY — PREMIUM HERO ANIMATIONS
+   Layout and hero height remain unchanged
+   ========================================== */
+
+/* 1. Left content entrance */
+@keyframes ttHeroContentReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 26px, 0);
+    filter: blur(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+}
+
+/* 2. Heading reveals with a soft upward movement */
+@keyframes ttHeroHeadingReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0);
+    clip-path: inset(0 0 100% 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* 3. Right collage entrance */
+@keyframes ttHeroCollageReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(28px, 0, 0) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/* 4. Decorative orbit floats gently */
+@keyframes ttHeroOrbitFloat {
+  0%, 100% {
+    transform: rotate(-34deg) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: rotate(-30deg) translate3d(-8px, 9px, 0);
+  }
+}
+
+/* 5. Small image shine */
+@keyframes ttHeroImageShine {
+  from {
+    transform: translateX(-120%) skewX(-16deg);
+  }
+  to {
+    transform: translateX(180%) skewX(-16deg);
+  }
+}
+
+/* LEFT SIDE — staggered reveal */
+.tt-collage-left {
+  animation: ttHeroContentReveal 0.8s cubic-bezier(.2,.7,.2,1) both;
+}
+
+.tt-collage-eyebrow {
+  animation: ttHeroContentReveal 0.65s ease-out 0.12s both;
+}
+
+.tt-collage-copy h1 {
+  animation: ttHeroHeadingReveal 0.9s cubic-bezier(.2,.7,.2,1) 0.22s both;
+}
+
+.tt-collage-copy > p {
+  animation: ttHeroContentReveal 0.8s ease-out 0.4s both;
+}
+
+.tt-collage-actions {
+  animation: ttHeroContentReveal 0.75s ease-out 0.55s both;
+}
+
+/* RIGHT SIDE — elegant image entrance */
+.tt-collage-right {
+  animation: ttHeroCollageReveal 1s cubic-bezier(.16,1,.3,1) 0.18s both;
+}
+
+/* Image hover — subtle, smooth zoom */
+.tt-mosaic-tile {
+  isolation: isolate;
+}
+
+.tt-mosaic-tile img {
+  transition:
+    transform 0.8s cubic-bezier(.2,.7,.2,1),
+    filter 0.5s ease;
+  will-change: transform;
+}
+
+.tt-mosaic-tile:hover img {
+  transform: scale(1.075);
+  filter: saturate(1.08);
+}
+
+/* Gentle orbit movement */
+.tt-orbit-one {
+  animation: ttHeroOrbitFloat 9s ease-in-out infinite;
+}
+
+.tt-orbit-two {
+  animation: ttHeroOrbitFloat 11s ease-in-out infinite reverse;
+}
+
+/* Buttons — polished hover motion */
+.tt-collage-hero .tt-collage-primary,
+.tt-collage-hero .tt-collage-secondary {
+  transition:
+    background-color 0.28s ease,
+    color 0.28s ease,
+    border-color 0.28s ease,
+    transform 0.28s ease,
+    box-shadow 0.28s ease !important;
+}
+
+.tt-collage-hero .tt-collage-primary:hover,
+.tt-collage-hero .tt-collage-secondary:hover {
+  background-color: #111111 !important;
+  color: #FFFFFF !important;
+  border-color: #111111 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgb(17 17 17 / 12%);
+}
+
+/* Keyboard navigation */
+.tt-collage-hero a:focus-visible {
+  outline: 2px solid #A84460;
+  outline-offset: 4px;
+}
+
+/* Accessibility — disable movement when requested */
+@media (prefers-reduced-motion: reduce) {
+  .tt-collage-left,
+  .tt-collage-eyebrow,
+  .tt-collage-copy h1,
+  .tt-collage-copy > p,
+  .tt-collage-actions,
+  .tt-collage-right,
+  .tt-orbit-one,
+  .tt-orbit-two {
+    animation: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+    clip-path: none !important;
+    transform: none !important;
+  }
+
+  .tt-mosaic-tile img,
+  .tt-collage-hero a {
+    transition: none !important;
+  }
+}
+/* SERVICES HERO — BALANCED TYPOGRAPHY AND IMAGE SIZES */
+
+@media (min-width: 1025px) {
+  .tt-collage-hero {
+    height: auto !important;
+    max-height: none !important;
+    min-height: 0 !important;
+    padding-block: 45px !important;
+  }
+
+  .tt-collage-container {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    align-items: center !important;
+  }
+
+  .tt-collage-left,
+  .tt-collage-right {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .tt-collage-copy h1 {
+    font-size: clamp(48px, 5.2vw, 72px) !important;
+    line-height: 1.08 !important;
+    margin-block: 14px 20px !important;
+  }
+
+  .tt-collage-copy > p {
+    font-size: 16px !important;
+    line-height: 1.8 !important;
+    max-width: 480px !important;
+  }
+
+  .tt-photo-mosaic {
+    height: 460px !important;
+    max-height: none !important;
+  }
+}
+/* SIGNATURE MENU HEADING */
+html body .services-page .svc-section-intro h2 {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: clamp(42px, 4.7vw, 64px) !important;
+  line-height: 1.08 !important;
+  font-weight: 500 !important;
+  letter-spacing: -1.5px !important;
+}
+
+html body .services-page .svc-section-intro h2 em {
+  color: #A84460 !important;
+  font-style: italic !important;
+  font-weight: 400 !important;
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+  html body .services-page .svc-section-intro h2 {
+    font-size: clamp(36px, 8vw, 48px) !important;
+  }
+}
+/* CENTER THE SERVICE MENU TAGLINE, HEADING AND PARAGRAPH */
+
+html body .services-page .svc-section-intro {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  gap: 22px !important;
+}
+
+html body .services-page .svc-section-intro > div {
+  width: 100% !important;
+  text-align: center !important;
+}
+
+html body .services-page .svc-section-intro .svc-kicker {
+  display: block !important;
+  text-align: center !important;
+  margin-inline: auto !important;
+}
+
+html body .services-page .svc-section-intro h2 {
+  width: 100% !important;
+  text-align: center !important;
+  margin: 18px auto 0 !important;
+}
+
+html body .services-page .svc-section-intro > p {
+  width: 100% !important;
+  max-width: 600px !important;
+  margin: 0 auto !important;
+  text-align: center !important;
+}
+
+/* Mobile */
+@media (max-width: 680px) {
+  html body .services-page .svc-section-intro {
+    gap: 18px !important;
+  }
+
+  html body .services-page .svc-section-intro h2 {
+    font-size: clamp(36px, 8vw, 48px) !important;
+  }
+}
+/* =========================================
+   SERVICES FASHION SECTION
+   Full Background Image + Left Content
+========================================= */
+
+.svc-fashion {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 650px;
+  padding: 65px 6%;
+  isolation: isolate;
+  overflow: hidden;
+  background: #111111;
+  color: #FFFDFC;
+}
+
+/* Full-section background image */
+
+.svc-fashion .svc-fashion-image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.svc-fashion .svc-fashion-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Dark gradient keeps left-side text readable */
+
+.svc-fashion::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 8, 9, 0.97) 0%,
+      rgba(10, 8, 9, 0.91) 29%,
+      rgba(10, 8, 9, 0.70) 43%,
+      rgba(10, 8, 9, 0.20) 69%,
+      rgba(10, 8, 9, 0.08) 100%
+    );
+}
+
+/* Vertical label */
+
+.svc-fashion .svc-fashion-vertical {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%) rotate(180deg);
+  color: #FFFDFC;
+  font-family: "Lora", serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+/* Left-side text content */
+
+.svc-fashion .svc-fashion-copy {
+  position: relative;
+  z-index: 1;
+  width: min(510px, 48%);
+  margin-left: 25px;
+  padding: 25px 0;
+  color: #FFFDFC;
+}
+
+.svc-fashion .svc-kicker {
+  display: inline-block;
+  margin-bottom: 22px;
+  color: #E98BA2;
+  font-family: "Lora", serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.svc-fashion .svc-fashion-copy h2 {
+  margin: 0 0 22px;
+  color: #FFFDFC;
+  font-family: "Playfair Display", serif;
+  font-size: clamp(38px, 4.1vw, 59px);
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.svc-fashion .svc-fashion-copy h2 em {
+  color: #E98BA2;
+  font-weight: 500;
+}
+
+.svc-fashion .svc-fashion-copy > p {
+  max-width: 440px;
+  margin: 0 0 30px;
+  color: #E9DCDD;
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* Colour notes */
+
+.svc-fashion .svc-colour-notes {
+  display: grid;
+  gap: 20px;
+  margin: 0 0 30px;
+}
+
+.svc-fashion .svc-colour-notes > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.svc-fashion .svc-dot {
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(255, 255, 255, 0.55);
+  border-radius: 50%;
+}
+
+.svc-fashion .svc-dot-nude {
+  background: #E8BBAE;
+}
+
+.svc-fashion .svc-dot-berry {
+  background: #B83C60;
+}
+
+.svc-fashion .svc-dot-art {
+  background: linear-gradient(
+    135deg,
+    #F9D9D6 0 35%,
+    #B83C60 35% 65%,
+    #F9D9D6 65% 100%
+  );
+}
+
+.svc-fashion .svc-colour-notes b {
+  display: block;
+  margin-bottom: 5px;
+  color: #FFFDFC;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.svc-fashion .svc-colour-notes small {
+  display: block;
+  color: #E3CDCF;
+  font-family: "Lora", serif;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* Button */
+
+.svc-fashion .svc-btn-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 47px;
+  padding: 12px 21px;
+  border: 1px solid #E98BA2;
+  background: #A84460;
+  color: #FFFFFF;
+  font-family: "Lora", serif;
+  font-size: 12px;
+  text-decoration: none;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.svc-fashion .svc-btn-light:hover {
+  border-color: #E98BA2;
+  background: #C85C7B;
+  transform: translateY(-2px);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .svc-fashion {
+    min-height: 620px;
+    padding: 55px 5%;
+  }
+
+  .svc-fashion .svc-fashion-copy {
+    width: min(480px, 58%);
+    margin-left: 18px;
+  }
+
+  .svc-fashion .svc-fashion-copy h2 {
+    font-size: clamp(36px, 5vw, 48px);
+  }
+
+  .svc-fashion .svc-fashion-image img {
+    object-position: 58% center;
+  }
+
+  .svc-fashion::after {
+    background: linear-gradient(
+      90deg,
+      rgba(10, 8, 9, 0.97) 0%,
+      rgba(10, 8, 9, 0.89) 40%,
+      rgba(10, 8, 9, 0.45) 75%,
+      rgba(10, 8, 9, 0.18) 100%
+    );
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .svc-fashion {
+    min-height: 0;
+    padding: 65px 24px 55px;
+  }
+
+  .svc-fashion .svc-fashion-image img {
+    object-position: 60% center;
+  }
+
+  .svc-fashion::after {
+    background: linear-gradient(
+      90deg,
+      rgba(10, 8, 9, 0.94),
+      rgba(10, 8, 9, 0.78)
+    );
+  }
+
+  .svc-fashion .svc-fashion-vertical {
+    left: 7px;
+    font-size: 7px;
+  }
+
+  .svc-fashion .svc-fashion-copy {
+    width: 100%;
+    margin-left: 10px;
+    padding: 0;
+  }
+
+  .svc-fashion .svc-kicker {
+    margin-bottom: 18px;
+    font-size: 9px;
+  }
+
+  .svc-fashion .svc-fashion-copy h2 {
+    font-size: clamp(35px, 9vw, 45px);
+    line-height: 1.15;
+  }
+
+  .svc-fashion .svc-fashion-copy > p {
+    font-size: 12px;
+  }
+
+  .svc-fashion .svc-colour-notes {
+    gap: 18px;
+  }
+
+  .svc-fashion .svc-colour-notes b {
+    font-size: 16px;
+  }
+
+  .svc-fashion .svc-colour-notes small {
+    font-size: 10px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 380px) {
+  .svc-fashion {
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .svc-fashion .svc-fashion-copy {
+    margin-left: 8px;
+  }
+
+  .svc-fashion .svc-fashion-copy h2 {
+    font-size: 33px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .svc-fashion .svc-fashion-image img,
+  .svc-fashion .svc-btn-light {
+    transition: none;
+  }
+}
+/* Reduce svc-fashion section height */
+
+section.svc-fashion {
+  min-height: 0 !important;
+  height: 500px !important;
+  padding: 20px 6% !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
+}
+
+section.svc-fashion .svc-fashion-image {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+section.svc-fashion .svc-fashion-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 45% !important;
+}
+
+section.svc-fashion .svc-fashion-copy {
+  width: min(480px, 48%) !important;
+  padding: 0 !important;
+  margin-left: 25px !important;
+}
+
+section.svc-fashion .svc-fashion-copy h2 {
+  font-size: clamp(36px, 3.5vw, 48px) !important;
+  margin-bottom: 14px !important;
+}
+
+section.svc-fashion .svc-fashion-copy > p {
+  margin-bottom: 20px !important;
+}
+
+section.svc-fashion .svc-colour-notes {
+  gap: 13px !important;
+  margin-bottom: 20px !important;
+}
+
+section.svc-fashion .svc-dot {
+  width: 32px !important;
+  height: 32px !important;
+  flex-basis: 32px !important;
+}
+
+@media (max-width: 900px) {
+  section.svc-fashion {
+    height: 520px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  section.svc-fashion {
+    height: auto !important;
+    min-height: 650px !important;
+    padding: 35px 22px !important;
+  }
+
+  section.svc-fashion .svc-fashion-copy {
+    width: 100% !important;
+    margin-left: 8px !important;
+  }
+}
+/* Slightly increase top and bottom spacing */
+
+section.svc-fashion {
+  height: 540px !important;
+  padding-top: 35px !important;
+  padding-bottom: 35px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 900px) {
+  section.svc-fashion {
+    height: 550px !important;
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  section.svc-fashion {
+    height: auto !important;
+    min-height: 650px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+/* Create Your Look — Secondary to Primary Hover */
+
+.svc-fashion .svc-btn.svc-btn-light {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 16px !important;
+
+  width: fit-content !important;
+  min-width: 0 !important;
+  min-height: 44px !important;
+
+  padding: 12px 16px !important;
+
+  background: var(--blush, #F9ECEB) !important;
+  color: var(--black, #111111) !important;
+  border: 1px solid var(--blush, #F9ECEB) !important;
+  border-radius: 3px !important;
+
+  font-family: "Lora", serif !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease !important;
+}
+
+.svc-fashion .svc-btn.svc-btn-light i {
+  width: 15px !important;
+  height: 15px !important;
+  margin-left: 4px !important;
+}
+
+/* Hover: Primary colour */
+
+.svc-fashion .svc-btn.svc-btn-light:hover {
+  background: var(--black, #111111) !important;
+  color: #FFFFFF !important;
+  border-color: var(--black, #111111) !important;
+}
+/* Create Your Look — Secondary Berry Pink */
+
+section.svc-fashion a.svc-btn.svc-btn-light {
+  background: #A84460 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #A84460 !important;
+  width: fit-content !important;
+  min-width: 0 !important;
+  padding: 12px 16px !important;
+}
+
+/* Hover — Primary Black */
+
+section.svc-fashion a.svc-btn.svc-btn-light:hover {
+  background: #111111 !important;
+  color: #FFFFFF !important;
+  border-color: #111111 !important;
+}
+/* Increase space above the Fashion section */
+
+section.svc-fashion {
+  margin-top: 65px !important;
+}
+
+/* =========================================
+   TIPTHEORY — SERVICES NAIL DESIGN STUDIO
+   Fix: layout, SVG size, controls and spacing
+========================================= */
+
+#design-studio.td-studio {
+  display: block;
+  width: 100%;
+  padding: 90px 24px;
+  overflow: hidden;
+  background: var(--blush, #F9ECEB);
+  color: var(--ink, #111111);
+  box-sizing: border-box;
+}
+
+#design-studio *,
+#design-studio *::before,
+#design-studio *::after {
+  box-sizing: border-box;
+}
+
+#design-studio .td-studio-container {
+  width: min(1200px, 100%);
+  margin-inline: auto;
+}
+
+#design-studio .td-studio-heading {
+  max-width: 700px;
+  margin: 0 auto 48px;
+  text-align: center;
+}
+
+#design-studio .td-studio-eyebrow {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--berry, #A84460);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+#design-studio .td-studio-heading h2 {
+  margin: 0 0 16px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+#design-studio .td-studio-heading h2 em {
+  color: var(--berry, #A84460);
+}
+
+#design-studio .td-studio-heading p {
+  max-width: 560px;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+#design-studio .td-studio-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  align-items: stretch;
+  gap: 30px;
+}
+
+/* Preview panel */
+
+#design-studio .td-preview-panel {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid rgba(168, 68, 96, 0.18);
+  border-radius: 8px;
+  background: #FFFDFC;
+}
+
+#design-studio .td-preview-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 20px 22px;
+  border-bottom: 1px solid rgba(168, 68, 96, 0.13);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+#design-studio .td-live-dot {
+  color: var(--berry, #A84460);
+}
+
+#design-studio .td-preview-stage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 440px;
+  padding: 25px;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at center, #FFFFFF 0%, #F9ECEB 75%);
+}
+
+#design-studio .td-preview-orbit {
+  position: absolute;
+  width: 290px;
+  height: 290px;
+  border: 1px solid rgba(168, 68, 96, 0.14);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+#design-studio .td-orbit-two {
+  width: 225px;
+  height: 225px;
+  border-style: dashed;
+  opacity: 0.6;
+}
+
+#design-studio .td-nail-wrap {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 390px;
+  pointer-events: none;
+}
+
+#design-studio #tdNailSvg {
+  display: block;
+  width: auto;
+  height: 100%;
+  max-width: 100%;
+  max-height: 390px;
+  overflow: visible;
+}
+
+#design-studio .td-preview-note {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 15px;
+  border: 1px solid rgba(168, 68, 96, 0.15);
+  border-radius: 5px;
+  background: rgba(255, 253, 252, 0.94);
+}
+
+#design-studio .td-preview-note > span:not(.td-note-star) {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#design-studio .td-preview-note small {
+  font-size: 9px;
+  letter-spacing: 1px;
+  color: #78676A;
+}
+
+#design-studio .td-note-star {
+  color: var(--berry, #A84460);
+}
+
+#design-studio .td-preview-summary {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 18px 20px;
+  border-top: 1px solid rgba(168, 68, 96, 0.13);
+}
+
+#design-studio .td-summary-swatch {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 3px solid #FFFFFF;
+  outline: 1px solid rgba(168, 68, 96, 0.25);
+  border-radius: 50%;
+}
+
+#design-studio .td-summary-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+#design-studio .td-summary-text > span {
+  font-size: 12px;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+
+#design-studio .td-summary-text small {
+  color: #78676A;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+#design-studio .td-summary-arrow {
+  color: var(--berry, #A84460);
+  font-size: 22px;
+}
+
+/* Customisation controls */
+
+#design-studio .td-controls-panel {
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid rgba(168, 68, 96, 0.17);
+  border-radius: 8px;
+  background: #FFFDFC;
+}
+
+#design-studio .td-control-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+
+#design-studio .td-step-number {
+  padding-top: 3px;
+  color: var(--berry, #A84460);
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 18px;
+}
+
+#design-studio .td-control-heading h3 {
+  margin: 0 0 6px;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+#design-studio .td-control-heading p {
+  margin: 0;
+  color: #78676A;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+#design-studio .td-shape-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 8px;
+}
+
+#design-studio .td-shape-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 0;
+  min-height: 100px;
+  padding: 12px 4px;
+  border: 1px solid #E8D7D9;
+  border-radius: 5px;
+  background: #FFFFFF;
+  color: #302428;
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+#design-studio .td-shape-option:hover,
+#design-studio .td-shape-option.is-selected {
+  border-color: var(--berry, #A84460);
+  background: #F9ECEB;
+}
+
+#design-studio .td-mini-nail {
+  display: block;
+  width: 19px;
+  height: 42px;
+  border: 1px solid #A84460;
+  background: linear-gradient(135deg, #F8D4DF, #A84460);
+}
+
+#design-studio .almond-mini {
+  border-radius: 50% 50% 40% 40% / 35% 35% 65% 65%;
+}
+
+#design-studio .oval-mini {
+  border-radius: 50%;
+}
+
+#design-studio .square-mini {
+  border-radius: 4px 4px 1px 1px;
+}
+
+#design-studio .coffin-mini {
+  clip-path: polygon(20% 0, 80% 0, 100% 100%, 0 100%);
+}
+
+#design-studio .stiletto-mini {
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+
+#design-studio .td-control-divider {
+  height: 1px;
+  margin: 25px 0;
+  background: #EBDCDD;
+}
+
+#design-studio .td-colour-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 13px;
+}
+
+#design-studio .td-colour-option {
+  flex: 0 0 37px;
+  width: 37px;
+  height: 37px;
+  padding: 0;
+  border: 4px solid #FFFFFF;
+  outline: 1px solid #E2CFD3;
+  border-radius: 50%;
+  background: var(--swatch);
+  cursor: pointer;
+  transition: outline-color 0.2s ease, transform 0.2s ease;
+}
+
+#design-studio .td-colour-option:hover {
+  transform: scale(1.08);
+}
+
+#design-studio .td-colour-option.is-selected {
+  outline: 2px solid var(--berry, #A84460);
+}
+
+#design-studio .td-finish-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 9px;
+}
+
+#design-studio .td-finish-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #E8D7D9;
+  border-radius: 5px;
+  background: #FFFFFF;
+  color: #302428;
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+#design-studio .td-finish-option:hover,
+#design-studio .td-finish-option.is-selected {
+  border-color: var(--berry, #A84460);
+  background: #F9ECEB;
+}
+
+#design-studio .td-finish-visual {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #F7D0DB, #A84460);
+}
+
+#design-studio .td-finish-glossy {
+  background: linear-gradient(110deg, #D85A7B, #FFFFFF 38%, #E75480 55%, #A84460);
+}
+
+#design-studio .td-finish-matte {
+  background: #C97C92;
+}
+
+#design-studio .td-finish-chrome {
+  background: linear-gradient(100deg, #875B70, #FFFFFF 25%, #B78B9A 45%, #FFFFFF 60%, #785064);
+}
+
+#design-studio .td-finish-shimmer {
+  background:
+    radial-gradient(circle at 25% 35%, #FFFFFF 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 60%, #FFFFFF 0 2px, transparent 3px),
+    linear-gradient(135deg, #F4B7CB, #A84460);
+}
+
+#design-studio .td-finish-option > span:nth-child(2) {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+#design-studio .td-finish-option small {
+  color: #78676A;
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+#design-studio .td-booking-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid #EBDCDD;
+}
+
+#design-studio .td-booking-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+#design-studio .td-booking-summary small {
+  color: #78676A;
+  font-size: 10px;
+}
+
+#design-studio .td-booking-summary strong {
+  font-size: 12px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+#design-studio .td-book-look {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 1px solid var(--berry, #A84460);
+  border-radius: 4px;
+  background: var(--berry, #A84460);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+#design-studio .td-book-look:hover {
+  background: #111111;
+  border-color: #111111;
+  color: #FFFFFF;
+}
+
+#design-studio .td-preview-stage.td-preview-updated {
+  animation: tdPreviewUpdate 0.35s ease;
+}
+
+@keyframes tdPreviewUpdate {
+  0% { opacity: 0.75; }
+  100% { opacity: 1; }
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  #design-studio .td-studio-layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 650px;
+    margin-inline: auto;
+  }
+
+  #design-studio .td-preview-stage {
+    min-height: 390px;
+  }
+
+  #design-studio .td-controls-panel {
+    padding: 24px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  #design-studio.td-studio {
+    padding: 55px 15px;
+  }
+
+  #design-studio .td-studio-heading {
+    margin-bottom: 30px;
+  }
+
+  #design-studio .td-studio-heading h2 {
+    font-size: 34px;
+  }
+
+  #design-studio .td-preview-stage {
+    min-height: 330px;
+    padding: 15px;
+  }
+
+  #design-studio .td-nail-wrap {
+    height: 285px;
+  }
+
+  #design-studio #tdNailSvg {
+    max-height: 285px;
+  }
+
+  #design-studio .td-preview-orbit {
+    width: 225px;
+    height: 225px;
+  }
+
+  #design-studio .td-orbit-two {
+    width: 175px;
+    height: 175px;
+  }
+
+  #design-studio .td-preview-note {
+    right: 10px;
+    bottom: 10px;
+    padding: 9px 11px;
+  }
+
+  #design-studio .td-controls-panel {
+    padding: 18px 14px;
+  }
+
+  #design-studio .td-shape-grid {
+    gap: 5px;
+  }
+
+  #design-studio .td-shape-option {
+    font-size: 10px;
+    min-height: 88px;
+  }
+
+  #design-studio .td-finish-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  #design-studio .td-booking-bar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  #design-studio .td-book-look {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #design-studio *,
+  #design-studio *::before,
+  #design-studio *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+/* =====================================
+   SERVICES — DARK NAIL PREVIEW
+   Match Home 2 design
+===================================== */
+
+#design-studio .td-preview-panel {
+  background: #111111 !important;
+  border: 1px solid rgba(168, 68, 96, 0.35) !important;
+  color: #FFFDFC !important;
+}
+
+/* Preview header */
+
+#design-studio .td-preview-top {
+  background: #111111 !important;
+  color: #FFFDFC !important;
+  border-bottom: 1px solid rgba(168, 68, 96, 0.25) !important;
+}
+
+#design-studio .td-live-dot {
+  color: #E98BA2 !important;
+}
+
+/* Dark preview stage with berry glow */
+
+#design-studio .td-preview-stage {
+  position: relative !important;
+  min-height: 480px !important;
+  overflow: hidden !important;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(168, 68, 96, 0.28) 0%,
+      rgba(78, 30, 43, 0.20) 35%,
+      #111111 75%
+    ) !important;
+}
+
+/* Circular rings */
+
+#design-studio .td-preview-orbit {
+  width: 340px !important;
+  height: 340px !important;
+  border-color: rgba(233, 139, 162, 0.24) !important;
+}
+
+#design-studio .td-orbit-two {
+  width: 265px !important;
+  height: 265px !important;
+  border-color: rgba(233, 139, 162, 0.16) !important;
+}
+
+/* Nail preview size and position */
+
+#design-studio .td-nail-wrap {
+  height: 370px !important;
+}
+
+#design-studio #tdNailSvg {
+  height: 100% !important;
+  max-height: 370px !important;
+  filter: drop-shadow(0 0 20px rgba(233, 139, 162, 0.15));
+}
+
+/* Finish note */
+
+#design-studio .td-preview-note {
+  background: rgba(28, 23, 25, 0.92) !important;
+  border: 1px solid rgba(233, 139, 162, 0.22) !important;
+  color: #FFFDFC !important;
+}
+
+#design-studio .td-preview-note small {
+  color: #D7B8C0 !important;
+}
+
+#design-studio .td-note-star {
+  color: #E98BA2 !important;
+}
+
+/* Selection summary */
+
+#design-studio .td-preview-summary {
+  background: #1B191A !important;
+  border-top: 1px solid rgba(168, 68, 96, 0.3) !important;
+  color: #FFFDFC !important;
+}
+
+#design-studio .td-summary-text small {
+  color: #D7B8C0 !important;
+}
+
+#design-studio .td-summary-arrow {
+  color: #E98BA2 !important;
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  #design-studio .td-preview-stage {
+    min-height: 360px !important;
+  }
+
+  #design-studio .td-preview-orbit {
+    width: 255px !important;
+    height: 255px !important;
+  }
+
+  #design-studio .td-orbit-two {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
+  #design-studio .td-nail-wrap {
+    height: 280px !important;
+  }
+
+  #design-studio #tdNailSvg {
+    max-height: 280px !important;
+  }
+}
+/* Push the summary card to the bottom of the preview panel */
+
+#design-studio .td-preview-panel {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#design-studio .td-preview-panel .td-preview-stage {
+  flex: 1 0 auto !important;
+}
+
+#design-studio .td-preview-panel .td-preview-summary {
+  order: 3 !important;
+  margin: auto 24px 24px !important;
+  position: static !important;
+  flex-shrink: 0 !important;
+}
+
+/* Keep the preview panel tall enough */
+#design-studio .td-preview-panel {
+  min-height: 600px !important;
+}
+
+@media (max-width: 900px) {
+  #design-studio .td-preview-panel {
+    min-height: 0 !important;
+  }
+
+  #design-studio .td-preview-panel .td-preview-summary {
+    margin: 16px !important;
+  }
+}
+/* Reduce Overall Nail Design Studio Height */
+
+#design-studio.td-studio {
+  padding-top: 45px !important;
+  padding-bottom: 45px !important;
+}
+
+#design-studio .td-studio-heading {
+  margin-bottom: 28px !important;
+}
+
+#design-studio .td-studio-layout {
+  align-items: stretch !important;
+  gap: 24px !important;
+}
+
+/* Left preview panel */
+#design-studio .td-preview-panel {
+  min-height: 0 !important;
+}
+
+#design-studio .td-preview-stage {
+  min-height: 360px !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+}
+
+#design-studio .td-nail-wrap {
+  height: 300px !important;
+}
+
+#design-studio #tdNailSvg {
+  max-height: 300px !important;
+}
+
+/* Keep summary at the bottom */
+#design-studio .td-preview-summary {
+  margin: auto 18px 18px !important;
+  padding: 12px 14px !important;
+  min-height: 68px !important;
+}
+
+/* Right controls: reduce spacing */
+#design-studio .td-controls-panel {
+  padding: 22px !important;
+}
+
+#design-studio .td-control-divider {
+  margin: 17px 0 !important;
+}
+
+#design-studio .td-control-heading {
+  margin-bottom: 15px !important;
+}
+
+#design-studio .td-shape-option {
+  min-height: 82px !important;
+  padding: 8px 4px !important;
+}
+
+#design-studio .td-booking-bar {
+  margin-top: 20px !important;
+  padding-top: 16px !important;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  #design-studio.td-studio {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
+
+  #design-studio .td-preview-stage {
+    min-height: 330px !important;
+  }
+
+  #design-studio .td-nail-wrap {
+    height: 275px !important;
+  }
+
+  #design-studio #tdNailSvg {
+    max-height: 275px !important;
+  }
+}
+/* Increase space above Nail Design Studio */
+
+#design-studio.td-studio {
+  padding-top: 120px !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  #design-studio.td-studio {
+    padding-top: 90px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  #design-studio.td-studio {
+    padding-top: 65px !important;
+  }
+}
+/* Center tagline and heading */
+
+.svc-details-heading {
+  text-align: center !important;
+  width: 100% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.svc-details-heading .svc-kicker {
+  display: block !important;
+  text-align: center !important;
+}
+
+.svc-details-heading h2 {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+/* Details Section — Black + Berry Pink Headings */
+
+.svc-details-section h2,
+.svc-details-section h3 {
+  color: #111111 !important;
+}
+
+/* Highlight heading words in secondary colour */
+.svc-details-section h2 em,
+.svc-details-section h3 em {
+  color: #A84460 !important;
+  font-style: italic;
+}
+
+/* Card headings */
+.svc-details-section .svc-detail-card h3 {
+  color: #A84460 !important;
+}
+
+/* Hover effect */
+.svc-details-section .svc-detail-card:hover h3 {
+  color: #111111 !important;
+  transition: color 0.3s ease;
+}
+/* Details Card Headings — Always Secondary Berry Pink */
+
+.svc-details .svc-detail-card h3 {
+  color: #A84460 !important;
+  transition: none !important;
+}
+
+.svc-details .svc-detail-card:hover h3 {
+  color: #A84460 !important;
+}
+/* SERVICES — Match heading style used across other pages */
+
+.svc-details .svc-details-heading h2,
+.svc-details .svc-detail-card h3 {
+    color: var(--text) !important;
+    font-family: var(--serif);
+}
+
+/* Keep the highlighted heading words in berry pink */
+.svc-details .svc-details-heading h2 em {
+    color: var(--secondary) !important;
+}
+
+/* Card headings stay consistent on hover */
+.svc-details .svc-detail-card h3,
+.svc-details .svc-detail-card:hover h3 {
+    color: var(--text) !important;
+    transition: none;
+}
+
+/* Tagline uses the site's secondary colour */
+.svc-details .svc-kicker {
+    color: var(--secondary) !important;
+}
+/* SERVICES — Clear heading hierarchy */
+
+/* Main section heading */
+.svc-details .svc-details-heading h2 {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: clamp(44px, 5vw, 66px) !important;
+  font-weight: 500 !important;
+  line-height: 1.08 !important;
+  color: #111111 !important;
+  text-align: center !important;
+}
+
+.svc-details .svc-details-heading h2 em {
+  color: #A84460 !important;
+  font-style: italic !important;
+}
+
+/* Three service detail card headings */
+.svc-details .svc-detail-card h3,
+.svc-details .svc-detail-card:hover h3 {
+  font-family: "Playfair Display", Georgia, serif !important;
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  line-height: 1.3 !important;
+  color: #111111 !important;
+}
+
+/* Section tagline */
+.svc-details .svc-details-heading .svc-kicker {
+  font-size: 12px !important;
+  letter-spacing: 2px !important;
+  color: #A84460 !important;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .svc-details .svc-details-heading h2 {
+    font-size: 46px !important;
+  }
+
+  .svc-details .svc-detail-card h3 {
+    font-size: 22px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .svc-details .svc-details-heading h2 {
+    font-size: 36px !important;
+  }
+
+  .svc-details .svc-detail-card h3 {
+    font-size: 21px !important;
+  }
+}
+/* Services Details Card Headings — Secondary Colour */
+
+.svc-details .svc-detail-card h3,
+.svc-details .svc-detail-card:hover h3 {
+  color: #A84460 !important;
+}
+/* SERVICES PAGE — DISCUSS YOUR DESIGN BUTTON */
+.services-page .svc-story-copy a.svc-btn.svc-btn-dark,
+.services-page .svc-story-copy .svc-btn-dark {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    color: #FFFDFC !important;
+    border: 1px solid #A84460 !important;
+    box-shadow: none !important;
+    text-decoration: none !important;
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                color 0.3s ease !important;
+}
+
+/* Hover: Primary Black */
+.services-page .svc-story-copy a.svc-btn.svc-btn-dark:hover,
+.services-page .svc-story-copy .svc-btn-dark:hover {
+    background: #111111 !important;
+    background-color: #111111 !important;
+    color: #FFFDFC !important;
+    border-color: #111111 !important;
+}
+
+/* Keep arrow same colour as button text */
+.services-page .svc-story-copy .svc-btn-dark i {
+    color: inherit !important;
+}
+/* Services page — Final CTA button */
+.services-page .svc-final .svc-final-actions .svc-btn-dark {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    color: #FFFDFC !important;
+    border: 1px solid #A84460 !important;
+    transition: background-color 0.3s ease,
+                border-color 0.3s ease,
+                color 0.3s ease !important;
+}
+
+.services-page .svc-final .svc-final-actions .svc-btn-dark:hover {
+    background: #111111 !important;
+    background-color: #111111 !important;
+    color: #FFFDFC !important;
+    border-color: #111111 !important;
+}
+/* Increase the pink space ABOVE the Details section */
+html body .services-page > section.svc-details {
+  margin-top: 0 !important;
+  padding-top: 220px !important;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html body .services-page > section.svc-details {
+    padding-top: 150px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  html body .services-page > section.svc-details {
+    padding-top: 100px !important;
+  }
+}
+html body .services-page > section.svc-details {
+  padding-top: 100px !important;
+}
+/* Increase top padding of Saved on your phone section */
+html body main.services-page section.svc-story {
+  padding-top: 120px !important;
+  margin-top: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Keep both columns aligned */
+html body main.services-page section.svc-story .svc-story-image,
+html body main.services-page section.svc-story .svc-story-copy {
+  margin-top: 0 !important;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html body main.services-page section.svc-story {
+    padding-top: 80px !important;
+  }
+}
+/* =====================================
+   TIPTHEORY — LUXURY SPLIT CTA SECTION
+===================================== */
+
+html body main.services-page section.svc-final {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+
+  min-height: 440px;
+  padding: 85px 8% !important;
+  margin: 0 !important;
+
+  display: flex;
+  align-items: center;
+
+  background: #21191B !important;
+  border: 0 !important;
+}
+
+/* Remove the old decorative circles */
+html body main.services-page .svc-final-orbit {
+  display: none !important;
+}
+
+/* Split-layout content */
+html body main.services-page .svc-final-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto !important;
+
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 70px;
+  align-items: center;
+  text-align: left;
+}
+
+/* Eyebrow spans full width */
+html body main.services-page .svc-final-content > .svc-kicker {
+  grid-column: 1 / -1;
+  margin: 0 0 28px !important;
+
+  color: #E8A0B2 !important;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+/* Heading on the left */
+html body main.services-page .svc-final-content h2 {
+  grid-column: 1;
+  grid-row: 2 / 4;
+
+  margin: 0 !important;
+  max-width: 650px;
+
+  color: #FFF8F6 !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: clamp(43px, 5.2vw, 72px) !important;
+  font-weight: 400;
+  line-height: 1.13;
+  letter-spacing: -1.8px;
+}
+
+html body main.services-page .svc-final-content h2 em {
+  color: #E8A0B2 !important;
+  font-weight: 400;
+}
+
+/* Supporting message on the right */
+html body main.services-page .svc-final-content > p {
+  grid-column: 2;
+  grid-row: 2;
+
+  max-width: 350px;
+  margin: 0 0 28px !important;
+
+  color: #E5D4D7 !important;
+  font-family: "Lora", serif !important;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+/* Keep the CTA in the right column */
+html body main.services-page .svc-final-actions {
+  grid-column: 2;
+  grid-row: 3;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 !important;
+}
+
+/* Fine decorative divider */
+html body main.services-page section.svc-final::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+
+  left: 8%;
+  right: 8%;
+  bottom: 35px;
+
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    #A84460,
+    rgba(232, 160, 178, 0.12)
+  );
+}
+
+/* Side note */
+html body main.services-page .svc-final-side-note {
+  position: absolute;
+  right: 22px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  writing-mode: vertical-rl;
+  color: #E8A0B2;
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html body main.services-page section.svc-final {
+    padding: 65px 7% !important;
+  }
+
+  html body main.services-page .svc-final-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 22px;
+  }
+
+  html body main.services-page .svc-final-content > .svc-kicker {
+    grid-column: 1;
+    margin-bottom: 5px !important;
+  }
+
+  html body main.services-page .svc-final-content h2 {
+    grid-column: 1;
+    grid-row: auto;
+    font-size: clamp(42px, 8vw, 60px) !important;
+  }
+
+  html body main.services-page .svc-final-content > p {
+    grid-column: 1;
+    grid-row: auto;
+    margin: 0 !important;
+  }
+
+  html body main.services-page .svc-final-actions {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  html body main.services-page .svc-final-side-note {
+    display: none;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  html body main.services-page section.svc-final {
+    padding: 55px 22px !important;
+    min-height: auto;
+  }
+
+  html body main.services-page .svc-final-content h2 {
+    font-size: 39px !important;
+    letter-spacing: -0.8px;
+  }
+
+  html body main.services-page .svc-final-content > p {
+    font-size: 14px;
+  }
+
+  html body main.services-page section.svc-final::after {
+    bottom: 20px;
+  }
+}
+
+/* =====================================================
+   TIPTHEORY SERVICES — PREMIUM MOTION SYSTEM
+   Rose / Berry palette • Editorial • Responsive
+===================================================== */
+
+.services-page {
+  --motion-berry: #A84460;
+  --motion-rose: #E8A0B2;
+  --motion-cream: #FFF8F6;
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
+
+/* 1. Reveal system: activated by JavaScript */
+.services-page .motion-reveal {
+  opacity: 0;
+  transform: translate3d(0, 38px, 0);
+  transition:
+    opacity .9s var(--motion-ease),
+    transform .9s var(--motion-ease);
+  transition-delay: var(--motion-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.services-page .motion-reveal.is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.services-page .motion-reveal.from-left {
+  transform: translate3d(-48px, 0, 0);
+}
+
+.services-page .motion-reveal.from-right {
+  transform: translate3d(48px, 0, 0);
+}
+
+.services-page .motion-reveal.from-left.is-visible,
+.services-page .motion-reveal.from-right.is-visible {
+  transform: translate3d(0, 0, 0);
+}
+
+.services-page .motion-reveal.scale-in {
+  transform: translate3d(0, 22px, 0) scale(.96);
+}
+
+.services-page .motion-reveal.scale-in.is-visible {
+  transform: translate3d(0, 0, 0) scale(1);
+}
+
+/* 2. Hero: cinematic entrance */
+.tt-collage-copy > * {
+  animation: ttHeroTextIn 1s var(--motion-ease) both;
+}
+
+.tt-collage-copy > *:nth-child(1) { animation-delay: .12s; }
+.tt-collage-copy > *:nth-child(2) { animation-delay: .28s; }
+.tt-collage-copy > *:nth-child(3) { animation-delay: .44s; }
+.tt-collage-copy > *:nth-child(4) { animation-delay: .60s; }
+
+@keyframes ttHeroTextIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 30px, 0);
+    clip-path: inset(0 0 15% 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* 3. Hero collage: staggered image reveal */
+.tt-photo-mosaic .tt-mosaic-tile {
+  animation: ttImageReveal 1.15s var(--motion-ease) both;
+  transform-origin: center;
+}
+
+.tt-photo-mosaic .tt-tile-one   { animation-delay: .15s; }
+.tt-photo-mosaic .tt-tile-two   { animation-delay: .28s; }
+.tt-photo-mosaic .tt-tile-three { animation-delay: .40s; }
+.tt-photo-mosaic .tt-tile-four  { animation-delay: .52s; }
+.tt-photo-mosaic .tt-tile-five  { animation-delay: .64s; }
+.tt-photo-mosaic .tt-tile-six   { animation-delay: .76s; }
+.tt-photo-mosaic .tt-tile-seven { animation-delay: .88s; }
+
+@keyframes ttImageReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 32px, 0) scale(.94);
+    filter: blur(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0);
+  }
+}
+
+/* 4. Image hover: slow editorial zoom */
+.services-page .tt-mosaic-tile,
+.services-page .svc-menu-image,
+.services-page .svc-fashion-image,
+.services-page .svc-detail-photo,
+.services-page .svc-story-image {
+  overflow: hidden;
+}
+
+.services-page .tt-mosaic-tile img,
+.services-page .svc-menu-image img,
+.services-page .svc-fashion-image img,
+.services-page .svc-detail-photo img,
+.services-page .svc-story-image img {
+  transition:
+    transform 1.1s var(--motion-ease),
+    filter .8s ease;
+  will-change: transform;
+}
+
+.services-page .tt-mosaic-tile:hover img,
+.services-page .svc-menu-image:hover img,
+.services-page .svc-fashion-image:hover img,
+.services-page .svc-detail-photo:hover img,
+.services-page .svc-story-image:hover img {
+  transform: scale(1.075);
+  filter: saturate(1.08);
+}
+
+/* 5. Service menu: refined row interaction */
+.services-page .svc-menu-item {
+  transition:
+    background-color .5s ease,
+    border-color .5s ease,
+    transform .65s var(--motion-ease),
+    box-shadow .65s ease;
+}
+
+.services-page .svc-menu-item:hover {
+  transform: translate3d(0, -5px, 0);
+}
+
+.services-page .svc-menu-number {
+  transition: color .4s ease, transform .5s var(--motion-ease);
+}
+
+.services-page .svc-menu-item:hover .svc-menu-number {
+  color: var(--motion-berry);
+  transform: translateY(-4px);
+}
+
+.services-page .svc-menu-copy h3 {
+  transition: color .4s ease, letter-spacing .5s var(--motion-ease);
+}
+
+.services-page .svc-menu-item:hover .svc-menu-copy h3 {
+  color: var(--motion-berry);
+  letter-spacing: .3px;
+}
+
+/* 6. Round arrow button */
+.services-page .svc-round-link {
+  transition:
+    color .4s ease,
+    background-color .4s ease,
+    border-color .4s ease,
+    transform .55s var(--motion-ease);
+}
+
+.services-page .svc-round-link:hover {
+  transform: rotate(45deg) scale(1.08);
+  color: #fff;
+  background: var(--motion-berry);
+  border-color: var(--motion-berry);
+}
+
+.services-page .svc-round-link i {
+  transition: transform .45s var(--motion-ease);
+}
+
+.services-page .svc-round-link:hover i {
+  transform: rotate(-45deg);
+}
+
+/* 7. Fashion section: image and text move separately */
+.services-page .svc-fashion-image img {
+  transform-origin: center;
+}
+
+.services-page .svc-fashion-image:hover img {
+  transform: scale(1.045);
+}
+
+.services-page .svc-colour-notes > div {
+  transition: transform .45s var(--motion-ease);
+}
+
+.services-page .svc-colour-notes > div:hover {
+  transform: translateX(7px);
+}
+
+.services-page .svc-dot {
+  transition: transform .4s var(--motion-ease), box-shadow .4s ease;
+}
+
+.services-page .svc-colour-notes > div:hover .svc-dot {
+  transform: scale(1.18);
+  box-shadow: 0 0 0 5px rgb(168 68 96 / 12%);
+}
+
+/* 8. Nail design studio: elegant floating preview */
+.services-page .td-preview-panel {
+  transition:
+    transform .7s var(--motion-ease),
+    box-shadow .7s ease;
+}
+
+.services-page .td-preview-panel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 60px rgb(80 35 48 / 12%);
+}
+
+.services-page .td-nail-wrap {
+  animation: tdNailFloat 5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes tdNailFloat {
+  0%, 100% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-9px) rotate(1deg); }
+}
+
+.services-page .td-preview-orbit {
+  animation: tdOrbit 22s linear infinite;
+  transform-origin: center;
+}
+
+.services-page .td-orbit-two {
+  animation-direction: reverse;
+  animation-duration: 30s;
+}
+
+@keyframes tdOrbit {
+  to { transform: rotate(360deg); }
+}
+
+/* 9. Shape and finish choices */
+.services-page .td-shape-option,
+.services-page .td-finish-option {
+  transition:
+    transform .4s var(--motion-ease),
+    border-color .35s ease,
+    box-shadow .4s ease,
+    background-color .35s ease;
+}
+
+.services-page .td-shape-option:hover,
+.services-page .td-finish-option:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgb(168 68 96 / 12%);
+}
+
+.services-page .td-colour-option {
+  transition:
+    transform .4s var(--motion-ease),
+    box-shadow .4s ease;
+}
+
+.services-page .td-colour-option:hover {
+  transform: scale(1.14);
+  box-shadow: 0 0 0 5px rgb(168 68 96 / 13%);
+}
+
+.services-page .td-book-look {
+  transition:
+    transform .4s var(--motion-ease),
+    box-shadow .4s ease;
+}
+
+.services-page .td-book-look:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 26px rgb(168 68 96 / 22%);
+}
+
+/* 10. Detail cards: editorial lift */
+.services-page .svc-detail-card {
+  transition: transform .65s var(--motion-ease);
+}
+
+.services-page .svc-detail-card:hover {
+  transform: translateY(-8px);
+}
+
+.services-page .svc-detail-photo span {
+  transition:
+    background-color .4s ease,
+    color .4s ease,
+    transform .5s var(--motion-ease);
+}
+
+.services-page .svc-detail-card:hover .svc-detail-photo span {
+  background: var(--motion-berry);
+  color: white;
+  transform: translateY(-4px);
+}
+
+.services-page .svc-detail-card h3 {
+  transition: color .35s ease;
+}
+
+.services-page .svc-detail-card:hover h3 {
+  color: var(--motion-berry);
+}
+
+/* 11. Story badge: gentle movement */
+.services-page .svc-story-badge {
+  animation: svcBadgeFloat 5s ease-in-out infinite;
+}
+
+@keyframes svcBadgeFloat {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50% { transform: translateY(-7px) rotate(-2deg); }
+}
+
+/* 12. Buttons: premium press and arrow motion */
+.services-page .svc-btn,
+.services-page .tt-collage-primary,
+.services-page .tt-collage-secondary {
+  transition:
+    transform .4s var(--motion-ease),
+    box-shadow .4s ease,
+    background-color .35s ease,
+    color .35s ease,
+    border-color .35s ease;
+}
+
+.services-page .svc-btn:hover,
+.services-page .tt-collage-primary:hover,
+.services-page .tt-collage-secondary:hover {
+  transform: translateY(-3px);
+}
+
+.services-page .svc-btn i,
+.services-page .tt-collage-primary span {
+  display: inline-flex;
+  transition: transform .4s var(--motion-ease);
+}
+
+.services-page .svc-btn:hover i,
+.services-page .tt-collage-primary:hover span {
+  transform: translate(3px, -3px);
+}
+
+.services-page .svc-btn:active,
+.services-page .tt-collage-primary:active,
+.services-page .tt-collage-secondary:active {
+  transform: translateY(0) scale(.98);
+}
+
+/* 13. Final CTA: subtle ambient movement */
+.services-page .svc-final-orbit {
+  animation: svcFinalOrbit 28s linear infinite;
+  transform-origin: center;
+}
+
+.services-page .svc-orbit-two {
+  animation-direction: reverse;
+  animation-duration: 36s;
+}
+
+@keyframes svcFinalOrbit {
+  to { transform: rotate(360deg); }
+}
+
+.services-page .svc-final-content h2 em {
+  transition: letter-spacing .6s var(--motion-ease);
+}
+
+.services-page .svc-final:hover .svc-final-content h2 em {
+  letter-spacing: .5px;
+}
+
+/* 14. Keyboard accessibility */
+.services-page a:focus-visible,
+.services-page button:focus-visible {
+  outline: 2px solid var(--motion-berry);
+  outline-offset: 4px;
+}
+
+/* 15. Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .services-page *,
+  .services-page *::before,
+  .services-page *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+
+  .services-page .motion-reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+/* 16. Mobile: lighter motion for smoother scrolling */
+@media (max-width: 768px) {
+  .services-page .motion-reveal,
+  .services-page .motion-reveal.from-left,
+  .services-page .motion-reveal.from-right {
+    transform: translate3d(0, 22px, 0);
+    transition-duration: .7s;
+  }
+
+  .services-page .motion-reveal.is-visible,
+  .services-page .motion-reveal.from-left.is-visible,
+  .services-page .motion-reveal.from-right.is-visible {
+    transform: translate3d(0, 0, 0);
+  }
+
+  .services-page .td-nail-wrap {
+    animation-duration: 6s;
+  }
+}
+
+/* Premium paragraph reveal */
+.services-page .paragraph-reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  filter: blur(3px);
+  transition:
+    opacity 800ms ease,
+    transform 850ms cubic-bezier(.22, 1, .36, 1),
+    filter 800ms ease;
+  transition-delay: var(--motion-delay, 0ms);
+}
+
+.services-page .paragraph-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .services-page .paragraph-reveal {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+}
+/* ==========================================
+   TIPTHEORY SERVICES — DARK MODE FIX
+   Uses the actual body.dark class from app.js
+   ========================================== */
+
+body.dark .td-controls-panel {
+  background: #171316 !important;
+  color: #FFF5F7 !important;
+  border-color: rgba(216, 117, 141, 0.28) !important;
+}
+
+/* Step headings */
+body.dark .td-controls-panel .td-control-heading h3 {
+  color: #FFF5F7 !important;
+}
+
+/* Step numbers */
+body.dark .td-controls-panel .td-step-number {
+  color: #E87996 !important;
+}
+
+/* Descriptions under headings */
+body.dark .td-controls-panel .td-control-heading p {
+  color: #E4CED4 !important;
+}
+
+/* Nail shape cards */
+body.dark .td-controls-panel .td-shape-option {
+  background: #211B1F !important;
+  color: #FFF5F7 !important;
+  border-color: #59404A !important;
+}
+
+body.dark .td-controls-panel .td-shape-option span {
+  color: #FFF5F7 !important;
+}
+
+body.dark .td-controls-panel .td-shape-option.is-selected {
+  background: #342029 !important;
+  border-color: #E87996 !important;
+}
+
+/* Colour picker — keep the actual swatch colours */
+body.dark .td-controls-panel .td-colour-option {
+  border-color: #59404A !important;
+}
+
+/* Finish cards */
+body.dark .td-controls-panel .td-finish-option {
+  background: #211B1F !important;
+  color: #FFF5F7 !important;
+  border-color: #59404A !important;
+}
+
+body.dark .td-controls-panel .td-finish-option > span:not(.td-finish-visual),
+body.dark .td-controls-panel .td-finish-option small {
+  color: #FFF5F7 !important;
+}
+
+body.dark .td-controls-panel .td-finish-option.is-selected {
+  background: #342029 !important;
+  border-color: #E87996 !important;
+}
+
+/* Dividers */
+body.dark .td-controls-panel .td-control-divider {
+  border-color: rgba(216, 117, 141, 0.28) !important;
+}
+
+/* Booking summary */
+body.dark .td-controls-panel .td-booking-bar {
+  background: #211B1F !important;
+  color: #FFF5F7 !important;
+  border-color: #59404A !important;
+}
+
+body.dark .td-controls-panel .td-booking-summary small,
+body.dark .td-controls-panel .td-booking-summary strong {
+  color: #FFF5F7 !important;
+}
+
+/* Keep button text readable */
+body.dark .td-controls-panel .td-book-look {
+  color: #FFFFFF !important;
+}
+
+/* Preview panel text */
+body.dark .td-preview-panel,
+body.dark .td-preview-panel .td-preview-top,
+body.dark .td-preview-panel .td-preview-note,
+body.dark .td-preview-panel .td-preview-summary {
+  color: #FFF5F7 !important;
+}
+
+body.dark .td-preview-panel .td-preview-note small,
+body.dark .td-preview-panel .td-summary-description {
+  color: #E4CED4 !important;
+}
+/* ============================================
+   TIPTHEORY — NAIL STUDIO TEXT VISIBILITY FIX
+   ============================================ */
+
+/* Studio section heading */
+body .td-studio-heading h2 {
+  color: #26151C !important;
+  font-size: clamp(34px, 3.5vw, 46px) !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+}
+
+/* Main studio description */
+body .td-studio-heading > p {
+  color: #654B53 !important;
+  font-family: "Lora", serif !important;
+  font-size: 17px !important;
+  line-height: 1.9 !important;
+  font-weight: 500 !important;
+}
+
+/* Each step heading */
+body .td-controls-panel .td-control-heading h3 {
+  color: #28161D !important;
+  font-family: "Playfair Display", serif !important;
+  font-size: 25px !important;
+  line-height: 1.35 !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+/* Step number 01, 02, 03 */
+body .td-controls-panel .td-step-number {
+  color: #B73558 !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+/* Sub-paragraphs under each heading */
+body .td-controls-panel .td-control-heading p {
+  color: #634750 !important;
+  font-family: "Lora", serif !important;
+  font-size: 15px !important;
+  line-height: 1.8 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+  margin-top: 7px !important;
+}
+
+/* Shape names */
+body .td-shape-option > span:not(.td-mini-nail) {
+  color: #3E2931 !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+}
+
+/* Finish names */
+body .td-finish-option > span:not(.td-finish-visual) {
+  color: #38232B !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  opacity: 1 !important;
+}
+
+/* Finish descriptions: Mirror shine, Soft elegance etc. */
+body .td-finish-option small {
+  color: #70545E !important;
+  font-size: 12px !important;
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
+  opacity: 1 !important;
+}
+
+/* Preview panel text */
+body .td-preview-top,
+body .td-preview-note > span,
+body .td-summary-text > span {
+  color: #FFF5F7 !important;
+  opacity: 1 !important;
+}
+
+body .td-preview-note small,
+body .td-summary-text small {
+  color: #E9C6D0 !important;
+  font-size: 11px !important;
+  opacity: 1 !important;
+}
+
+/* ============================================
+   DARK MODE — CLEAR, BRIGHT TEXT
+   ============================================ */
+
+body.dark .td-studio-heading h2,
+body.dark .td-controls-panel .td-control-heading h3 {
+  color: #FFF5F7 !important;
+}
+
+body.dark .td-studio-heading > p,
+body.dark .td-controls-panel .td-control-heading p {
+  color: #F0DDE3 !important;
+  opacity: 1 !important;
+}
+
+body.dark .td-controls-panel .td-step-number {
+  color: #FF91AC !important;
+}
+
+body.dark .td-shape-option > span:not(.td-mini-nail),
+body.dark .td-finish-option > span:not(.td-finish-visual) {
+  color: #FFF5F7 !important;
+}
+
+body.dark .td-finish-option small {
+  color: #EBD5DD !important;
+}
+
+/* Mobile readability */
+@media (max-width: 600px) {
+  body .td-controls-panel .td-control-heading h3 {
+    font-size: 22px !important;
+  }
+
+  body .td-controls-panel .td-control-heading p {
+    font-size: 14px !important;
+    line-height: 1.8 !important;
+  }
+
+  body .td-studio-heading > p {
+    font-size: 15px !important;
+  }
+}
+/* SERVICES DESIGN STUDIO — MATCH HEADING FONT */
+
+body .td-controls-panel .td-control-heading h3 {
+  font-family: "Playfair Display", serif !important;
+  font-size: 25px !important;
+  font-weight: 600 !important;
+  font-style: normal !important;
+  letter-spacing: -0.7px !important;
+  line-height: 1.3 !important;
+  color: #28161D !important;
+}
+
+/* Main studio heading */
+body .td-studio-heading h2 {
+  font-family: "Playfair Display", serif !important;
+  font-weight: 600 !important;
+  letter-spacing: -1px !important;
+}
+
+/* Dark mode headings */
+body.dark .td-controls-panel .td-control-heading h3,
+body.dark .td-studio-heading h2 {
+  color: #FFF5F7 !important;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  body .td-controls-panel .td-control-heading h3 {
+    font-size: 22px !important;
+  }
+}
+
+/* BOOK YOUR VISIT — PRIMARY */
+html body .tt-collage-hero a.tt-collage-primary,
+html body .tt-collage-hero a.tt-collage-primary:link,
+html body .tt-collage-hero a.tt-collage-primary:visited {
+    background: #530F0E !important;
+    background-color: #530F0E !important;
+    border: 1px solid #530F0E !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+    transition: all 0.3s ease !important;
+}
+
+/* BOOK YOUR VISIT — HOVER SECONDARY */
+html body .tt-collage-hero a.tt-collage-primary:hover,
+html body .tt-collage-hero a.tt-collage-primary:focus-visible {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* EXPLORE SERVICES — DEFAULT */
+html body .tt-collage-hero a.tt-collage-secondary {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: 1px solid #A84460 !important;
+    color: #A84460 !important;
+    -webkit-text-fill-color: #A84460 !important;
+    transition: all 0.3s ease !important;
+}
+
+/* EXPLORE SERVICES — HOVER */
+html body .tt-collage-hero a.tt-collage-secondary:hover,
+html body .tt-collage-hero a.tt-collage-secondary:focus-visible {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* ==========================================
+   THE SIGNATURE MENU — 3 CARDS PER ROW
+   ========================================== */
+
+html body .services-page #service-menu .svc-menu-list {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  gap: 28px !important;
+  align-items: stretch !important;
+  border: none !important;
+}
+
+/* Individual service card */
+html body .services-page #service-menu .svc-menu-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 16px !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  padding: 22px !important;
+  margin: 0 !important;
+  position: relative !important;
+  border: 1px solid rgba(168, 68, 96, 0.25) !important;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.55) !important;
+  box-shadow: 0 8px 24px rgba(83, 15, 14, 0.05) !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease,
+              border-color 0.25s ease !important;
+}
+
+html body .services-page #service-menu .svc-menu-item:hover {
+  transform: translateY(-5px) !important;
+  border-color: #A84460 !important;
+  box-shadow: 0 14px 30px rgba(83, 15, 14, 0.10) !important;
+}
+
+/* Number label */
+html body .services-page #service-menu .svc-menu-number {
+  position: static !important;
+  display: block !important;
+  color: #A84460 !important;
+  font-size: 13px !important;
+  letter-spacing: 0.12em !important;
+}
+
+/* Equal image sizes */
+html body .services-page #service-menu .svc-menu-image,
+html body .services-page #service-menu .svc-menu-image.svc-image-offset {
+  width: 100% !important;
+  height: 190px !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  border-radius: 10px !important;
+  transform: none !important;
+  border: none !important;
+}
+
+html body .services-page #service-menu .svc-menu-image img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Text content */
+html body .services-page #service-menu .svc-menu-copy {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  flex: 1 1 auto !important;
+  min-width: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+html body .services-page #service-menu .svc-menu-copy h3 {
+  margin: 8px 0 10px !important;
+  font-size: clamp(21px, 1.8vw, 27px) !important;
+  line-height: 1.25 !important;
+  color: #530F0E !important;
+}
+
+html body .services-page #service-menu .svc-menu-copy p {
+  margin: 0 0 16px !important;
+  line-height: 1.7 !important;
+  flex: 1 1 auto !important;
+}
+
+/* Tags */
+html body .services-page #service-menu .svc-tags {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin-top: auto !important;
+}
+
+/* Booking arrow button */
+html body .services-page #service-menu .svc-round-link {
+  position: static !important;
+  align-self: flex-end !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 42px !important;
+  height: 42px !important;
+  min-width: 42px !important;
+  margin-top: 2px !important;
+  border: 1px solid #A84460 !important;
+  border-radius: 50% !important;
+  color: #A84460 !important;
+  background: transparent !important;
+  transition: all 0.25s ease !important;
+}
+
+html body .services-page #service-menu .svc-round-link:hover {
+  background: #A84460 !important;
+  color: #FFFFFF !important;
+  border-color: #A84460 !important;
+}
+
+html body .services-page #service-menu .svc-round-link svg {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+/* Footnote spans all 3 columns */
+html body .services-page #service-menu .svc-menu-footnote {
+  margin-top: 28px !important;
+}
+
+/* Tablet: 2 cards per row */
+@media (max-width: 900px) {
+  html body .services-page #service-menu .svc-menu-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+  }
+
+  html body .services-page #service-menu .svc-menu-image,
+  html body .services-page #service-menu .svc-menu-image.svc-image-offset {
+    height: 180px !important;
+  }
+}
+
+/* Mobile: 1 card per row */
+@media (max-width: 600px) {
+  html body .services-page #service-menu .svc-menu-list {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+
+  html body .services-page #service-menu .svc-menu-item {
+    padding: 18px !important;
+  }
+
+  html body .services-page #service-menu .svc-menu-image,
+  html body .services-page #service-menu .svc-menu-image.svc-image-offset {
+    height: 220px !important;
+  }
+}
+
+/* Dark mode */
+html[data-theme="dark"] body .services-page #service-menu .svc-menu-item,
+body.dark-mode .services-page #service-menu .svc-menu-item {
+  background: #21191D !important;
+  border-color: rgba(168, 68, 96, 0.35) !important;
+}
+
+html[data-theme="dark"] body .services-page #service-menu .svc-menu-copy h3,
+body.dark-mode .services-page #service-menu .svc-menu-copy h3 {
+  color: #F7EDEF !important;
+}
+/* REMOVE BLACK OVERLAY — SERVICES FASHION SECTION */
+html body main.services-page section.svc-fashion::after {
+    content: none !important;
+    display: none !important;
+    background: none !important;
+    opacity: 0 !important;
+}
+
+/* Remove dark background behind the image */
+html body main.services-page section.svc-fashion {
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Keep the original image bright and clear */
+html body main.services-page section.svc-fashion .svc-fashion-image {
+    z-index: 0 !important;
+}
+
+html body main.services-page section.svc-fashion .svc-fashion-image img {
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+/* Keep text and button visible above the image */
+html body main.services-page section.svc-fashion .svc-fashion-copy {
+    z-index: 2 !important;
+}
+
+html body main.services-page section.svc-fashion .svc-fashion-vertical {
+    z-index: 2 !important;
+}
+/* FIX: SERVICES FASHION HERO TEXT VISIBILITY */
+html body .svc-fashion .svc-fashion-copy,
+html body .svc-fashion .svc-fashion-copy * {
+    text-shadow: none !important;
+}
+
+/* Main heading */
+html body .svc-fashion .svc-fashion-copy h1 {
+    color: #530F0E !important;
+    font-size: clamp(36px, 3.5vw, 50px) !important;
+    line-height: 1.08 !important;
+}
+
+/* Heading highlight */
+html body .svc-fashion .svc-fashion-copy h1 span,
+html body .svc-fashion .svc-fashion-copy h1 em {
+    color: #A84460 !important;
+}
+
+/* Paragraph and all feature text */
+html body .svc-fashion .svc-fashion-copy p,
+html body .svc-fashion .svc-fashion-copy h2,
+html body .svc-fashion .svc-fashion-copy h3,
+html body .svc-fashion .svc-fashion-copy h4,
+html body .svc-fashion .svc-fashion-copy li,
+html body .svc-fashion .svc-fashion-copy small,
+html body .svc-fashion .svc-fashion-copy strong,
+html body .svc-fashion .svc-fashion-copy b,
+html body .svc-fashion .svc-fashion-copy label {
+    color: #530F0E !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #530F0E !important;
+}
+
+/* Small top label */
+html body .svc-fashion .svc-fashion-copy .svc-kicker {
+    color: #A84460 !important;
+    -webkit-text-fill-color: #A84460 !important;
+    opacity: 1 !important;
+}
+
+/* Keep buttons visible */
+html body .svc-fashion .svc-fashion-copy a {
+    opacity: 1 !important;
+}
+
+/* No black overlay */
+html body .svc-fashion::before,
+html body .svc-fashion::after {
+    content: none !important;
+    display: none !important;
+}
+
+
+
+
+
+
+/* SERVICES PAGE — MAKE ALL H2 HEADINGS EQUAL */
+body.page-services h2,
+body.page-services main h2,
+body.page-services section h2 {
+    font-size: 42px !important;
+    line-height: 1.15 !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.8px !important;
+}
+
+/* Keep italic headings the same size */
+body.page-services h2 em,
+body.page-services h2 span {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    body.page-services h2,
+    body.page-services main h2,
+    body.page-services section h2 {
+        font-size: 36px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+    body.page-services h2,
+    body.page-services main h2,
+    body.page-services section h2 {
+        font-size: 30px !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.4px !important;
+    }
+}
+
+
+
+
+/* ==========================================
+   SERVICES — INCREASE THESE TWO H2 HEADINGS
+========================================== */
+
+html body .svc-fashion .svc-fashion-copy h2,
+html body .svc-your-look h2,
+html body .svc-look h2,
+html body section h2.svc-look-heading,
+html body section h2.svc-your-look-heading {
+    font-size: 48px !important;
+    line-height: 1.15 !important;
+    font-weight: 500 !important;
+    letter-spacing: -1px !important;
+}
+
+/* Keep highlighted text the same size */
+html body .svc-fashion .svc-fashion-copy h2 em,
+html body .svc-your-look h2 em,
+html body .svc-look h2 em,
+html body section h2.svc-look-heading em,
+html body section h2.svc-your-look-heading em {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    html body .svc-fashion .svc-fashion-copy h2,
+    html body .svc-your-look h2,
+    html body .svc-look h2,
+    html body section h2.svc-look-heading,
+    html body section h2.svc-your-look-heading {
+        font-size: 40px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    html body .svc-fashion .svc-fashion-copy h2,
+    html body .svc-your-look h2,
+    html body .svc-look h2,
+    html body section h2.svc-look-heading,
+    html body section h2.svc-your-look-heading {
+        font-size: 34px !important;
+        line-height: 1.2 !important;
+        letter-spacing: -0.4px !important;
+    }
+}
+
+/* ==========================================
+   TIPTHEORY — A LITTLE MORE YOU
+   Content LEFT | Image RIGHT
+========================================== */
+
+html body section.svc-fashion {
+    display: grid !important;
+    grid-template-columns: minmax(0, 0.88fr) minmax(0, 1.12fr) !important;
+    grid-template-areas: "copy image" !important;
+    align-items: center !important;
+    gap: clamp(30px, 5vw, 70px) !important;
+    width: 100% !important;
+    min-height: 620px !important;
+    padding: 65px clamp(28px, 6vw, 90px) !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    background: #fffaf8 !important;
+}
+
+/* LEFT — CONTENT */
+html body section.svc-fashion .svc-fashion-copy {
+    grid-area: copy !important;
+    position: relative !important;
+    z-index: 2 !important;
+    width: 100% !important;
+    max-width: 540px !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+}
+
+/* Small label */
+html body section.svc-fashion .svc-kicker {
+    display: block !important;
+    color: #A84460 !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    letter-spacing: 2.5px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Heading — two balanced lines */
+html body section.svc-fashion .svc-fashion-copy h2 {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 22px !important;
+    padding: 0 !important;
+    color: #530F0E !important;
+    font-size: clamp(36px, 3.5vw, 50px) !important;
+    font-weight: 500 !important;
+    line-height: 1.12 !important;
+    letter-spacing: -1.2px !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+}
+
+html body section.svc-fashion .svc-fashion-copy h2 em {
+    display: inline !important;
+    color: #A84460 !important;
+    font-size: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Description */
+html body section.svc-fashion .svc-fashion-copy > p {
+    width: 100% !important;
+    max-width: 470px !important;
+    margin: 0 0 24px !important;
+    color: #765F5D !important;
+    font-size: 15px !important;
+    line-height: 1.85 !important;
+}
+
+/* Colour notes */
+html body section.svc-fashion .svc-colour-notes {
+    display: grid !important;
+    gap: 18px !important;
+    width: 100% !important;
+    margin: 0 0 28px !important;
+}
+
+html body section.svc-fashion .svc-colour-notes > div {
+    display: flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+}
+
+html body section.svc-fashion .svc-colour-notes b {
+    display: block !important;
+    color: #530F0E !important;
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+    margin-bottom: 4px !important;
+}
+
+html body section.svc-fashion .svc-colour-notes small {
+    display: block !important;
+    color: #765F5D !important;
+    font-size: 12px !important;
+    line-height: 1.6 !important;
+}
+
+html body section.svc-fashion .svc-dot {
+    flex: 0 0 34px !important;
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 50% !important;
+}
+
+/* Button */
+html body section.svc-fashion .svc-fashion-copy a.svc-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    min-height: 48px !important;
+    padding: 14px 22px !important;
+    background: #530F0E !important;
+    border: 1px solid #530F0E !important;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+    transition: background-color .25s ease, border-color .25s ease !important;
+}
+
+html body section.svc-fashion .svc-fashion-copy a.svc-btn:hover {
+    background: #A84460 !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+}
+
+/* RIGHT — IMAGE */
+html body section.svc-fashion .svc-fashion-image {
+    grid-area: image !important;
+    position: relative !important;
+    width: 100% !important;
+    height: clamp(420px, 42vw, 570px) !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+    border-radius: 2px !important;
+}
+
+html body section.svc-fashion .svc-fashion-image img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    filter: none !important;
+}
+
+/* Vertical image label */
+html body section.svc-fashion .svc-fashion-vertical {
+    position: absolute !important;
+    left: 15px !important;
+    bottom: 20px !important;
+    writing-mode: vertical-rl !important;
+    transform: rotate(180deg) !important;
+    color: #FFFFFF !important;
+    font-size: 10px !important;
+    letter-spacing: 2px !important;
+    text-shadow: 0 1px 6px rgba(0,0,0,.6) !important;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+    html body section.svc-fashion {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+        gap: 28px !important;
+        padding: 45px 28px !important;
+        min-height: 0 !important;
+    }
+
+    html body section.svc-fashion .svc-fashion-copy h2 {
+        font-size: clamp(32px, 4vw, 40px) !important;
+        letter-spacing: -.7px !important;
+    }
+
+    html body section.svc-fashion .svc-fashion-image {
+        height: 460px !important;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+    html body section.svc-fashion {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 30px !important;
+        padding: 38px 22px !important;
+    }
+
+    html body section.svc-fashion .svc-fashion-copy {
+        order: 1 !important;
+        max-width: none !important;
+    }
+
+    html body section.svc-fashion .svc-fashion-image {
+        order: 2 !important;
+        height: 340px !important;
+    }
+
+    html body section.svc-fashion .svc-fashion-copy h2 {
+        font-size: clamp(34px, 8vw, 42px) !important;
+        line-height: 1.15 !important;
+        letter-spacing: -.5px !important;
+    }
+}
+
+/* FIX — A LITTLE MORE YOU SECTION SPACING */
+
+html body section.svc-fashion {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
+    gap: clamp(28px, 4vw, 55px) !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 42px clamp(28px, 5.7vw, 78px) !important;
+    overflow: visible !important;
+    align-items: center !important;
+}
+
+/* Keep the full content visible */
+html body section.svc-fashion .svc-fashion-copy {
+    align-self: center !important;
+    padding: 15px 0 !important;
+    max-width: 540px !important;
+}
+
+/* Heading */
+html body section.svc-fashion .svc-fashion-copy h2 {
+    font-size: clamp(38px, 3.3vw, 48px) !important;
+    line-height: 1.12 !important;
+    margin-bottom: 20px !important;
+}
+
+/* Content spacing */
+html body section.svc-fashion .svc-fashion-copy > p {
+    margin-bottom: 22px !important;
+    line-height: 1.8 !important;
+}
+
+html body section.svc-fashion .svc-colour-notes {
+    gap: 15px !important;
+    margin-bottom: 24px !important;
+}
+
+/* Ensure button is fully visible */
+html body section.svc-fashion .svc-fashion-copy a.svc-btn {
+    position: relative !important;
+    z-index: 3 !important;
+    margin-bottom: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+/* Image — less aggressive crop */
+html body section.svc-fashion .svc-fashion-image {
+    height: clamp(440px, 42vw, 550px) !important;
+    min-height: 0 !important;
+    overflow: hidden !important;
+}
+
+html body section.svc-fashion .svc-fashion-image img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: 58% center !important;
+}
+
+/* Smaller laptop screens */
+@media (min-width: 651px) and (max-width: 1100px) {
+    html body section.svc-fashion {
+        padding: 35px 28px !important;
+        gap: 25px !important;
+    }
+
+    html body section.svc-fashion .svc-fashion-copy h2 {
+        font-size: 38px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 650px) {
+    html body section.svc-fashion {
+        display: flex !important;
+        flex-direction: column !important;
+        padding: 30px 22px !important;
+        gap: 28px !important;
+    }
+
+    html body section.svc-fashion .svc-fashion-image {
+        width: 100% !important;
+        height: 340px !important;
+    }
+
+    html body section.svc-fashion .svc-fashion-copy {
+        width: 100% !important;
+        max-width: none !important;
+    }
+}
+/* A LITTLE MORE YOU — INCREASE HEADING SIZE */
+html body section.svc-fashion .svc-fashion-copy h2 {
+    font-size: clamp(46px, 4vw, 56px) !important;
+    line-height: 1.12 !important;
+    letter-spacing: -1.2px !important;
+    max-width: 650px !important;
+    margin-bottom: 22px !important;
+}
+
+/* Keep both heading lines equally sized */
+html body section.svc-fashion .svc-fashion-copy h2 em {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    html body section.svc-fashion .svc-fashion-copy h2 {
+        font-size: 42px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    html body section.svc-fashion .svc-fashion-copy h2 {
+        font-size: 36px !important;
+        line-height: 1.15 !important;
+    }
+}
+/* A WHOLE MOOD — SECONDARY COLOUR */
+html body section.svc-fashion .svc-fashion-copy h2 em {
+    color: #A84460 !important;
+    -webkit-text-fill-color: #A84460 !important;
+}
+/* YOUR LOOK, YOUR WAY — LARGER HEADING */
+html body section h2:has(+ p) {
+    font-size: 56px !important;
+    line-height: 1.12 !important;
+    letter-spacing: -1.2px !important;
+}
+
+/* Keep highlighted words the same size */
+html body section h2:has(+ p) em,
+html body section h2:has(+ p) span {
+    font-size: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    html body section h2:has(+ p) {
+        font-size: 44px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    html body section h2:has(+ p) {
+        font-size: 36px !important;
+    }
+}
+
+
+
+
+
+
+/* ==========================================
+   DARK MODE — A LITTLE MORE YOU
+========================================== */
+
+html.dark body .svc-fashion-copy,
+html.dark body .svc-fashion-copy h2,
+html.dark body .svc-fashion-copy p,
+html.dark body .svc-fashion-copy .svc-colour-notes b,
+html.dark body .svc-fashion-copy .svc-colour-notes small,
+body.dark-mode .svc-fashion-copy,
+body.dark-mode .svc-fashion-copy h2,
+body.dark-mode .svc-fashion-copy p,
+body.dark-mode .svc-fashion-copy .svc-colour-notes b,
+body.dark-mode .svc-fashion-copy .svc-colour-notes small,
+body[data-theme="dark"] .svc-fashion-copy,
+body[data-theme="dark"] .svc-fashion-copy h2,
+body[data-theme="dark"] .svc-fashion-copy p,
+body[data-theme="dark"] .svc-fashion-copy .svc-colour-notes b,
+body[data-theme="dark"] .svc-fashion-copy .svc-colour-notes small,
+html[data-theme="dark"] .svc-fashion-copy,
+html[data-theme="dark"] .svc-fashion-copy h2,
+html[data-theme="dark"] .svc-fashion-copy p,
+html[data-theme="dark"] .svc-fashion-copy .svc-colour-notes b,
+html[data-theme="dark"] .svc-fashion-copy .svc-colour-notes small {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Keep highlighted heading in secondary colour */
+html.dark body .svc-fashion-copy h2 em,
+body.dark-mode .svc-fashion-copy h2 em,
+body[data-theme="dark"] .svc-fashion-copy h2 em,
+html[data-theme="dark"] .svc-fashion-copy h2 em {
+    color: #E75480 !important;
+    -webkit-text-fill-color: #E75480 !important;
+}
+
+/* Kicker remains accent pink */
+html.dark body .svc-fashion-copy .svc-kicker,
+body.dark-mode .svc-fashion-copy .svc-kicker,
+body[data-theme="dark"] .svc-fashion-copy .svc-kicker,
+html[data-theme="dark"] .svc-fashion-copy .svc-kicker {
+    color: #E75480 !important;
+    -webkit-text-fill-color: #E75480 !important;
+}
+
+
+
+
+
+/* ==========================================
+   THE DETAILS MATTER — DARK MODE
+========================================== */
+
+html.dark body .svc-details h2,
+html.dark body .svc-details p,
+html.dark body .svc-details .svc-details-intro,
+body.dark-mode .svc-details h2,
+body.dark-mode .svc-details p,
+body.dark-mode .svc-details .svc-details-intro,
+body[data-theme="dark"] .svc-details h2,
+body[data-theme="dark"] .svc-details p,
+body[data-theme="dark"] .svc-details .svc-details-intro,
+html[data-theme="dark"] .svc-details h2,
+html[data-theme="dark"] .svc-details p,
+html[data-theme="dark"] .svc-details .svc-details-intro {
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Highlighted heading phrase */
+html.dark body .svc-details h2 em,
+body.dark-mode .svc-details h2 em,
+body[data-theme="dark"] .svc-details h2 em,
+html[data-theme="dark"] .svc-details h2 em {
+    color: #E75480 !important;
+    -webkit-text-fill-color: #E75480 !important;
+}
+
+/* Three equal-height cards */
+.svc-details .svc-details-grid,
+.svc-details .detail-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 22px !important;
+    align-items: stretch !important;
+}
+
+.svc-details .svc-details-card,
+.svc-details .detail-card {
+    display: flex !important;
+    flex-direction: column !important;
+    height: 100% !important;
+    min-height: 340px !important;
+    box-sizing: border-box !important;
+}
+
+.svc-details .svc-details-card img,
+.svc-details .detail-card img {
+    display: block !important;
+    width: 100% !important;
+    height: 150px !important;
+    margin-top: auto !important;
+    object-fit: cover !important;
+}
+
+@media (max-width: 800px) {
+    .svc-details .svc-details-grid,
+    .svc-details .detail-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .svc-details .svc-details-grid,
+    .svc-details .detail-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   SERVICES PAGE — PREMIUM CTA REDESIGN
+========================================== */
+
+.svc-cta {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 44px;
+  padding: clamp(36px, 6vw, 76px);
+  margin: 50px auto;
+  max-width: 1400px;
+  border: 1px solid rgba(168, 68, 96, 0.45);
+  border-radius: 4px;
+  background: #1b1518;
+  color: #ffffff;
+}
+
+.svc-cta::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 360px;
+  height: 360px;
+  right: 30%;
+  top: -210px;
+  border: 1px solid rgba(168, 68, 96, 0.5);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 35px rgba(168, 68, 96, 0.06),
+    0 0 0 75px rgba(168, 68, 96, 0.04);
+}
+
+.svc-cta-content {
+  position: relative;
+  z-index: 1;
+}
+
+.svc-cta .svc-kicker {
+  display: block;
+  margin-bottom: 18px;
+  color: #E88AA5;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.svc-cta h2 {
+  max-width: 720px;
+  margin: 0 0 20px;
+  color: #ffffff;
+  font-size: clamp(36px, 4.2vw, 60px);
+  line-height: 1.08;
+  font-weight: 500;
+}
+
+.svc-cta h2 em {
+  color: #E88AA5;
+}
+
+.svc-cta p {
+  max-width: 580px;
+  color: #e5d9dd;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.svc-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.svc-cta-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 24px;
+  border: 1px solid #A84460;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.svc-cta-actions .svc-cta-primary {
+  background: #530F0E;
+  border-color: #530F0E;
+  color: #ffffff;
+}
+
+.svc-cta-actions .svc-cta-primary:hover {
+  background: #A84460;
+  border-color: #A84460;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.svc-cta-actions .svc-cta-secondary {
+  background: transparent;
+  color: #ffffff;
+  border-color: #E88AA5;
+}
+
+.svc-cta-actions .svc-cta-secondary:hover {
+  background: #A84460;
+  border-color: #A84460;
+  color: #ffffff;
+}
+
+.svc-cta-image {
+  position: relative;
+  min-height: 340px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.svc-cta-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 340px;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .svc-cta {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    margin: 28px 16px;
+    padding: 30px 22px;
+  }
+
+  .svc-cta-image,
+  .svc-cta-image img {
+    min-height: 240px;
+  }
+
+  .svc-cta h2 {
+    font-size: clamp(32px, 8vw, 44px);
+  }
+}
+
+
+
+
+
+
+
+/* SHORT PREMIUM CTA */
+.svc-quick-cta {
+  --primary: #530F0E;
+  --secondary: #A84460;
+
+  padding: 48px 22px;
+  margin: 0;
+  text-align: center;
+  background: var(--primary);
+  color: #fff;
+}
+
+.svc-quick-cta-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.svc-quick-cta-content > span {
+  display: block;
+  margin-bottom: 12px;
+  color: #F0A1B6;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.svc-quick-cta h2 {
+  margin: 0 0 12px;
+  color: #fff;
+  font-size: clamp(32px, 4vw, 46px);
+  line-height: 1.2;
+}
+
+.svc-quick-cta h2 em {
+  color: #E88AA5;
+}
+
+.svc-quick-cta p {
+  margin: 0 0 22px;
+  color: #F5E4E8;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.svc-quick-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 22px;
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.svc-quick-cta-btn:hover {
+  background: #fff;
+  border-color: #fff;
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.svc-quick-cta-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+html[data-theme="dark"] .svc-quick-cta,
+body.dark-mode .svc-quick-cta,
+body[data-theme="dark"] .svc-quick-cta {
+  background: #160F11;
+}
+
+@media (max-width: 600px) {
+  .svc-quick-cta {
+    padding: 36px 18px;
+  }
+
+  .svc-quick-cta h2 {
+    font-size: 32px;
+  }
+
+  .svc-quick-cta p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+/* =========================================
+   FORCE LIGHT MODE — SERVICES CTA
+========================================= */
+
+html body section.svc-quick-cta {
+    background: #FFF5F5 !important;
+    background-color: #FFF5F5 !important;
+    margin-bottom: 40px !important;
+    padding: 45px 22px 55px !important;
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* Heading visible */
+html body section.svc-quick-cta .svc-quick-cta-content h2 {
+    color: #530F0E !important;
+    -webkit-text-fill-color: #530F0E !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+html body section.svc-quick-cta .svc-quick-cta-content h2 em {
+    color: #A84460 !important;
+    -webkit-text-fill-color: #A84460 !important;
+}
+
+/* Description */
+html body section.svc-quick-cta .svc-quick-cta-content p {
+    color: #654448 !important;
+    -webkit-text-fill-color: #654448 !important;
+    opacity: 1 !important;
+}
+
+/* Kicker */
+html body section.svc-quick-cta .svc-quick-cta-content > span {
+    color: #A84460 !important;
+    -webkit-text-fill-color: #A84460 !important;
+}
+
+/* Primary button */
+html body section.svc-quick-cta a.svc-quick-cta-btn {
+    background: #530F0E !important;
+    background-color: #530F0E !important;
+    border: 1px solid #530F0E !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+html body section.svc-quick-cta a.svc-quick-cta-btn:hover {
+    background: #A84460 !important;
+    background-color: #A84460 !important;
+    border-color: #A84460 !important;
+    color: #FFFFFF !important;
+    -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Space between CTA and footer */
+html body section.svc-quick-cta {
+    margin-bottom: 40px !important;
+}
+
+html body section.svc-quick-cta + footer,
+html body section.svc-quick-cta + .site-footer,
+html body section.svc-quick-cta + .footer,
+html body section.svc-quick-cta ~ footer {
+    margin-top: 0 !important;
+}
+
+
+
+
+/* ==========================================
+   THE DETAILS MATTER — EQUAL HEIGHT CARDS
+========================================== */
+
+.svc-details .svc-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  gap: 28px;
+}
+
+.svc-details .svc-detail-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.svc-details .svc-detail-photo {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.svc-details .svc-detail-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.svc-details .svc-detail-card h3 {
+  margin: 22px 0 10px;
+  line-height: 1.4;
+}
+
+.svc-details .svc-detail-card p {
+  margin: 0;
+  line-height: 1.8;
+  flex-grow: 1;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .svc-details .svc-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .svc-details .svc-detail-photo {
+    height: 250px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .svc-details .svc-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .svc-details .svc-detail-photo {
+    height: 260px;
+  }
+
+  .svc-details .svc-detail-card h3 {
+    margin-top: 18px;
+  }
+}
+
+
+/* ==========================================
+   TIPTHEORY SERVICES — FINAL CTA FIX
+   Light mode + visible heading + footer gap
+========================================== */
+
+/* LIGHT MODE */
+html body main.services-page section.svc-final {
+  background: #FFF8F6 !important;
+  background-color: #FFF8F6 !important;
+  margin-bottom: 24px !important;
+  color: #530F0E !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* CTA heading */
+html body main.services-page section.svc-final .svc-final-content h2 {
+  color: #530F0E !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: none !important;
+}
+
+/* Highlighted words */
+html body main.services-page section.svc-final .svc-final-content h2 em {
+  color: #A84460 !important;
+}
+
+/* Supporting paragraph */
+html body main.services-page section.svc-final .svc-final-content > p {
+  color: #655256 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Small label */
+html body main.services-page section.svc-final .svc-final-content > .svc-kicker {
+  color: #A84460 !important;
+}
+
+/* Decorative divider */
+html body main.services-page section.svc-final::after {
+  background: linear-gradient(
+    90deg,
+    #A84460,
+    rgba(168, 68, 96, 0.12)
+  ) !important;
+}
+
+/* Side note */
+html body main.services-page section.svc-final .svc-final-side-note {
+  color: #A84460 !important;
+}
+
+/* CTA button */
+html body main.services-page section.svc-final .svc-final-actions .svc-btn-dark {
+  background: #A84460 !important;
+  border: 1px solid #A84460 !important;
+  color: #FFFFFF !important;
+}
+
+html body main.services-page section.svc-final .svc-final-actions .svc-btn-dark:hover {
+  background: #530F0E !important;
+  border-color: #530F0E !important;
+  color: #FFFFFF !important;
+}
+
+/* DARK MODE — retain dark CTA */
+html.dark body main.services-page section.svc-final,
+body.dark main.services-page section.svc-final,
+html[data-theme="dark"] body main.services-page section.svc-final,
+body[data-theme="dark"] main.services-page section.svc-final {
+  background: #21191B !important;
+  background-color: #21191B !important;
+  color: #FFF8F6 !important;
+}
+
+html.dark body main.services-page section.svc-final .svc-final-content h2,
+body.dark main.services-page section.svc-final .svc-final-content h2,
+html[data-theme="dark"] body main.services-page section.svc-final .svc-final-content h2,
+body[data-theme="dark"] main.services-page section.svc-final .svc-final-content h2 {
+  color: #FFF8F6 !important;
+}
+
+html.dark body main.services-page section.svc-final .svc-final-content h2 em,
+body.dark main.services-page section.svc-final .svc-final-content h2 em,
+html[data-theme="dark"] body main.services-page section.svc-final .svc-final-content h2 em,
+body[data-theme="dark"] main.services-page section.svc-final .svc-final-content h2 em {
+  color: #E8A0B2 !important;
+}
+
+html.dark body main.services-page section.svc-final .svc-final-content > p,
+body.dark main.services-page section.svc-final .svc-final-content > p,
+html[data-theme="dark"] body main.services-page section.svc-final .svc-final-content > p,
+body[data-theme="dark"] main.services-page section.svc-final .svc-final-content > p {
+  color: #E5D4D7 !important;
+}
+
+/* Mobile footer spacing */
+@media (max-width: 600px) {
+  html body main.services-page section.svc-final {
+    margin-bottom: 16px !important;
+  }
+}
+
+
+
+
+
+/* ==========================================
+   SERVICES — THREE EQUAL HEIGHT DETAIL CARDS
+========================================== */
+
+html body main.services-page .svc-detail-grid {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  align-items: stretch !important;
+  gap: 28px !important;
+}
+
+html body main.services-page .svc-detail-grid .svc-detail-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-self: stretch !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+/* Equal image height */
+html body main.services-page .svc-detail-grid .svc-detail-photo {
+  width: 100% !important;
+  height: 280px !important;
+  min-height: 280px !important;
+  flex-shrink: 0 !important;
+  overflow: hidden !important;
+}
+
+html body main.services-page .svc-detail-grid .svc-detail-photo img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+}
+
+/* Equal heading spacing */
+html body main.services-page .svc-detail-grid .svc-detail-card h3 {
+  margin: 22px 0 10px !important;
+  min-height: 32px !important;
+  line-height: 1.3 !important;
+}
+
+/* Description alignment */
+html body main.services-page .svc-detail-grid .svc-detail-card p {
+  margin: 0 !important;
+  line-height: 1.7 !important;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  html body main.services-page .svc-detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+  }
+
+  html body main.services-page .svc-detail-grid .svc-detail-photo {
+    height: 250px !important;
+    min-height: 250px !important;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  html body main.services-page .svc-detail-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  html body main.services-page .svc-detail-grid .svc-detail-photo {
+    height: 240px !important;
+    min-height: 240px !important;
+  }
+
+  html body main.services-page .svc-detail-grid .svc-detail-card h3 {
+    min-height: 0 !important;
+  }
+}
+/* =========================================
+   SERVICES QUICK CTA — DARK MODE
+========================================= */
+
+html body.dark .svc-quick-cta,
+html body[data-theme="dark"] .svc-quick-cta,
+html[data-theme="dark"] body .svc-quick-cta {
+  background: #171416 !important;
+  color: #FFF5F7 !important;
+  border-color: rgba(232, 160, 178, 0.2) !important;
+}
+
+/* Small heading */
+html body.dark .svc-quick-cta-content > span,
+html body[data-theme="dark"] .svc-quick-cta-content > span,
+html[data-theme="dark"] body .svc-quick-cta-content > span {
+  color: #E75480 !important;
+}
+
+/* Main heading */
+html body.dark .svc-quick-cta-content h2,
+html body[data-theme="dark"] .svc-quick-cta-content h2,
+html[data-theme="dark"] body .svc-quick-cta-content h2 {
+  color: #FFF5F7 !important;
+}
+
+/* Highlighted words */
+html body.dark .svc-quick-cta-content h2 em,
+html body[data-theme="dark"] .svc-quick-cta-content h2 em,
+html[data-theme="dark"] body .svc-quick-cta-content h2 em {
+  color: #E75480 !important;
+}
+
+/* Description */
+html body.dark .svc-quick-cta-content p,
+html body[data-theme="dark"] .svc-quick-cta-content p,
+html[data-theme="dark"] body .svc-quick-cta-content p {
+  color: #D8C8CE !important;
+}
+
+/* Appointment button */
+html body.dark .svc-quick-cta-btn,
+html body[data-theme="dark"] .svc-quick-cta-btn,
+html[data-theme="dark"] body .svc-quick-cta-btn {
+  background: #E75480 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #E75480 !important;
+}
+
+/* Berry pink hover */
+html body.dark .svc-quick-cta-btn:hover,
+html body[data-theme="dark"] .svc-quick-cta-btn:hover,
+html[data-theme="dark"] body .svc-quick-cta-btn:hover {
+  background: #C93665 !important;
+  border-color: #C93665 !important;
+  color: #FFFFFF !important;
+}
+/* FIX: Services Quick CTA dark mode text */
+
+body.dark .svc-quick-cta .svc-quick-cta-content h2,
+body.dark .svc-quick-cta .svc-quick-cta-content h2:not(em),
+body[data-theme="dark"] .svc-quick-cta .svc-quick-cta-content h2,
+html[data-theme="dark"] .svc-quick-cta .svc-quick-cta-content h2 {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+body.dark .svc-quick-cta .svc-quick-cta-content h2 em,
+body[data-theme="dark"] .svc-quick-cta .svc-quick-cta-content h2 em,
+html[data-theme="dark"] .svc-quick-cta .svc-quick-cta-content h2 em {
+  color: #E75480 !important;
+  -webkit-text-fill-color: #E75480 !important;
+}
+
+body.dark .svc-quick-cta .svc-quick-cta-content p,
+body[data-theme="dark"] .svc-quick-cta .svc-quick-cta-content p,
+html[data-theme="dark"] .svc-quick-cta .svc-quick-cta-content p {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+/* =====================================
+   SERVICES CTA BUTTON — HEADER STYLE
+===================================== */
+
+.svc-quick-cta .svc-quick-cta-btn {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 15px 28px !important;
+
+  background: var(--primary-color, #650909) !important;
+  color: #FFFFFF !important;
+
+  border: 1px solid var(--primary-color, #650909) !important;
+  border-radius: 7px !important;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+
+  text-decoration: none !important;
+  box-shadow: none !important;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Icon alignment */
+.svc-quick-cta .svc-quick-cta-btn i,
+.svc-quick-cta .svc-quick-cta-btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+/* Berry pink hover — matching your website buttons */
+.svc-quick-cta .svc-quick-cta-btn:hover {
+  background: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+body.dark .svc-quick-cta .svc-quick-cta-btn,
+body[data-theme="dark"] .svc-quick-cta .svc-quick-cta-btn,
+html[data-theme="dark"] .svc-quick-cta .svc-quick-cta-btn {
+  background: #650909 !important;
+  border-color: #650909 !important;
+  color: #FFFFFF !important;
+  border-radius: 7px !important;
+}
+
+body.dark .svc-quick-cta .svc-quick-cta-btn:hover,
+body[data-theme="dark"] .svc-quick-cta .svc-quick-cta-btn:hover,
+html[data-theme="dark"] .svc-quick-cta .svc-quick-cta-btn:hover {
+  background: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #FFFFFF !important;
+}
+/* =========================================
+   BRING YOUR INSPIRATION — BUTTON STYLE
+========================================= */
+
+.svc-story .svc-story-copy a.svc-btn.svc-btn-dark {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+
+  padding: 15px 28px !important;
+
+  background: #650909 !important;
+  color: #FFFFFF !important;
+
+  border: 1px solid #650909 !important;
+  border-radius: 7px !important;
+
+  font-family: inherit !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+
+  text-decoration: none !important;
+  box-shadow: none !important;
+  transform: none;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease !important;
+}
+
+/* Icon alignment */
+.svc-story .svc-story-copy a.svc-btn.svc-btn-dark svg {
+  width: 16px !important;
+  height: 16px !important;
+  flex-shrink: 0;
+}
+
+/* Berry pink hover */
+.svc-story .svc-story-copy a.svc-btn.svc-btn-dark:hover {
+  background: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+body.dark .svc-story .svc-story-copy a.svc-btn.svc-btn-dark,
+body[data-theme="dark"] .svc-story .svc-story-copy a.svc-btn.svc-btn-dark,
+html[data-theme="dark"] .svc-story .svc-story-copy a.svc-btn.svc-btn-dark {
+  background: #650909 !important;
+  border-color: #650909 !important;
+  color: #FFFFFF !important;
+  border-radius: 7px !important;
+}
+
+/* Dark mode hover */
+body.dark .svc-story .svc-story-copy a.svc-btn.svc-btn-dark:hover,
+body[data-theme="dark"] .svc-story .svc-story-copy a.svc-btn.svc-btn-dark:hover,
+html[data-theme="dark"] .svc-story .svc-story-copy a.svc-btn.svc-btn-dark:hover {
+  background: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #FFFFFF !important;
+}
+/* =========================================
+   TIPTHEORY SERVICES — MATCH BUTTON STYLES
+========================================= */
+
+/* 1. Create your look button */
+.services-page .svc-fashion-copy .svc-btn.svc-btn-light,
+.services-page .svc-fashion-copy .svc-btn.svc-btn-light:visited,
+
+/* 2. Book This Look button */
+.services-page .td-booking-bar .td-book-look {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 10px !important;
+
+  padding: 15px 28px !important;
+
+  background: #650909 !important;
+  color: #FFFFFF !important;
+
+  border: 1px solid #650909 !important;
+  border-radius: 7px !important;
+
+  font-family: inherit !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.4 !important;
+
+  text-decoration: none !important;
+  box-shadow: none !important;
+  transform: none;
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease !important;
+}
+
+/* Create your look — hover */
+.services-page .svc-fashion-copy .svc-btn.svc-btn-light:hover,
+
+/* Book This Look — hover */
+.services-page .td-booking-bar .td-book-look:hover {
+  background: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #FFFFFF !important;
+  transform: translateY(-2px);
+}
+
+/* Arrow icon alignment */
+.services-page .svc-fashion-copy .svc-btn svg {
+  width: 16px !important;
+  height: 16px !important;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark .services-page .svc-fashion-copy .svc-btn.svc-btn-light,
+body.dark .services-page .td-booking-bar .td-book-look,
+body[data-theme="dark"] .services-page .svc-fashion-copy .svc-btn.svc-btn-light,
+body[data-theme="dark"] .services-page .td-booking-bar .td-book-look,
+html[data-theme="dark"] .services-page .svc-fashion-copy .svc-btn.svc-btn-light,
+html[data-theme="dark"] .services-page .td-booking-bar .td-book-look {
+  background: #650909 !important;
+  border-color: #650909 !important;
+  color: #FFFFFF !important;
+}
+
+body.dark .services-page .svc-fashion-copy .svc-btn.svc-btn-light:hover,
+body.dark .services-page .td-booking-bar .td-book-look:hover,
+body[data-theme="dark"] .services-page .svc-fashion-copy .svc-btn.svc-btn-light:hover,
+body[data-theme="dark"] .services-page .td-booking-bar .td-book-look:hover,
+html[data-theme="dark"] .services-page .svc-fashion-copy .svc-btn.svc-btn-light:hover,
+html[data-theme="dark"] .services-page .td-booking-bar .td-book-look:hover {
+  background: #E75480 !important;
+  border-color: #E75480 !important;
+  color: #FFFFFF !important;
+}
+/* A LITTLE MORE YOU — DARK MODE TEXT FIX */
+
+body.dark .services-page .svc-fashion-copy h2,
+body[data-theme="dark"] .services-page .svc-fashion-copy h2,
+html[data-theme="dark"] .services-page .svc-fashion-copy h2 {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Keep highlighted heading berry pink */
+body.dark .services-page .svc-fashion-copy h2 em,
+body[data-theme="dark"] .services-page .svc-fashion-copy h2 em,
+html[data-theme="dark"] .services-page .svc-fashion-copy h2 em {
+  color: #E75480 !important;
+  -webkit-text-fill-color: #E75480 !important;
+}
+
+/* Paragraph text */
+body.dark .services-page .svc-fashion-copy > p,
+body[data-theme="dark"] .services-page .svc-fashion-copy > p,
+html[data-theme="dark"] .services-page .svc-fashion-copy > p {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+/* Supporting text */
+body.dark .services-page .svc-colour-notes b,
+body.dark .services-page .svc-colour-notes small,
+body[data-theme="dark"] .services-page .svc-colour-notes b,
+body[data-theme="dark"] .services-page .svc-colour-notes small,
+html[data-theme="dark"] .services-page .svc-colour-notes b,
+html[data-theme="dark"] .services-page .svc-colour-notes small {
+  color: #FFFFFF !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+}
+
+

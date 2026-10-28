@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TipTheory Nail Art & Manicure Studio — signature nail art, manicures and gel extensions.">
+  <title>TipTheory | Nail Art & Manicure Studio</title>
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/tt logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/tt logo.png">
+
+
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/services.css">
+
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script defer src="js/app.js"></script>
+  <link rel="stylesheet" href="css/brand-overrides.css">
+</head>
+
+<body data-page="home1">
+
+  <!-- HEADER: original design preserved -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="TipTheory home">
+        <img class="brand-mark" src="assets/tt logo.png" alt="">
+        <span class="brand-copy">
+          <span class="brand-name">Tip<span>Theory</span></span>
+          <span class="brand-tagline">Nail Art &amp; Manicure Studio</span>
+        </span>
+      </a>
+
+      <button class="icon-btn mobile-toggle" id="mobile-toggle" aria-label="Open navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="nav" id="primary-nav" aria-label="Main navigation">
+       <div class="home-menu" id="home-menu">
+  <button class="nav-home-button" id="home-menu-button" aria-expanded="false">
+    Home <i data-lucide="chevron-down" width="15"></i>
+  </button>
+  <div class="home-dropdown">
+    <a href="index.html">Home 1 · Classic</a>
+    <a href="home2.html">Home 2 · Premium</a>
+  </div>
+</div>
+
+<a class="nav-link" href="about.html">About</a>
+
+<a class="nav-link active"
+   aria-current="page"
+   href="services.html">Services</a>
+
+<a class="nav-link" href="gallery.html">Gallery</a>
+<a class="nav-link" href="contact.html">Contact</a>
+<a class="btn btn-primary mobile-book-appointment"
+   href="enquiry.html">
+  <i data-lucide="calendar-days" width="16"></i>
+  Book Appointment
+</a>
+      </nav>
+
+      <div class="header-tools">
+        <button class="icon-btn" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <i data-lucide="moon"></i>
+        </button>
+
+        <button class="icon-btn" id="rtl-toggle" aria-label="Toggle right-to-left layout" title="Toggle RTL">
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+
+        <a class="btn btn-primary header-cta" href="enquiry.html">
+          <i data-lucide="calendar-days" width="16"></i> Book Appointment
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+
+<main id="main" class="services-page">
+
+  <!-- SECTION 1: EDITORIAL HERO -->
+  
+<!-- TIPTHEORY SERVICES HERO — CREATIVE COLLAGE -->
+<section class="tt-collage-hero">
+  <div class="tt-collage-container">
+
+    <!-- LEFT: CONTENT + SERVICE MINI CARDS -->
+    <div class="tt-collage-left">
+
+      <div class="tt-collage-copy">
+        <span class="svc-kicker"> BEAUTY, WITH A PERSONAL TOUCH</span>
+        
+
+        <h1>
+          Your nails,<br>
+          your <span>signature.</span>
+        </h1>
+           
+<p>
+  Discover beautiful manicures, dreamy nail extensions and creative nail art
+  made to match your unique style. From timeless classics to expressive,every detail is thoughtfully chosen to make you
+  feel beautifully yourself.
+</p>
+        <div class="tt-collage-actions">
+          <a href="contact.html" class="tt-collage-primary">
+            Book Your Visit <span>↗</span>
+          </a>
+
+          <a href="#service-menu" class="tt-collage-secondary">
+            Explore services
+          </a>
+        </div>
+
+      </div>
+        
+     
+    </div>
+
+    <!-- RIGHT: MOSAIC PHOTO COLLAGE -->
+    <div class="tt-collage-right">
+
+      <div class="tt-collage-orbit tt-orbit-one"></div>
+      <div class="tt-collage-orbit tt-orbit-two"></div>
+
+      <div class="tt-photo-mosaic">
+
+        <div class="tt-mosaic-tile tt-tile-one">
+          <img
+            src="images/services img1.jpg"
+            alt="Elegant manicure close-up"
+            fetchpriority="high"
+          >
+        </div>
+
+        <div class="tt-mosaic-tile tt-tile-two">
+          <img
+            src="images/services img2.jpg"
+            alt="Rose-toned nail polish"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tt-mosaic-tile tt-tile-three">
+          <img
+            src="images/services img3.jpg"
+            alt="Nail art inspiration"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tt-mosaic-tile tt-tile-four">
+          <img
+            src="images/services img5.jpg"
+            alt="Manicure and beauty styling"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tt-mosaic-tile tt-tile-five">
+          <img
+            src="images/services img4.jpg"
+            alt="Detailed nail design"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tt-mosaic-tile tt-tile-six">
+          <img
+            src="images/services img6.jpg"
+            alt="Glossy manicure finish"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tt-mosaic-tile tt-tile-seven">
+          <img
+            src="images/services img7.jpg"
+            alt="Luxury nail care"
+            loading="lazy"
+          >
+        </div>
+
+        <div class="tt-mosaic-note">
+          <span>THE ART OF</span>
+          <strong>YOU.</strong>
+        </div>
+
+      </div>
+
+      <div class="tt-collage-side-note">
+        NAILS · ART · SELF-EXPRESSION
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+  <!-- SECTION 2: SERVICE MENU -->
+  <section class="svc-menu-section" id="service-menu">
+    <div class="svc-section-intro">
+      <div>
+        <span class="svc-kicker">THE SIGNATURE MENU</span>
+        <h2>
+  Beauty in<br>
+  <span><em>Every Detail.</em></span>
+</h2>
+      </div>
+      <p>Choose the treatment that feels right for you. Every appointment starts with your preferences and the finish you want to achieve.</p>
+    </div>
+
+    <div class="svc-menu-list">
+      <article class="svc-menu-item" id="manicure">
+        <span class="svc-menu-number">01</span>
+        <div class="svc-menu-image">
+          <img src="images/services-classic manicure.jpg" alt="Classic manicure treatment" loading="lazy">
+        </div>
+        <div class="svc-menu-copy">
+          <span class="svc-mini-label">THE TIMELESS ONE</span>
+          <h3>Classic Manicure</h3>
+          <p>Thoughtful nail shaping, cuticle care and a beautifully neat finish for everyday elegance.</p>
+          <div class="svc-tags"><span>Shape &amp; tidy</span><span>Polished finish</span></div>
+        </div>
+        <a class="svc-round-link" href="service-details.html#classic-manicure" aria-label="Book Classic Manicure"><i data-lucide="arrow-up-right"></i></a>
+      </article>
+
+      <article class="svc-menu-item" id="gel">
+        <span class="svc-menu-number">02</span>
+        <div class="svc-menu-image svc-image-offset">
+          <img src="images/services-gel manicure.jpg" alt="Glossy gel manicure inspiration" loading="lazy">
+        </div>
+        <div class="svc-menu-copy">
+          <span class="svc-mini-label">THE GLOSS EDIT</span>
+          <h3>Gel Manicure</h3>
+          <p>A smooth, glossy colour finish for a refined look that stays beautiful between appointments.</p>
+          <div class="svc-tags"><span>Glossy colour</span><span>Modern finish</span></div>
+        </div>
+        <a class="svc-round-link" href="service-details.html#gel-manicure" aria-label="Book Gel Manicure"><i data-lucide="arrow-up-right"></i></a>
+      </article>
+
+      <article class="svc-menu-item" id="extensions">
+        <span class="svc-menu-number">03</span>
+        <div class="svc-menu-image">
+          <img src="images/services-gel extension.jpg" alt="Long nail extensions and shaped nails" loading="lazy">
+        </div>
+        <div class="svc-menu-copy">
+          <span class="svc-mini-label">THE LENGTH EDIT</span>
+          <h3>Gel Extensions</h3>
+          <p>Explore added length and shape, tailored to your personal style and the look you have in mind.</p>
+          <div class="svc-tags"><span>Custom length</span><span>Shape consultation</span></div>
+        </div>
+        <a class="svc-round-link" href="service-details.html#gel-extensions" aria-label="Book Gel Extensions"><i data-lucide="arrow-up-right"></i></a>
+      </article>
+
+      <article class="svc-menu-item" id="art">
+        <span class="svc-menu-number">04</span>
+        <div class="svc-menu-image svc-image-offset">
+          <img src="images/services-custom nail art.jpg" alt="Creative nail art and colour details" loading="lazy">
+        </div>
+        <div class="svc-menu-copy">
+          <span class="svc-mini-label">THE CREATIVE EDIT</span>
+          <h3>Custom Nail Art</h3>
+          <p>From delicate accents and minimal lines to expressive designs inspired by your ideas.</p>
+          <div class="svc-tags"><span>Personalised designs</span><span>Colour stories</span></div>
+        </div>
+        <a class="svc-round-link" href="service-details.html#custom-nail-art" aria-label="Book Custom Nail Art"><i data-lucide="arrow-up-right"></i></a>
+      </article>
+
+      <article class="svc-menu-item" id="pedicure">
+        <span class="svc-menu-number">05</span>
+        <div class="svc-menu-image">
+          <img src="images/services-spa pedicure.jpg" alt="Relaxing foot care and pedicure inspiration" loading="lazy">
+        </div>
+        <div class="svc-menu-copy">
+          <span class="svc-mini-label">THE RESET RITUAL</span>
+          <h3>Spa Pedicure</h3>
+          <p>A refreshing care ritual designed to leave your feet feeling cared for and looking neat.</p>
+          <div class="svc-tags"><span>Foot care</span><span>Polished toes</span></div>
+        </div>
+        <a class="svc-round-link" href="service-details.html#spa-pedicure" aria-label="Book Spa Pedicure"><i data-lucide="arrow-up-right"></i></a>
+      </article>
+
+      <article class="svc-menu-item" id="removal">
+        <span class="svc-menu-number">06</span>
+        <div class="svc-menu-image svc-image-offset">
+          <img src="images/sevices-gel removal.jpg" alt="Nail care before a fresh manicure" loading="lazy">
+        </div>
+        <div class="svc-menu-copy">
+          <span class="svc-mini-label">THE FRESH START</span>
+          <h3>Gel Removal</h3>
+          <p>Careful removal planned around your existing manicure and the condition of your natural nails.</p>
+          <div class="svc-tags"><span>Gentle approach</span><span>Nail care</span></div>
+        </div>
+        <a class="svc-round-link" href="service-details.html#gel-removal" aria-label="Book Gel Removal"><i data-lucide="arrow-up-right"></i></a>
+      </article>
+    </div>
+    <p class="svc-menu-footnote"><i data-lucide="info"></i> Have existing extensions or a reference design? Mention it in your enquiry so your appointment can be planned accordingly.</p>
+  </section>
+
+  <!-- SECTION 3: BOLD FASHION STUDIO -->
+ <section class="svc-fashion">
+  <div class="svc-fashion-image">
+    <img
+      src="images/about a little more you.png"
+      alt="Nail technician creating a professional manicure"
+      loading="lazy"
+    >
+    <span class="svc-fashion-vertical">COLOUR IS A MOOD</span>
+  </div>
+
+  <div class="svc-fashion-copy">
+    <span class="svc-kicker">A LITTLE MORE YOU</span>
+
+    <h2>Not just a colour.<br><em>A whole mood.</em></h2>
+
+    <p>
+      Soft neutrals for quiet confidence. Berry tones for a little
+      drama. Artful details when ordinary just will not do.
+    </p>
+
+    <div class="svc-colour-notes">
+      <div>
+        <span class="svc-dot svc-dot-nude"></span>
+        <div>
+          <b>Soft &amp; understated</b>
+          <small>Clean, effortless, timeless.</small>
+        </div>
+      </div>
+
+      <div>
+        <span class="svc-dot svc-dot-berry"></span>
+        <div>
+          <b>Bold &amp; expressive</b>
+          <small>Rich colour, confident energy.</small>
+        </div>
+      </div>
+
+      <div>
+        <span class="svc-dot svc-dot-art"></span>
+        <div>
+          <b>Artfully individual</b>
+          <small>Details that feel like you.</small>
+        </div>
+      </div>
+    </div>
+
+    <a
+      class="svc-btn svc-btn-light"
+      href="enquiry.html?service=Custom%20Nail%20Art"
+    >
+      Create your look
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+  </div>
+</section>
+
+<!-- NAIL DESIGN STUDIO -->
+<section class="td-studio" id="design-studio">
+  <div class="td-studio-container">
+
+    <header class="td-studio-heading">
+      <span class="td-studio-eyebrow">YOUR LOOK, YOUR WAY</span>
+       <h2>Create Your <em>Signature Look.</em></h2>
+      <p>
+        Explore shapes, colours and finishes to find inspiration
+        for your next nail appointment.
+      </p>
+    </header>
+
+    <div class="td-studio-layout">
+
+      <!-- LEFT: LIVE NAIL PREVIEW -->
+      <div class="td-preview-panel">
+        <div class="td-preview-top">
+          <span>YOUR DESIGN PREVIEW</span>
+          <span class="td-live-dot">LIVE PREVIEW</span>
+        </div>
+
+        <div class="td-preview-stage">
+          <div class="td-preview-orbit"></div>
+          <div class="td-preview-orbit td-orbit-two"></div>
+
+          <div class="td-nail-wrap" id="tdNailWrap">
+            <svg id="tdNailSvg" viewBox="0 0 220 390"
+                 role="img" aria-label="Live nail design preview">
+              <defs>
+                <linearGradient id="tdNailGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#FFE1D5"/>
+                  <stop offset="45%" stop-color="#F1C6B6"/>
+                  <stop offset="100%" stop-color="#C98F82"/>
+                </linearGradient>
+
+                <linearGradient id="tdChromeGradient" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0%" stop-color="#815D65"/>
+                  <stop offset="20%" stop-color="#FFFFFF"/>
+                  <stop offset="42%" stop-color="#B78B9A"/>
+                  <stop offset="65%" stop-color="#FFFFFF"/>
+                  <stop offset="100%" stop-color="#7A5260"/>
+                </linearGradient>
+
+                <linearGradient id="tdShimmerGradient" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".8"/>
+                  <stop offset="50%" stop-color="#FFFFFF" stop-opacity=".05"/>
+                  <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".55"/>
+                </linearGradient>
+
+                <filter id="tdNailShadow" x="-60%" y="-30%" width="220%" height="180%">
+                  <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+                  <feOffset dy="10"/>
+                  <feComponentTransfer>
+                    <feFuncA type="linear" slope=".45"/>
+                  </feComponentTransfer>
+                  <feMerge>
+                    <feMergeNode/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+
+                <clipPath id="tdNailClip">
+                  <path id="tdNailClipPath"
+                    d="M110 28 C153 28 177 83 177 147 L177 322 Q110 354 43 322 L43 147 C43 83 67 28 110 28 Z"/>
+                </clipPath>
+              </defs>
+
+              <path id="tdNailShape"
+                d="M110 28 C153 28 177 83 177 147 L177 322 Q110 354 43 322 L43 147 C43 83 67 28 110 28 Z"
+                fill="url(#tdNailGradient)"
+                stroke="#FFE7E4"
+                stroke-width="2.5"
+                filter="url(#tdNailShadow)"/>
+
+              <g id="tdNailFinish" clip-path="url(#tdNailClip)">
+                <path d="M63 105 Q75 52 102 47 Q78 125 79 255 L69 307 Q58 230 63 105Z"
+                  fill="#FFFFFF" opacity=".35"/>
+
+                <path d="M145 70 Q164 116 160 210"
+                  fill="none" stroke="#FFFFFF" stroke-width="5"
+                  stroke-linecap="round" opacity=".2"/>
+
+                <g id="tdShimmerDetails" opacity="0"></g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="td-preview-note">
+            <span class="td-note-star">✦</span>
+            <span id="tdPreviewFinish">Glossy finish</span>
+            <small>YOUR SIGNATURE LOOK</small>
+          </div>
+        </div>
+
+        <div class="td-preview-summary">
+          <div class="td-summary-swatch" id="tdSummarySwatch"></div>
+          <div class="td-summary-text">
+            <span id="tdSummaryTitle">Almond · Rose Pink · Glossy</span>
+            <small id="tdSummaryDescription">
+              A timeless look, beautifully finished.
+            </small>
+          </div>
+          <span class="td-summary-arrow">↗</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: CUSTOMIZATION PANEL -->
+      <div class="td-controls-panel">
+
+        <div class="td-control-heading">
+          <span class="td-step-number">01.</span>
+          <div>
+            <h3>Choose Your Shape</h3>
+            <p>Find the silhouette that feels like you.</p>
+          </div>
+        </div>
+
+        <div class="td-shape-grid" role="group" aria-label="Choose nail shape">
+          <button class="td-shape-option is-selected" type="button"
+                  data-shape="almond" aria-pressed="true">
+            <span class="td-mini-nail almond-mini"></span>
+            <span>Almond</span>
+          </button>
+
+          <button class="td-shape-option" type="button"
+                  data-shape="oval" aria-pressed="false">
+            <span class="td-mini-nail oval-mini"></span>
+            <span>Oval</span>
+          </button>
+
+          <button class="td-shape-option" type="button"
+                  data-shape="square" aria-pressed="false">
+            <span class="td-mini-nail square-mini"></span>
+            <span>Square</span>
+          </button>
+
+          <button class="td-shape-option" type="button"
+                  data-shape="coffin" aria-pressed="false">
+            <span class="td-mini-nail coffin-mini"></span>
+            <span>Coffin</span>
+          </button>
+
+          <button class="td-shape-option" type="button"
+                  data-shape="stiletto" aria-pressed="false">
+            <span class="td-mini-nail stiletto-mini"></span>
+            <span>Stiletto</span>
+          </button>
+        </div>
+
+        <div class="td-control-divider"></div>
+
+        <div class="td-control-heading">
+          <span class="td-step-number">02.</span>
+          <div>
+            <h3>Select Your Colour</h3>
+            <p>Choose your favourite signature shade.</p>
+          </div>
+        </div>
+
+        <div class="td-colour-grid" role="group" aria-label="Choose nail colour">
+          <button class="td-colour-option is-selected" type="button"
+            data-colour="#FF477E" data-colour-name="Rose Pink"
+            style="--swatch:#FF477E" aria-label="Rose Pink" aria-pressed="true"></button>
+
+          <button class="td-colour-option" type="button"
+            data-colour="#F1C6B6" data-colour-name="Nude"
+            style="--swatch:#F1C6B6" aria-label="Nude" aria-pressed="false"></button>
+
+          <button class="td-colour-option" type="button"
+            data-colour="#8D1737" data-colour-name="Burgundy"
+            style="--swatch:#8D1737" aria-label="Burgundy" aria-pressed="false"></button>
+
+          <button class="td-colour-option" type="button"
+            data-colour="#F8D4DF" data-colour-name="Blush"
+            style="--swatch:#F8D4DF" aria-label="Blush" aria-pressed="false"></button>
+
+          <button class="td-colour-option" type="button"
+            data-colour="#A84460" data-colour-name="Berry"
+            style="--swatch:#A84460" aria-label="Berry" aria-pressed="false"></button>
+
+          <button class="td-colour-option" type="button"
+            data-colour="#D1A565" data-colour-name="Champagne"
+            style="--swatch:#D1A565" aria-label="Champagne" aria-pressed="false"></button>
+        </div>
+
+        <div class="td-control-divider"></div>
+
+        <div class="td-control-heading">
+          <span class="td-step-number">03.</span>
+          <div>
+            <h3>Choose Your Finish</h3>
+            <p>Make the final detail your own.</p>
+          </div>
+        </div>
+
+        <div class="td-finish-grid" role="group" aria-label="Choose nail finish">
+          <button class="td-finish-option is-selected" type="button"
+                  data-finish="glossy" aria-pressed="true">
+            <span class="td-finish-visual td-finish-glossy"></span>
+            <span>Glossy</span>
+            <small>Mirror shine</small>
+          </button>
+
+          <button class="td-finish-option" type="button"
+                  data-finish="matte" aria-pressed="false">
+            <span class="td-finish-visual td-finish-matte"></span>
+            <span>Matte</span>
+            <small>Soft elegance</small>
+          </button>
+
+          <button class="td-finish-option" type="button"
+                  data-finish="chrome" aria-pressed="false">
+            <span class="td-finish-visual td-finish-chrome"></span>
+            <span>Chrome</span>
+            <small>Liquid metal</small>
+          </button>
+
+          <button class="td-finish-option" type="button"
+                  data-finish="shimmer" aria-pressed="false">
+            <span class="td-finish-visual td-finish-shimmer"></span>
+            <span>Shimmer</span>
+            <small>Subtle sparkle</small>
+          </button>
+        </div>
+
+        <div class="td-booking-bar">
+          <div class="td-booking-summary">
+            <small>Your selection</small>
+            <strong id="tdSelectionText">Almond · Rose Pink · Glossy</strong>
+          </div>
+
+          <a href="enquiry.html" class="td-book-look">
+            <span>Book This Look</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- SECTION 5: THE DETAIL BAR -->
+  <section class="svc-details">
+    <div class="svc-details-heading">
+      <span class="svc-kicker">THE DETAILS MATTER</span>
+      <h2>The little things<br><em>make the look.</em></h2>
+    </div>
+    <div class="svc-detail-grid">
+      <article class="svc-detail-card">
+        <div class="svc-detail-photo">
+          <img src="images/shape and length.png" alt="Nail shapes and lengths" loading="lazy">
+          <span>01</span>
+        </div>
+        <h3>Shape &amp; length</h3>
+        <p>Choose a shape and length that suit your look, comfort and everyday routine.</p>
+      </article>
+      <article class="svc-detail-card">
+        <div class="svc-detail-photo">
+          <img src="images/services-colour direction.jpg" alt="Nail colour inspiration" loading="lazy">
+          <span>02</span>
+        </div>
+        <h3>Colour direction</h3>
+        <p>Explore soft neutrals, romantic pinks, deep berry shades or something unexpected.</p>
+      </article>
+      <article class="svc-detail-card">
+        <div class="svc-detail-photo">
+          <img src="images/finishimg touches.jpg" alt="Careful nail finishing" loading="lazy">
+          <span>03</span>
+        </div>
+        <h3>Finishing touches</h3>
+        <p>Talk through your design details and get practical guidance for maintaining your finish.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SECTION 6: PERSONAL DESIGN STORY -->
+  <section class="svc-story">
+    <div class="svc-story-image">
+      <img src="images/services-inspiration.png" alt="Artistic manicure inspiration with expressive details" loading="lazy">
+      
+    </div>
+    <div class="svc-story-copy">
+      <span class="svc-kicker">BRING YOUR INSPIRATION</span>
+      <h2>Saved on your phone?<br><em>Let's make it yours.</em></h2>
+      <p>A screenshot, a favourite colour, a special occasion or simply a feeling — inspiration can start anywhere. Share your references with the studio before your visit.</p>
+      <ul class="svc-story-list">
+        <li><i data-lucide="check"></i> Bring a reference image or design idea</li>
+        <li><i data-lucide="check"></i> Tell us your preferred colours and length</li>
+        <li><i data-lucide="check"></i> Mention existing gel or extensions</li>
+      </ul>
+      <a class="svc-btn svc-btn-dark" href="enquiry.html">Discuss your design <i data-lucide="arrow-up-right"></i></a>
+    </div>
+  </section>
+
+  <!-- SECTION 7: FINAL BOOKING CTA -->
+  <!-- <section class="svc-final">
+    <div class="svc-final-orbit svc-orbit-one"></div>
+    <div class="svc-final-orbit svc-orbit-two"></div>
+    <div class="svc-final-content">
+      <span class="svc-kicker">YOUR NEXT NAIL MOMENT</span>
+      <h2>A little time for you.<br><em>A look you'll love.</em></h2>
+      <p>Tell us what you have in mind and let's plan your next appointment.</p>
+      <div class="svc-final-actions">
+        <a class="svc-btn svc-btn-dark" href="enquiry.html">Book an appointment <i data-lucide="arrow-up-right"></i></a>
+        
+      </div>
+    </div>
+   
+  </section> -->
+
+  
+
+<!-- SHORT SERVICES CTA -->
+<section class="svc-quick-cta">
+  <div class="svc-quick-cta-content">
+    <span>YOUR NEXT FAVOURITE LOOK</span>
+
+    <h2>Ready for a <em>fresh look?</em></h2>
+
+    <p>Beautiful nails, personal style, and a finish made for you.</p>
+
+    <a href="contact.html" class="svc-quick-cta-btn">
+      Book Your Appointment
+      <i data-lucide="arrow-up-right"></i>
+    </a>
+  </div>
+</section>
+
+
+</main>
+
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="index.html" aria-label="TipTheory home">
+          <img class="brand-mark" src="assets/tt logo.png" alt="">
+          <span class="brand-copy">
+            <span class="brand-name">Tip<span>Theory</span></span>
+            <span class="brand-tagline">Nail Art &amp; Manicure Studio</span>
+          </span>
+        </a>
+
+        <p>
+          Thoughtful nail care, expressive nail art, and a little moment of luxury just for you. 
+          comfort and the little details that make your nails feel uniquely yours.
+        </p>
+
+        <div class="socials" aria-label="Social media">
+          <a href="https://instagram.com/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://pinterest.com/" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="https://facebook.com/" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Explore</h3>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+
+          <a href="about.html">About Us</a>
+          <a href="services.html">Services</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Our Services</h3>
+        <div class="footer-links">
+          <a href="services.html#manicure">Classic Manicure</a>
+          <a href="services.html#gel">Gel Extensions</a>
+          <a href="services.html#art">Custom Nail Art</a>
+          <a href="services.html#pedicure">Spa Pedicure</a>
+          <a href="404.html">404 page </a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <div class="footer-links">
+          <a href="mailto:hello@tiptheory.com"><i data-lucide="mail"></i> hello@tiptheory.com</a>
+          <a href="tel:+910000000000"><i data-lucide="phone"></i> +91 00000 00000</a>
+          <span><i data-lucide="map-pin"></i> India · By appointment</span>
+          <span><i data-lucide="clock-3"></i> Tue–Sun · 10:00 AM–7:00 PM</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> TipTheory Nail Art &amp; Manicure Studio.</span>
+      <span>
+        <a href="privacy-policy.html">Privacy Policy</a> &nbsp; · &nbsp;
+        <a href="terms-conditions.html">Terms &amp; conditions</a>
+      </span>
+    </div>
+  </footer>
+
+
+<div class="toast" id="toast" aria-live="polite"></div>
+</body>
+</html>
